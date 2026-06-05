@@ -57,6 +57,6 @@ export class ContactComponent implements AfterViewInit {
       shadowSize: [41, 41]
     }));
     marker.addTo(this.map);
-    marker.bindPopup("<b>Movara Consult</b><br>MJ1 Business Park, Westlands.").openPopup();
+    marker.bindPopup("<b>Lukenya University</b><br>MJ1 Business Park, Westlands.").openPopup();
   }
 }
