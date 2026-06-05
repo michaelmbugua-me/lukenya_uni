@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-movara-dark: #004037;
+  --color-movara-orange: #FF5A1F;
+  --color-movara-beige: #FDF8F5;
+  --color-movara-light-green: #006D5B;
+  --font-sans: 'Source Sans 3', 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+
+  --color-brand-green: #1a5c3a;
+  --color-brand-orange: #e85d04;
+  --color-text-dark: #2d2d2d;
+}
+
+body {
+  @apply font-sans m-0 p-0 text-[#1a1a1a];
+  font-family: 'Source Sans 3', 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+/* ===========================
+   Shared CSS Variables
+   =========================== */
+:root {
+  --green: #065f46;
+  --dark-green: #004037;
+  --orange: #ff6a2a;
+  --cream: #fff3ee;
+  --peach: #fff2eb;
+  --soft: #fffbf9;
+  --text: #151515;
+  --ink: #19191b;
+  --muted: #737373;
+  --navy: #293f6d;
+}
+
+/* ===========================
+   Shared Component Host
+   =========================== */
+app-home,
+app-about,
+app-case-studies,
+app-contact {
+  display: block;
+}
+
+/* ===========================
+   Shared Page Container
+   =========================== */
+.home-page,
+.about-page,
+.case-page,
+.contact-page {
+  background: #ffffff;
+  color: var(--text);
+  font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+/* ===========================
+   Shared Button Styles
+   =========================== */
+.btn-base,
+.quote-button,
+.primary-button,
+.outline-button,
+.secondary-button,
+.form-submit,
+.email-capture button,
+.footer-subscribe button {
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.primary-button {
+  background: var(--orange);
+  color: #ffffff;
+  font-size: 16px;
+  min-height: 56px;
+  padding: 0 42px;
+}
+
+.primary-button.small {
+  font-size: 13px;
+  min-height: 42px;
+  padding: 0 24px;
+}
+
+.primary-button.dark {
+  background: var(--dark-green);
+}
+
+.primary-button svg {
+  fill: currentColor;
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.outline-button,
+.secondary-button {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.outline-button {
+  min-height: 52px;
+  padding: 0 30px;
+}
+
+.secondary-button {
+  font-size: 16px;
+  min-height: 50px;
+  padding: 0 30px;
+}
+
+.form-submit {
+  background: var(--orange);
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 22px;
+  padding: 14px 24px;
+  width: 100%;
+}
+
+/* ===========================
+   Shared Pill / Badge
+   =========================== */
+.pill {
+  background: #fff8f5;
+  border-radius: 999px;
+  color: var(--orange);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 28px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   Shared Section Heading
+   =========================== */
+.section-heading {
+  align-items: end;
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.section-heading p {
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(40px, 3.35vw, 64px);
+  font-weight: 800;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.section-heading span {
+  color: var(--muted);
+  display: block;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===========================
+   Shared Hero Section Styles
+   =========================== */
+.hero-section {
+  border-radius: 30px;
+  height: clamp(520px, 41.7vw, 800px);
+  margin: 0 clamp(24px, 4.16vw, 80px);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image,
+.hero-overlay {
+  inset: 0;
+  position: absolute;
+}
+
+.hero-image {
+  /*height: 100%;*/
+  /*object-fit: cover;*/
+  /*width: 100%;*/
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(6, 95, 70, 0.92) 0%, rgba(6, 95, 70, 0.76) 42%, rgba(6, 95, 70, 0.18) 100%);
+}
+
+.hero-content {
+  color: #ffffff;
+  left: clamp(48px, 12vw, 226px);
+  max-width: 880px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.eyebrow {
+  color: #d7a873;
+  font-size: 20px;
+  margin: 0 0 42px;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.1;
+  margin: 0 0 35px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 48px;
+  max-width: 820px;
+}
+
+.hero-actions {
+  align-items: center;
+  display: flex;
+  gap: 42px;
+}
+
+/* ===========================
+   Shared Stats Band Styles
+   =========================== */
+.stats-band {
+  align-items: center;
+  background: var(--cream, #fff3ee);
+  border-radius: 20px;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: minmax(300px, 1fr) 1.5fr;
+  margin: 32px clamp(24px, 4.16vw, 80px) 32px;
+  padding: clamp(44px, 3.5vw, 66px) clamp(48px, 11.8vw, 226px);
+}
+
+.stats-band h2 {
+  font-size: clamp(20px, 1.4vw, 26px);
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.stats-band h2 span,
+.stats-list strong {
+  color: var(--orange, #ff6a2a);
+}
+
+.stats-list {
+  display: grid;
+  gap: clamp(32px, 4vw, 64px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats-list strong {
+  display: block;
+  font-size: clamp(28px, 2vw, 40px);
+  line-height: 1;
+  margin-bottom: 13px;
+}
+
+.stats-list p {
+  color: #7a7a7a;
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ===========================
+   Shared Responsive Styles
+   =========================== */
+@media (max-width: 1100px) {
+  .stats-band {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section {
+    border-radius: 18px;
+    height: 560px;
+    margin: 0 16px;
+  }
+
+  .hero-content {
+    left: 28px;
+    max-width: calc(100% - 56px);
+    transform: translateY(-42%);
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .stats-band {
+    border-radius: 20px;
+    gap: 30px;
+    margin: 24px 16px 72px;
+    padding: 32px 28px;
+  }
+
+  .stats-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+/* Custom Scrollbar for Testimonials */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

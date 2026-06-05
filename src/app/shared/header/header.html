@@ -1,0 +1,27 @@
+<div class="top-strip">
+  <span>Ready to start and grow your business? Let&apos;s Begin</span>
+  <a href="mailto:info@movaraconsult.com">Contact us</a>
+</div>
+
+<header class="site-header">
+  <div class="header-brand-row">
+    <a routerLink="/" class="brand-link" aria-label="Movara home">
+      <img src="/case-study/logo.svg" alt="Movara Consult" class="brand-logo">
+    </a>
+    <p class="brand-tagline">Help to Grow your Business</p>
+    <a routerLink="/contact" class="quote-button">Get Quote</a>
+  </div>
+
+  <nav class="main-nav" aria-label="Primary navigation">
+    <a routerLink="/case-studies" [class.active]="activeRoute === 'case-studies'">Case Studies</a>
+    <a routerLink="/about" [class.active]="activeRoute === 'about'">About</a>
+    <a routerLink="/contact" [class.active]="activeRoute === 'contact'">Contact Us</a>
+    <button class="language-button" type="button" aria-label="Language selector">
+      Eng
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M5.5 7.5 10 12l4.5-4.5" />
+      </svg>
+    </button>
+  </nav>
+</header>
+

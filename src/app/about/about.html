@@ -1,0 +1,109 @@
+<main class="about-page">
+  <app-header activeRoute="about"></app-header>
+
+  <app-hero-section
+    imageUrl="/hero-images/about-hero.webp"
+    imageAlt="Case studies showcase"
+    eyebrow="About Us"
+    title="Professional Technology Consulting Solutions"
+    description="We help businesses build practical digital systems, improve operations, and create customer experiences that support measurable growth."
+    buttonText="Get Consultation"
+    buttonLink="/contact">
+  </app-hero-section>
+
+  <app-stats-band></app-stats-band>
+
+  <section class="story-section" aria-labelledby="story-title">
+    <div class="story-copy">
+      <p class="section-pill">Our Mission</p>
+      <h2 id="story-title">Build better technology for your business growth.</h2>
+      <p>
+        Movara Consult combines business strategy, product design, engineering,
+        and marketing to help companies turn complex goals into clear digital
+        systems.
+      </p>
+      <p>
+        We work closely with teams from discovery to delivery, making sure every
+        product, website, and workflow we build is useful, scalable, and easy to
+        adopt.
+      </p>
+      <div class="story-actions">
+        <a routerLink="/contact" class="primary-button">Book Now</a>
+        <a routerLink="/case-studies" class="secondary-button">Learn More</a>
+      </div>
+    </div>
+
+    <div class="story-visual" aria-hidden="true">
+      <div>
+        <img src="/about/about-notebook.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" aria-labelledby="services-title">
+    <div class="services-heading">
+      <p class="section-pill">Services</p>
+      <h2 id="services-title">Digital solutions that move your business forward.</h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <span class="service-icon">M</span>
+        <h3>Marketing Strategy</h3>
+        <p>Campaign planning, positioning, and channel strategy for consistent demand generation.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">U</span>
+        <h3>UX/UI Design</h3>
+        <p>Human-centered interfaces that make your digital products easier to use and trust.</p>
+      </article>
+      <article class="service-card featured">
+        <span class="service-icon">B</span>
+        <h3>Business Consulting</h3>
+        <p>Operational analysis and transformation planning for stronger technology decisions.</p>
+      </article>
+      <article class="service-card featured">
+        <span class="service-icon">A</span>
+        <h3>Automation</h3>
+        <p>Workflow automation that reduces manual tasks and improves team delivery speed.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">D</span>
+        <h3>Development</h3>
+        <p>Custom software, websites, and platforms built around your business requirements.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-icon">R</span>
+        <h3>Research &amp; Analytics</h3>
+        <p>Customer, product, and performance insights that guide better digital decisions.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="partners-section" aria-labelledby="partners-title">
+    <div class="partners-copy">
+      <h2 id="partners-title">Trusted by ambitious teams and growing businesses.</h2>
+      <p>
+        We partner with organizations across industries to design, launch, and
+        improve technology that supports real operating needs.
+      </p>
+    </div>
+    <div class="partners-grid" aria-label="Partner logos">
+      <img src="/clients/1.svg" alt="Movara" />
+      <img src="/clients/2.svg" alt="Wakili" />
+      <img src="/clients/3.svg" alt="Tappi" />
+      <img src="/clients/4.svg" alt="Strategy Lab" />
+      <img src="/clients/5.svg" alt="Growth Desk" />
+      <img src="/clients/6.svg" alt="Product Hub" />
+      <img src="/clients/7.svg" alt="Digital Works" />
+      <img src="/clients/8.svg" alt="Insight Co." />
+      <img src="/clients/9.svg" alt="Launch Team" />
+      <img src="/clients/10.svg" alt="Ops Studio" />
+    </div>
+  </section>
+
+  <app-team-section></app-team-section>
+
+  <app-cta-faq></app-cta-faq>
+  <app-footer></app-footer>
+</main>

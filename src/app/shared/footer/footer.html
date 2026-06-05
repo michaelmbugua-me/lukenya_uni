@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="/case-study/logo.svg" alt="Movara Consult">
+      <p>info&#64;movaraconsult.com</p>
+      <p class="footer-phone">+254 704 701 916 or +254 721 888 560</p>
+      <p>MJ1 Business Park, Westlands</p>
+      @if (showSocialLinks) {
+        <div class="social-links" aria-label="Social links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">t</a>
+        </div>
+      }
+    </div>
+
+    <div>
+      <h3>About</h3>
+      <a href="#">Company</a>
+      <a href="#">Products</a>
+      <a href="#">Our Team</a>
+      <a href="#">Careers</a>
+      <a href="#">Portfolio</a>
+    </div>
+
+    <div>
+      <h3>Services</h3>
+      <a href="#">UX/UI Design</a>
+      <a href="#">Mobile App Development</a>
+      <a href="#">Web App Development</a>
+      <a href="#">Digital Marketing</a>
+    </div>
+
+    @if (showLegalColumn) {
+      <div>
+        <h3>Legal</h3>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of use</a>
+      </div>
+    }
+
+
+    <form class="footer-subscribe">
+      <h3>Subscribe Newsletter &amp; Get Company News</h3>
+      <div>
+        <input type="email" placeholder="Enter your email" aria-label="Newsletter email">
+        <button type="submit">Subscribe</button>
+      </div>
+      <p>By subscribing you&apos;re accepting our Policy</p>
+    </form>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="copyright">© Copyright {{ currentYear }}, Movara Consult. All Rights Reserved.</p>
+    <nav class="footer-legal-nav">
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </nav>
+  </div>
+</footer>
+

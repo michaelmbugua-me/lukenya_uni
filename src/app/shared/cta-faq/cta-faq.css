@@ -1,0 +1,143 @@
+:host {
+  display: block;
+  --green: #065f46;
+  --dark-green: #004037;
+  --orange: #ff6a2a;
+  --muted: #737373;
+  font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cta-faq-section {
+  align-items: center;
+  background: var(--dark-green);
+  border-radius: 0 0 30px 30px;
+  display: grid;
+  gap: clamp(72px, 11vw, 210px);
+  grid-template-columns: minmax(300px, 0.8fr) minmax(420px, 0.78fr);
+  padding: clamp(84px, 7.8vw, 150px) clamp(48px, 12.3vw, 236px);
+}
+
+.cta-copy {
+  color: #ffffff;
+}
+
+.cta-copy h2 {
+  font-size: clamp(34px, 3.1vw, 60px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+.cta-copy p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 34px;
+  max-width: 520px;
+}
+
+.email-capture {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr auto;
+  max-width: 590px;
+}
+
+.email-capture input {
+  border: 0;
+  border-radius: 3px;
+  font: inherit;
+  padding: 14px 16px;
+  width: 100%;
+  color: #1a1a1a!important;
+  background: #ffffff!important;
+}
+
+.email-capture button {
+  align-items: center;
+  background: var(--orange);
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  padding: 0 28px;
+  white-space: nowrap;
+}
+
+.faq-panel {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: clamp(36px, 3vw, 58px);
+}
+
+.faq-panel h2 {
+  font-size: clamp(30px, 2.5vw, 48px);
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+.faq-panel details {
+  border-top: 1px solid #dcdcdc;
+  padding: 22px 0;
+}
+
+.faq-panel details:last-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.faq-panel summary {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+}
+
+.faq-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-panel summary::after {
+  color: #b4b4b4;
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq-panel details[open] summary::after {
+  content: "×";
+}
+
+.faq-panel p {
+  color: #7c7c7c;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 16px 36px 0 0;
+}
+
+@media (max-width: 1100px) {
+  .cta-faq-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .cta-faq-section {
+    margin: 0 16px;
+    padding: 72px 24px;
+  }
+
+  .email-capture {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-faq-section {
+    border-radius: 0 0 22px 22px;
+  }
+}
+
