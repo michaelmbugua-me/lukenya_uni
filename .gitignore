@@ -1,0 +1,7 @@
+.angular
+.env
+.env.local
+logs/
+*.log
+node_modules/
+.pm2/
