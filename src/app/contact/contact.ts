@@ -1,7 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from '../shared/header/header';
-import { FooterComponent } from '../shared/footer/footer';
 import { StatsBandComponent } from '../shared/stats-band/stats-band';
 import { HeroSectionComponent } from '../shared/hero-section/hero-section';
 import { CtaFaqComponent } from '../shared/cta-faq/cta-faq';
@@ -11,7 +9,7 @@ import * as L from 'leaflet';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, FooterComponent, StatsBandComponent, HeroSectionComponent, CtaFaqComponent],
+  imports: [CommonModule, StatsBandComponent, HeroSectionComponent, CtaFaqComponent],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })

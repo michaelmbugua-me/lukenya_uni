@@ -1,27 +1,35 @@
-<div class="top-strip">
-  <span>Ready to start and grow your business? Let&apos;s Begin</span>
-  <a href="mailto:info@movaraconsult.com">Contact us</a>
+<div class="topbar">
+  <div class="contact-line">
+    <span>☎</span>
+    <span>0722 370 485</span>
+    <span>✉</span>
+    <span>info&#64;lukenyauniversity.ac.ke</span>
+  </div>
+  <nav class="utility-nav" aria-label="Utility navigation">
+    <a href="#">Library</a>
+    <a href="#">Student Portal</a>
+    <a href="#">LU Marathon</a>
+    <a href="#">Virtual Campus</a>
+    <a href="#">E-Learning Platform</a>
+  </nav>
 </div>
 
-<header class="site-header">
-  <div class="header-brand-row">
-    <a routerLink="/" class="brand-link" aria-label="Movara home">
-      <img src="/case-study/logo.svg" alt="Movara Consult" class="brand-logo">
-    </a>
-    <p class="brand-tagline">Help to Grow your Business</p>
-    <a routerLink="/contact" class="quote-button">Get Quote</a>
-  </div>
-
-  <nav class="main-nav" aria-label="Primary navigation">
-    <a routerLink="/case-studies" [class.active]="activeRoute === 'case-studies'">Case Studies</a>
-    <a routerLink="/about" [class.active]="activeRoute === 'about'">About</a>
-    <a routerLink="/contact" [class.active]="activeRoute === 'contact'">Contact Us</a>
-    <button class="language-button" type="button" aria-label="Language selector">
-      Eng
-      <svg viewBox="0 0 20 20" aria-hidden="true">
-        <path d="M5.5 7.5 10 12l4.5-4.5" />
-      </svg>
-    </button>
+<div class="main-nav">
+  <a class="brand" routerLink="/" aria-label="Lukenya University home">
+    <span>LUKENYA</span>
+    <img src="/lukenya/asset-00-image0_1_33-99x123.png" alt="">
+    <span>UNIVERSITY</span>
+  </a>
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/academics" routerLinkActive="active">Academics</a>
+    <a href="#">Student</a>
+    <a href="#">Graduations</a>
+    <a href="#">KUCCPS</a>
+    <a href="#">Research</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </nav>
-</header>
+  <a class="nav-cta" href="#">Apply Now</a>
+</div>
 
