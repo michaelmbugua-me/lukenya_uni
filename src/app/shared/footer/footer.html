@@ -1,64 +1,47 @@
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <img src="/case-study/logo.svg" alt="Movara Consult">
-      <p>info&#64;movaraconsult.com</p>
-      <p class="footer-phone">+254 704 701 916 or +254 721 888 560</p>
-      <p>MJ1 Business Park, Westlands</p>
-      @if (showSocialLinks) {
-        <div class="social-links" aria-label="Social links">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Twitter">t</a>
-        </div>
-      }
+<footer class="footer">
+  <div class="footer-brand">
+    <a class="brand light" routerLink="/">
+      <span>LUKENYA</span>
+      <img src="/lukenya/asset-00-image0_1_33-99x123.png" alt="">
+      <span>UNIVERSITY</span>
+    </a>
+    <p>Since 1991, Lukenya University has been committed to excellence in education, research, and community engagement. We prepare students to become leaders who make a positive impact on the world.</p>
+    <div class="socials" aria-label="Social links">
+      <a href="#">◎</a>
+      <a href="#">𝕏</a>
+      <a href="#">f</a>
+      <a href="#">▶</a>
     </div>
-
-    <div>
-      <h3>About</h3>
-      <a href="#">Company</a>
-      <a href="#">Products</a>
-      <a href="#">Our Team</a>
-      <a href="#">Careers</a>
-      <a href="#">Portfolio</a>
-    </div>
-
-    <div>
-      <h3>Services</h3>
-      <a href="#">UX/UI Design</a>
-      <a href="#">Mobile App Development</a>
-      <a href="#">Web App Development</a>
-      <a href="#">Digital Marketing</a>
-    </div>
-
-    @if (showLegalColumn) {
-      <div>
-        <h3>Legal</h3>
-        <a href="#">Terms &amp; Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of use</a>
-      </div>
-    }
-
-
-    <form class="footer-subscribe">
-      <h3>Subscribe Newsletter &amp; Get Company News</h3>
-      <div>
-        <input type="email" placeholder="Enter your email" aria-label="Newsletter email">
-        <button type="submit">Subscribe</button>
-      </div>
-      <p>By subscribing you&apos;re accepting our Policy</p>
-    </form>
   </div>
 
-  <div class="footer-bottom">
-    <p class="copyright">© Copyright {{ currentYear }}, Movara Consult. All Rights Reserved.</p>
-    <nav class="footer-legal-nav">
-      <a href="#">Terms &amp; Conditions</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-    </nav>
-  </div>
+  <nav aria-label="Quick links">
+    <h3>Quick Links</h3>
+    <a routerLink="/about">About Us</a>
+    <a routerLink="/academics">Academics</a>
+    <a href="#">Campus Life</a>
+    <a href="#">LU Application Form</a>
+    <a href="#">Library</a>
+    <a href="#">Research</a>
+  </nav>
+  <nav aria-label="Academics links">
+    <h3>Academics</h3>
+    <a href="#">School of Agriculture, Technical Studies and Natural Sciences</a>
+    <a href="#">School of Business &amp; Economics</a>
+    <a href="#">School of Education &amp; Social Sciences</a>
+    <a href="#">School of Health</a>
+    <a href="#">Short Courses</a>
+  </nav>
+  <nav aria-label="Student links">
+    <h3>Students</h3>
+    <a href="#">Student Portal</a>
+    <a href="#">Student Handbook</a>
+    <a href="#">Graduation</a>
+    <a href="#">Cultural Week Festival</a>
+  </nav>
+  <address>
+    <span>◎ Mtotoni, Machakos County</span>
+    <span>☎ 0720 440 007 / 0723 440 000</span>
+    <span>✉ info&#64;lukenyauniversity.ac.ke</span>
+  </address>
+  <small>Copyright All Right Reserved 2025. Lukenya University</small>
 </footer>
-

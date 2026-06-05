@@ -7,15 +7,15 @@
 }
 
 .about-page {
-  --green: #00884f;
+  --green: #01884e;
   --deep-green: #003f2e;
-  --yellow: #ffd229;
-  --ink: #303030;
-  --muted: #6d6d6d;
+  --yellow: #f9ce31;
+  --ink: #1e1e1e;
+  --muted: #454545;
   --line: #d7eee4;
   background: #ffffff;
   color: var(--ink);
-  font-family: "Source Sans 3", "Inter", "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", "Source Sans 3", "Segoe UI", Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
 }
@@ -116,34 +116,52 @@ img {
   align-items: center;
   border: 0;
   border-radius: 999px;
+  cursor: pointer;
   display: inline-flex;
   font-weight: 700;
   justify-content: center;
+  text-decoration: none;
   white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .nav-cta {
   background: var(--yellow);
   color: #141414;
   font-size: 17px;
-  height: 52px;
+  height: 51px;
+  padding: 0 32px;
+}
+
+.nav-cta:hover {
+  box-shadow: 0 4px 12px rgba(249, 206, 49, 0.3);
 }
 
 .button {
   font-size: 17px;
-  min-height: 66px;
+  height: 67px;
   padding: 0 42px;
 }
 
 .button.small {
   font-size: 12px;
-  min-height: 40px;
+  height: 40px;
   padding: 0 26px;
 }
 
 .button.yellow {
   background: var(--yellow);
-  color: #171717;
+  color: #141414;
+}
+
+.button.yellow:hover {
+  box-shadow: 0 4px 12px rgba(249, 206, 49, 0.3);
 }
 
 .button.ghost {
@@ -153,7 +171,7 @@ img {
 
 .button.white {
   background: #ffffff;
-  color: #171717;
+  color: #141414;
 }
 
 .hero,
@@ -176,7 +194,7 @@ img {
 }
 
 .hero-shade {
-  background: linear-gradient(180deg, rgba(0, 71, 53, 0.06) 0%, rgba(0, 64, 48, 0.52) 48%, rgba(0, 48, 34, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(0, 71, 53, 0) 0%, rgba(0, 64, 48, 0.4) 48%, rgba(1, 136, 78, 0.9) 100%);
   inset: 0;
   position: absolute;
 }
@@ -187,7 +205,7 @@ img {
   max-width: 1060px;
   position: absolute;
   text-align: center;
-  top: 54%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 180px);
 }
