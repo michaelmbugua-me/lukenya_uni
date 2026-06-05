@@ -1,109 +1,209 @@
 <main class="about-page">
-  <app-header activeRoute="about"></app-header>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="contact-line">
+        <span>☎</span>
+        <span>0722 370 485</span>
+        <span>✉</span>
+        <span>info&#64;lukenyauniversity.ac.ke</span>
+      </div>
+      <nav class="utility-nav" aria-label="Utility navigation">
+        <a href="#">Library</a>
+        <a href="#">Student Portal</a>
+        <a href="#">LU Marathon</a>
+        <a href="#">Virtual Campus</a>
+        <a href="#">E-Learning Platform</a>
+      </nav>
+    </div>
 
-  <app-hero-section
-    imageUrl="/hero-images/about-hero.webp"
-    imageAlt="Case studies showcase"
-    eyebrow="About Us"
-    title="Professional Technology Consulting Solutions"
-    description="We help businesses build practical digital systems, improve operations, and create customer experiences that support measurable growth."
-    buttonText="Get Consultation"
-    buttonLink="/contact">
-  </app-hero-section>
+    <div class="main-nav">
+      <a class="brand" href="/" aria-label="Lukenya University home">
+        <span>LUKENYA</span>
+        <img src="/lukenya/asset-00-image0_1_33-99x123.png" alt="">
+        <span>UNIVERSITY</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#">Home</a>
+        <a class="active" href="#">About</a>
+        <a href="#">Academics</a>
+        <a href="#">Student</a>
+        <a href="#">Graduations</a>
+        <a href="#">KUCCPS</a>
+        <a href="#">Research</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#">Apply Now</a>
+    </div>
+  </header>
 
-  <app-stats-band></app-stats-band>
+  <section class="hero">
+    <img src="/lukenya/asset-13-image13_1_33-2048x1280.jpg" alt="Lukenya University campus">
+    <div class="hero-shade"></div>
+    <button class="hero-arrow left" aria-label="Previous slide">‹</button>
+    <button class="hero-arrow right" aria-label="Next slide">›</button>
+    <div class="hero-content">
+      <p class="hero-pill">▾ About Lukenya University</p>
+      <h1>Building Leaders, Advancing Knowledge</h1>
+      <p class="hero-copy">Since 1991, Lukenya University has been committed to shaping visionary leaders and fostering groundbreaking research. Our institution combines academic excellence with practical learning experiences to prepare students for global impact.</p>
+      <div class="hero-actions">
+        <a class="button yellow" href="#">Learn Our History</a>
+        <a class="button ghost" href="#">Our Values</a>
+      </div>
+    </div>
+  </section>
 
-  <section class="story-section" aria-labelledby="story-title">
-    <div class="story-copy">
-      <p class="section-pill">Our Mission</p>
-      <h2 id="story-title">Build better technology for your business growth.</h2>
-      <p>
-        Movara Consult combines business strategy, product design, engineering,
-        and marketing to help companies turn complex goals into clear digital
-        systems.
-      </p>
-      <p>
-        We work closely with teams from discovery to delivery, making sure every
-        product, website, and workflow we build is useful, scalable, and easy to
-        adopt.
-      </p>
-      <div class="story-actions">
-        <a routerLink="/contact" class="primary-button">Book Now</a>
-        <a routerLink="/case-studies" class="secondary-button">Learn More</a>
+  <section class="our-story">
+    <div class="story-content">
+      <h2>The Lukenya Story</h2>
+      <p>Our journey began in 1991 at Lukenya hills in Mavoko, where visionary founders, the Late Honourable Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, established Lukenya Academy primary school on their cattle farm. What started as a single institution has grown into a comprehensive university dedicated to educational excellence.</p>
+      <p>Today, Lukenya University serves over 1,000 students across multiple academic disciplines, maintaining our commitment to holistic education, research, and community impact.</p>
+    </div>
+    <div class="story-image">
+      <img src="/lukenya/asset-06-image6_1_33-4096x2730.jpg" alt="Lukenya University campus view">
+    </div>
+  </section>
+
+  <section class="mission-vision">
+    <div class="mission-box">
+      <h3>Our Mission</h3>
+      <p>To provide quality, accessible education that transforms lives, develops competent professionals, and advances knowledge through innovative teaching and research.</p>
+    </div>
+    <div class="vision-box">
+      <h3>Our Vision</h3>
+      <p>A globally competitive university recognized for academic excellence, groundbreaking research, and graduates who create positive change in their communities and the world.</p>
+    </div>
+    <div class="values-box">
+      <h3>Our Values</h3>
+      <ul>
+        <li>Excellence in all endeavors</li>
+        <li>Integrity and ethical conduct</li>
+        <li>Innovation and creativity</li>
+        <li>Inclusivity and diversity</li>
+        <li>Social responsibility</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <h2>Why Choose Lukenya University</h2>
+    <div class="highlight-grid">
+      <article class="highlight-card">
+        <img src="/lukenya/asset-07-image7_1_33-4096x2731.jpg" alt="Campus facilities">
+        <h3>World-Class Facilities</h3>
+        <p>State-of-the-art libraries, laboratories, and residential accommodations designed for optimal learning and student experience.</p>
+      </article>
+      <article class="highlight-card">
+        <img src="/lukenya/asset-08-image8_1_33-4096x2731.jpg" alt="Learning technology">
+        <h3>Technology &amp; Innovation</h3>
+        <p>High-speed wireless internet and modern learning platforms enabling flexible, accessible education for all students.</p>
+      </article>
+      <article class="highlight-card">
+        <img src="/lukenya/asset-09-image9_1_33-2731x4096.jpg" alt="Campus life">
+        <h3>Holistic Development</h3>
+        <p>Beyond academics, we foster leadership, creativity, and personal growth through diverse campus activities and mentorship.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="academics-overview">
+    <div class="academics-content">
+      <h2>Academic Excellence</h2>
+      <p>Lukenya University offers comprehensive programs across three schools, providing pathways from undergraduate to advanced research degrees.</p>
+      <div class="schools-grid">
+        <div class="school-item">
+          <h4>School of Business &amp; Economics</h4>
+          <span>4+ Programs</span>
+        </div>
+        <div class="school-item">
+          <h4>School of Health Sciences</h4>
+          <span>3+ Programs</span>
+        </div>
+        <div class="school-item">
+          <h4>School of Agriculture, Technical Studies &amp; Natural Sciences</h4>
+          <span>10+ Programs</span>
+        </div>
+      </div>
+      <a class="button small yellow" href="#">Explore All Programs</a>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="University statistics">
+    <div>
+      <strong>33 Years</strong>
+      <span>of Educational Excellence</span>
+    </div>
+    <div>
+      <strong>1000+</strong>
+      <span>Students</span>
+    </div>
+    <div>
+      <strong>10+</strong>
+      <span>Academic Programs</span>
+    </div>
+    <div>
+      <strong>94%</strong>
+      <span>Graduate Employment</span>
+    </div>
+  </section>
+
+  <section class="commitment">
+    <img src="/lukenya/asset-01-image1_1_33-2048x1365.jpg" alt="Lukenya University entrance">
+    <div class="commitment-overlay"></div>
+    <div class="commitment-content">
+      <h2>Our Commitment to You</h2>
+      <p>We are dedicated to providing an environment where every student can thrive academically, develop leadership skills, and build meaningful connections that last a lifetime.</p>
+      <div class="commitment-actions">
+        <a class="button white" href="#">Apply Now</a>
+        <a class="button ghost" href="#">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <a class="brand light" href="/">
+        <span>LUKENYA</span>
+        <img src="/lukenya/asset-00-image0_1_33-99x123.png" alt="">
+        <span>UNIVERSITY</span>
+      </a>
+      <p>Since 1991, Lukenya University has been committed to excellence in education, research, and community engagement. We prepare students to become leaders who make a positive impact on the world.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#">◎</a>
+        <a href="#">𝕏</a>
+        <a href="#">f</a>
+        <a href="#">▶</a>
       </div>
     </div>
 
-    <div class="story-visual" aria-hidden="true">
-      <div>
-        <img src="/about/about-notebook.webp" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="services-section" aria-labelledby="services-title">
-    <div class="services-heading">
-      <p class="section-pill">Services</p>
-      <h2 id="services-title">Digital solutions that move your business forward.</h2>
-    </div>
-
-    <div class="services-grid">
-      <article class="service-card">
-        <span class="service-icon">M</span>
-        <h3>Marketing Strategy</h3>
-        <p>Campaign planning, positioning, and channel strategy for consistent demand generation.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-icon">U</span>
-        <h3>UX/UI Design</h3>
-        <p>Human-centered interfaces that make your digital products easier to use and trust.</p>
-      </article>
-      <article class="service-card featured">
-        <span class="service-icon">B</span>
-        <h3>Business Consulting</h3>
-        <p>Operational analysis and transformation planning for stronger technology decisions.</p>
-      </article>
-      <article class="service-card featured">
-        <span class="service-icon">A</span>
-        <h3>Automation</h3>
-        <p>Workflow automation that reduces manual tasks and improves team delivery speed.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-icon">D</span>
-        <h3>Development</h3>
-        <p>Custom software, websites, and platforms built around your business requirements.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-icon">R</span>
-        <h3>Research &amp; Analytics</h3>
-        <p>Customer, product, and performance insights that guide better digital decisions.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="partners-section" aria-labelledby="partners-title">
-    <div class="partners-copy">
-      <h2 id="partners-title">Trusted by ambitious teams and growing businesses.</h2>
-      <p>
-        We partner with organizations across industries to design, launch, and
-        improve technology that supports real operating needs.
-      </p>
-    </div>
-    <div class="partners-grid" aria-label="Partner logos">
-      <img src="/clients/1.svg" alt="Movara" />
-      <img src="/clients/2.svg" alt="Wakili" />
-      <img src="/clients/3.svg" alt="Tappi" />
-      <img src="/clients/4.svg" alt="Strategy Lab" />
-      <img src="/clients/5.svg" alt="Growth Desk" />
-      <img src="/clients/6.svg" alt="Product Hub" />
-      <img src="/clients/7.svg" alt="Digital Works" />
-      <img src="/clients/8.svg" alt="Insight Co." />
-      <img src="/clients/9.svg" alt="Launch Team" />
-      <img src="/clients/10.svg" alt="Ops Studio" />
-    </div>
-  </section>
-
-  <app-team-section></app-team-section>
-
-  <app-cta-faq></app-cta-faq>
-  <app-footer></app-footer>
+    <nav aria-label="Quick links">
+      <h3>Quick Links</h3>
+      <a href="#">About Us</a>
+      <a href="#">Academics</a>
+      <a href="#">Campus Life</a>
+      <a href="#">LU Application Form</a>
+      <a href="#">Library</a>
+      <a href="#">Research</a>
+    </nav>
+    <nav aria-label="Academics links">
+      <h3>Academics</h3>
+      <a href="#">School of Agriculture, Technical Studies and Natural Sciences</a>
+      <a href="#">School of Business &amp; Economics</a>
+      <a href="#">School of Education &amp; Social Sciences</a>
+      <a href="#">School of Health</a>
+      <a href="#">Short Courses</a>
+    </nav>
+    <nav aria-label="Student links">
+      <h3>Students</h3>
+      <a href="#">Student Portal</a>
+      <a href="#">Student Handbook</a>
+      <a href="#">Graduation</a>
+      <a href="#">Cultural Week Festival</a>
+    </nav>
+    <address>
+      <span>◎ Mtotoni, Machakos County</span>
+      <span>☎ 0720 440 007 / 0723 440 000</span>
+      <span>✉ info&#64;lukenyauniversity.ac.ke</span>
+    </address>
+    <small>Copyright All Right Reserved 2025. Lukenya University</small>
+  </footer>
 </main>
