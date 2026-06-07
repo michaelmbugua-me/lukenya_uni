@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { TimelineNavComponent } from '../shared/timeline-nav/timeline-nav';
 
 @Component({
   selector: 'app-pro-chancellor',
   standalone: true,
   templateUrl: './pro-chancellor.html',
-  styleUrl: './pro-chancellor.css'
+  styleUrl: './pro-chancellor.css',
+  imports: [TimelineNavComponent]
 })
 export class ProChancellorComponent {}

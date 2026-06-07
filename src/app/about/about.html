@@ -1,190 +1,137 @@
 <main class="about-page">
-  <app-hero-section
-    imageUrl="/home/home_bottom_hero.webp"
-    imageAlt="Lukenya University campus"
-    pillIconUrl="/home/academy-cap.svg"
-    pillIconAlt="Academy cap"
-    pillText="About Us"
-    title="Where the journey begun"
-    description="The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history"
-    [showNavigation]="false"
-    [showBottomButtons]="false"
-    primaryButtonText="Learn Our History"
-    primaryButtonLink="#"
-    [primaryButtonExternal]="false"
-    secondaryButtonText="Our Values"
-    secondaryButtonLink="#"
-    [secondaryButtonExternal]="false">
-  </app-hero-section>
+    <app-hero-section
+            [primaryButtonExternal]="false"
+            [secondaryButtonExternal]="false"
+            [showBottomButtons]="false"
+            [showNavigation]="false"
+            description="The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history"
+            imageAlt="Lukenya University campus"
+            imageUrl="/home/home_bottom_hero.webp"
+            pillIconAlt="Academy cap"
+            pillIconUrl="/home/academy-cap.svg"
+            pillText="About Us"
+            primaryButtonLink="#"
+            primaryButtonText="Learn Our History"
+            secondaryButtonLink="#"
+            secondaryButtonText="Our Values"
+            title="Where the journey begun">
+    </app-hero-section>
 
-  <section class="timeline-section">
-    <nav class="timeline-nav">
-      <a href="#start" class="timeline-nav-item">Our Story</a>
-      <span class="timeline-nav-separator">/</span>
-      <a href="#board" class="timeline-nav-item">Board Of Trustees</a>
-      <span class="timeline-nav-separator">/</span>
-      <a href="#pro-chancellor" class="timeline-nav-item">Pro Chancellor</a>
-      <span class="timeline-nav-separator">/</span>
-      <a href="#chancellor" class="timeline-nav-item">Chancellor</a>
-      <span class="timeline-nav-separator">/</span>
-      <a href="#vice-chancellor" class="timeline-nav-item">Vice Chancellor</a>
-    </nav>
+    <section class="timeline-section">
+        <app-timeline-nav></app-timeline-nav>
 
-    <div class="timeline-container">
-      <div class="timeline-content">
-        <div class="timeline-milestones">
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">Start</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">University Venture</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">Construction</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">University Opens</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">We are Accredited</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">Degree Course Admissions</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone-marker"></div>
-            <div class="milestone-label">Fully Pledged University</div>
-          </div>
+        <div class="timeline-grid">
+            <!-- Row 1 -->
+            <div class="timeline-image">
+                <img alt="Lukenya University main building" src="/home/home_hero.webp">
+            </div>
+            <div class="timeline-text-block">
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>Start</h3>
+                    </div>
+                    <p><strong>1991:</strong> The story of Lukenya institutions starts in 1991 at the place known as
+                        Lukenya hills in Mavoko</p>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>University Venture</h3>
+                    </div>
+                    <p><strong>2011:</strong> The family decided to venture into university education and put
+                        together a steering committee team led by Andrew Mullei.</p>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>Construction</h3>
+                    </div>
+                    <p><strong>2012:</strong> Construction begun in 2012 with a traditional blessing prayers and
+                        ground breaking ceremony led by former Councillor Wilson Mutunga, a long-time friend of the
+                        family.</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="timeline-text-block">
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>University Opens</h3>
+                    </div>
+                    <p><strong>2014:</strong> The university was officially opened by Professor Kivutha Kibwana in
+                        May and operated as Lukenya College offering diplomas and certificates in various courses.
+                    </p>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>We are Accredited</h3>
+                    </div>
+                    <p><strong>2015:</strong> The founder Justice Kasanga Mulwa passed away in March. Later that
+                        year the university was accredited.</p>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>Degree Course Admissions</h3>
+                    </div>
+                    <p><strong>2016:</strong> Admitting students in May 2016, for degree courses.</p>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-header">
+                        <div class="milestone-icon"></div>
+                        <h3>Fully Pledged University</h3>
+                    </div>
+                    <p><strong>2021:</strong> A fully-fledged university with four schools, and twenty three
+                        programmes.</p>
+                </div>
+            </div>
+            <div class="timeline-image">
+                <img alt="Lukenya University entrance" src="/home/home_bottom_hero.webp">
+            </div>
         </div>
-
-        <div class="timeline-details">
-          <div class="timeline-event">
-            <h3>Start</h3>
-            <p><strong>1991:</strong> The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko</p>
-          </div>
-          <div class="timeline-event">
-            <h3>University Venture</h3>
-            <p><strong>2011:</strong> The family decided to venture into university education and put together a steering committee team led by Andrew Mullei.</p>
-          </div>
-          <div class="timeline-event">
-            <h3>Construction</h3>
-            <p><strong>2012:</strong> Construction begun in 2012 with a traditional blessing prayers and ground breaking ceremony led by former Councillor Wilson Mutunga, a long-time friend of the family.</p>
-          </div>
-          <div class="timeline-event">
-            <h3>University Opens</h3>
-            <p><strong>2014:</strong> The university was officially opened by Professor Kivutha Kibwana in May and operated as Lukenya College offering diplomas and certificates in various courses.</p>
-          </div>
-          <div class="timeline-event">
-            <h3>We are Accredited</h3>
-            <p><strong>2015:</strong> The founder Justice Kasanga Mulwa passed away in March. Later that year the university was accredited.</p>
-          </div>
-          <div class="timeline-event">
-            <h3>Degree Course Admissions</h3>
-            <p><strong>2016:</strong> Admitting students in May 2016, for degree courses.</p>
-          </div>
-          <div class="timeline-event">
-            <h3>Fully Pledged University</h3>
-            <p><strong>2021:</strong> A fully-fledged university with four schools, and twenty three programmes.</p>
-          </div>
+    </section>
+    <section class="story-section">
+        <p>We aim to be the best residential University in East Africa, by offering a wholesome learning experience for
+            our students and faculty. We focus on creating a unique and intentional residential environment that fosters
+            student learning and a strong sense of community. The residential model we believe ensures higher course
+            completion rates, and lowers cost of education for the student by ensuring no commuting expenses and
+            affordable accommodation rates.</p>
+    </section>
+    <section class="mission-vision-values">
+        <div class="value-card mission-card">
+            <h3>Our Mission</h3>
+            <p>To provide quality, accessible education that transforms lives, develops competent professionals, and
+                advances knowledge through innovative teaching and research.</p>
         </div>
-      </div>
-
-      <div class="timeline-images">
-        <div class="timeline-image-large">
-          <img src="/about/about-notebook.webp" alt="Lukenya University main building">
+        <div class="value-card vision-card">
+            <h3>Our Vision</h3>
+            <p>A globally competitive university recognized for academic excellence, groundbreaking research, and
+                graduates who create positive change in their communities and the world.</p>
         </div>
-        <div class="timeline-image-small">
-          <img src="/about/about-notebook.webp" alt="Lukenya University entrance">
+        <div class="value-card values-card">
+            <h3>Our Values</h3>
+            <ul class="values-list">
+                <li>Excellence in all endeavors</li>
+                <li>Integrity and ethical conduct</li>
+                <li>Innovation and creativity</li>
+                <li>Inclusivity and diversity</li>
+                <li>Social responsibility</li>
+            </ul>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="mission-statement">
-      <h2>We aim to be the best residential University in East Africa, by offering a wholesome learning experience for our students and faculty.</h2>
-      <p>We focus on creating a unique and intentional residential environment that fosters student learning and a strong sense of community. The residential model we believe ensures higher course completion rates, and lowers cost of education for the student by ensuring no commuting expenses and affordable accommodation</p>
-    </div>
-  </section>
-
-  <section class="mission-vision-values">
-    <div class="value-card mission-card">
-      <h3>Our Mission</h3>
-      <p>To provide quality, accessible education that transforms lives, develops competent professionals, and advances knowledge through innovative teaching and research.</p>
-    </div>
-    <div class="value-card vision-card">
-      <h3>Our Vision</h3>
-      <p>A globally competitive university recognized for academic excellence, groundbreaking research, and graduates who create positive change in their communities and the world.</p>
-    </div>
-    <div class="value-card values-card">
-      <h3>Our Values</h3>
-      <ul class="values-list">
-        <li>Excellence in all endeavors</li>
-        <li>Integrity and ethical conduct</li>
-        <li>Innovation and creativity</li>
-        <li>Inclusivity and diversity</li>
-        <li>Social responsibility</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="highlights">
-    <h2>Why Choose Lukenya University</h2>
-    <div class="feature-grid">
-      <article class="feature-card">
-        <img src="/lukenya/asset-07-image7_1_33-4096x2731.jpg" alt="Campus facilities">
-        <h3>World-Class Facilities</h3>
-        <p>State-of-the-art libraries, laboratories, and residential accommodations designed for optimal learning and student experience.</p>
-      </article>
-      <article class="feature-card">
-        <img src="/lukenya/asset-08-image8_1_33-4096x2731.jpg" alt="Learning technology">
-        <h3>Technology &amp; Innovation</h3>
-        <p>High-speed wireless internet and modern learning platforms enabling flexible, accessible education for all students.</p>
-      </article>
-      <article class="feature-card">
-        <img src="/lukenya/asset-09-image9_1_33-2731x4096.jpg" alt="Campus life">
-        <h3>Holistic Development</h3>
-        <p>Beyond academics, we foster leadership, creativity, and personal growth through diverse campus activities and mentorship.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="academics-overview">
-    <div class="academics-content">
-      <h2>Academic Excellence</h2>
-      <p>Lukenya University offers comprehensive programs across three schools, providing pathways from undergraduate to advanced research degrees.</p>
-      <div class="schools-grid">
-        <div class="school-card">
-          <h4>School of Business &amp; Economics</h4>
-          <span class="program-count">4+ Programs</span>
+    <section class="commitment">
+        <img alt="Lukenya University entrance" src="/about/hero_bottom.webp">
+        <div class="commitment-overlay"></div>
+        <div class="commitment-content">
+            <h2>We labour for the benefit of the future generation</h2>
+            <div class="commitment-actions">
+                <a class="button yellow" href="#">Apply Now</a>
+            </div>
         </div>
-        <div class="school-card">
-          <h4>School of Health Sciences</h4>
-          <span class="program-count">3+ Programs</span>
-        </div>
-        <div class="school-card">
-          <h4>School of Agriculture, Technical Studies &amp; Natural Sciences</h4>
-          <span class="program-count">10+ Programs</span>
-        </div>
-      </div>
-      <a class="button small yellow" href="#">Explore All Programs</a>
-    </div>
-  </section>
-
-
-  <section class="commitment">
-    <img src="/about/hero_bottom.webp" alt="Lukenya University entrance">
-    <div class="commitment-overlay"></div>
-    <div class="commitment-content">
-      <h2>We labour for the benefit of the future generation</h2>
-      <div class="commitment-actions">
-        <a class="button white" href="#">Apply Now</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
 </main>
