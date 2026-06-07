@@ -200,39 +200,152 @@ img {
   margin-top: 36px;
 }
 
-.story-section {
+.timeline-section {
+  padding: 60px 99px;
+}
+
+.timeline-nav {
+  background: var(--light-bg);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   align-items: center;
+  padding: 20px 28px;
+  margin-bottom: 60px;
+}
+
+.timeline-nav-item {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.timeline-nav-item:hover {
+  color: var(--green);
+}
+
+.timeline-nav-separator {
+  color: #999;
+  margin: 0 4px;
+}
+
+.timeline-container {
   display: grid;
-  gap: 80px;
   grid-template-columns: 1fr 1fr;
-  padding: 100px 99px;
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
-.story-text h2 {
-  color: #272727;
-  font-size: 39px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.12;
-  margin: 0 0 28px;
+.timeline-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
 }
 
-.story-text p {
-  color: var(--muted);
+.timeline-milestones {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.milestone-marker {
+  width: 12px;
+  height: 12px;
+  background: var(--green);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.milestone-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+  max-width: 180px;
+}
+
+.timeline-details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.timeline-event {
+  padding-bottom: 20px;
+}
+
+.timeline-event h3 {
+  color: var(--green);
   font-size: 18px;
-  line-height: 1.7;
-  margin: 0 0 18px;
+  font-weight: 800;
+  margin: 0 0 8px;
 }
 
-.story-photo {
+.timeline-event p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.timeline-images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.timeline-image-large {
   border-radius: 12px;
   overflow: hidden;
 }
 
-.story-photo img {
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+.timeline-image-large img {
   width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.timeline-image-small {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timeline-image-small img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.mission-statement {
+  background: rgba(1, 136, 78, 0.06);
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+}
+
+.mission-statement h2 {
+  color: #272727;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 20px;
+}
+
+.mission-statement p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 900px;
 }
 
 .mission-vision-values {
@@ -565,9 +678,13 @@ img {
     justify-content: flex-start;
   }
 
-  .story-section {
+  .timeline-section {
+    padding: 60px 50px;
+  }
+
+  .timeline-container {
     grid-template-columns: 1fr;
-    padding: 80px 50px;
+    gap: 40px;
   }
 
   .mission-vision-values {
@@ -601,14 +718,52 @@ img {
     flex-direction: column;
   }
 
-
-  .story-section {
-    gap: 40px;
-    padding: 62px 24px;
+  .timeline-section {
+    padding: 40px 24px;
   }
 
-  .story-text h2 {
-    font-size: 32px;
+  .timeline-nav {
+    font-size: 14px;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+
+  .timeline-container {
+    gap: 30px;
+  }
+
+  .timeline-content {
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+  }
+
+  .timeline-milestones {
+    gap: 20px;
+  }
+
+  .timeline-event h3 {
+    font-size: 16px;
+  }
+
+  .timeline-event p {
+    font-size: 14px;
+  }
+
+  .timeline-image-large img,
+  .timeline-image-small img {
+    height: 240px;
+  }
+
+  .mission-statement {
+    padding: 40px 24px;
+  }
+
+  .mission-statement h2 {
+    font-size: 22px;
+  }
+
+  .mission-statement p {
+    font-size: 14px;
   }
 
   .mission-vision-values,
