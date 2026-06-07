@@ -1,11 +1,19 @@
 <main class="home-page">
   <section class="hero">
-    <img src="/lukenya/asset-13-image13_1_33-2048x1280.jpg" alt="Lukenya University main campus entrance">
+    <img src="/home/home_hero.webp" alt="Lukenya University main campus entrance">
     <div class="hero-shade"></div>
-    <button class="hero-arrow left" aria-label="Previous slide">‹</button>
-    <button class="hero-arrow right" aria-label="Next slide">›</button>
+    <button class="hero-arrow left" (click)="onHeroArrow('left')" aria-label="Previous slide">
+      <img [src]="heroLeftActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
+           [class.flipped]="heroLeftActive" alt="">
+    </button>
+    <button class="hero-arrow right" (click)="onHeroArrow('right')" aria-label="Next slide">
+      <img [src]="heroRightActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
+           [class.flipped]="!heroRightActive" alt="">
+    </button>
     <div class="hero-content">
-      <p class="hero-pill">▾ Ranked Among Top Kenyan Universities</p>
+      <p class="hero-pill">
+          <img src="/home/academy-cap.svg" alt="academy_cap">
+          Ranked Among Top Kenyan Universities</p>
       <h1>Where Knowledge Meets Purpose &amp; Innovation</h1>
       <p class="hero-copy">For over 30 years, Lukenya University has shaped visionary leaders, groundbreaking researchers, and compassionate global citizens. Join a community committed to excellence, discovery, and meaningful impact.</p>
       <div class="hero-actions">
@@ -16,7 +24,7 @@
   </section>
 
   <section class="story">
-    <p>The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history</p>
+    <p>The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history.</p>
     <a class="button yellow" href="#">About Us</a>
   </section>
 
@@ -47,19 +55,19 @@
 
     <div class="program-grid">
       <article class="program-card featured">
-        <img src="/lukenya/asset-10-image10_1_33-4096x2731.jpg" alt="Business student on campus">
+        <img src="/home/sob.webp" alt="Business student on campus">
         <h3>School of Business and Economics</h3>
         <p>Over 80 bachelors programs across arts, sciences, engineering, and business disciplines.</p>
         <a href="#">4+ Programs ›</a>
       </article>
       <article class="program-card">
-        <img src="/lukenya/asset-11-image11_1_33-4096x2726.jpg" alt="Health sciences students">
+        <img src="/home/sohs.webp" alt="Health sciences students">
         <h3>School of Health Sciences</h3>
         <p>Advanced master's degrees designed for specialized expertise and research excellence.</p>
         <a href="#">3+ Programs ›</a>
       </article>
       <article class="program-card">
-        <img src="/lukenya/asset-12-image12_1_33-4096x2731.jpg" alt="Agriculture students in a greenhouse">
+        <img src="/home/soat.webp" alt="Agriculture students in a greenhouse">
         <h3>School of Agriculture, Technical Studies and Natural Sciences</h3>
         <p>World-class PhD programs with renowned faculty mentorship and cutting-edge research.</p>
         <a href="#">10+ Programs ›</a>
@@ -103,7 +111,7 @@
   </section>
 
   <section class="facility">
-    <img src="/lukenya/asset-06-image6_1_33-4096x2730.jpg" alt="Students in the central library">
+    <img src="/home/world_class_facilities.webp" alt="Students in the central library">
     <div class="facility-overlay"></div>
     <button class="facility-arrow left" aria-label="Previous facility">‹</button>
     <button class="facility-arrow right" aria-label="Next facility">›</button>
@@ -166,7 +174,7 @@
   </section>
 
   <section class="admissions">
-    <img src="/lukenya/asset-01-image1_1_33-2048x1365.jpg" alt="Lukenya University entrance">
+    <img src="/home/home_bottom_hero.webp" alt="Lukenya University entrance">
     <div class="admissions-overlay"></div>
     <div>
       <h2>Begin Your Journey at Lukenya University</h2>
