@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/portfoliowebsite/browser",
+    "public": "dist/lukenya_uni/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

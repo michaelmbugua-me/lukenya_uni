@@ -25,7 +25,7 @@
 
   <section class="story">
     <p>The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history.</p>
-    <a class="button yellow" href="#">About Us</a>
+    <a class="button yellow" routerLink="about">About Us</a>
   </section>
 
   <section class="stats" aria-label="University statistics">
@@ -85,21 +85,21 @@
 
     <div class="campus-grid">
       <article class="image-card">
-        <img src="/lukenya/asset-07-image7_1_33-4096x2731.jpg" alt="Student accommodation room">
+        <img src="/home/accommodation.webp" alt="Student accommodation room">
         <div>
           <h3>Accommodation</h3>
           <p>Lukenya University is a residential university and provides accommodation to all students.</p>
         </div>
       </article>
       <article class="image-card">
-        <img src="/lukenya/asset-08-image8_1_33-4096x2731.jpg" alt="Students using a laptop on campus">
+        <img src="/home/internet.webp" alt="Students using a laptop on campus">
         <div>
           <h3>Internet &amp; WI-FI Hotspots</h3>
           <p>Lukenya University has invested in high-speed wireless internet for students and staff members.</p>
         </div>
       </article>
       <article class="image-card">
-        <img src="/lukenya/asset-09-image9_1_33-2731x4096.jpg" alt="Student in cafeteria">
+        <img src="/home/mess.webp" alt="Student in cafeteria">
         <div>
           <h3>Mess and Cafeteria</h3>
           <p>The university recognizes the need to have efficient world-class cafeterias that provide nutritious meals.</p>
@@ -113,8 +113,14 @@
   <section class="facility">
     <img src="/home/world_class_facilities.webp" alt="Students in the central library">
     <div class="facility-overlay"></div>
-    <button class="facility-arrow left" aria-label="Previous facility">‹</button>
-    <button class="facility-arrow right" aria-label="Next facility">›</button>
+    <button class="facility-arrow left" (click)="onFacilityArrow('left')" aria-label="Previous facility">
+      <img [src]="facilityLeftActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
+           [class.flipped]="facilityLeftActive" alt="">
+    </button>
+    <button class="facility-arrow right" (click)="onFacilityArrow('right')" aria-label="Next facility">
+      <img [src]="facilityRightActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
+           [class.flipped]="!facilityRightActive" alt="">
+    </button>
     <div class="facility-copy top">
       <h2>World-Class Facilities</h2>
     </div>
@@ -132,39 +138,32 @@
 
     <div class="news-grid">
       <article class="news-feature">
-        <p class="source">Lukenya College</p>
-        <h3>Yesterday the College was buzzing with excitement during a colourful and successful event of Commissioning of Solar power to Lukenya College by SolarP...wer Group</h3>
-        <a href="#">Read More ›</a>
-        <img src="/lukenya/asset-02-image2_1_33-1010x1288.png" alt="Lukenya College event collage">
-        <footer>
-          <span>Lukenya College</span>
-          <a href="#">WhatsApp</a>
-        </footer>
+        <img src="/home/news_main.webp" alt="Lukenya College event collage">
       </article>
 
       <div class="news-list">
         <article>
-          <img src="/lukenya/asset-03-image3_1_33-1080x1350.png" alt="Lukenya cycling event">
+          <img src="/home/news_one.webp" alt="Lukenya cycling event">
           <div>
             <h3>Lukenya University 4th Edition 10 Million Trees</h3>
             <p>#LUClimateAction #GreenerFuture</p>
-            <a href="#">Read More ›</a>
+            <a href="#">Read More -></a>
           </div>
         </article>
         <article>
-          <img src="/lukenya/asset-04-image4_1_33-940x788.png" alt="Eid Mubarak greeting">
+          <img src="/home/news_two.webp" alt="Eid Mubarak greeting">
           <div>
             <h3>Eid Mubarak!</h3>
             <p>Warm greetings and peace to all communities.</p>
-            <a href="#">Read More ›</a>
+            <a href="#">Read More -></a>
           </div>
         </article>
         <article>
-          <img src="/lukenya/asset-05-image5_1_33-1280x1280.png" alt="School of education poster">
+          <img src="/home/news_three.webp" alt="School of education poster">
           <div>
             <h3>Join Lukenya University - Email Campus!</h3>
             <p>Apply September 2025 intake programs.</p>
-            <a href="#">Read More ›</a>
+            <a href="#">Read More -></a>
           </div>
         </article>
       </div>
