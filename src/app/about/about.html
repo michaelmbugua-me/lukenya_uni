@@ -1,19 +1,21 @@
 <main class="about-page">
-  <section class="hero">
-    <img src="/lukenya/asset-13-image13_1_33-2048x1280.jpg" alt="Lukenya University campus">
-    <div class="hero-shade"></div>
-    <button class="hero-arrow left" aria-label="Previous slide">‹</button>
-    <button class="hero-arrow right" aria-label="Next slide">›</button>
-    <div class="hero-content">
-      <p class="hero-pill">▾ About Lukenya University</p>
-      <h1>Building Leaders, Advancing Knowledge</h1>
-      <p class="hero-copy">Since 1991, Lukenya University has been committed to shaping visionary leaders and fostering groundbreaking research. Our institution combines academic excellence with practical learning experiences to prepare students for global impact.</p>
-      <div class="hero-actions">
-        <a class="button yellow" href="#">Learn Our History</a>
-        <a class="button ghost" href="#">Our Values</a>
-      </div>
-    </div>
-  </section>
+  <app-hero-section
+    imageUrl="/home/home_bottom_hero.webp"
+    imageAlt="Lukenya University campus"
+    pillIconUrl="/home/academy-cap.svg"
+    pillIconAlt="Academy cap"
+    pillText="About Us"
+    title="Where the journey begun"
+    description="The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history"
+    [showNavigation]="false"
+    [showBottomButtons]="false"
+    primaryButtonText="Learn Our History"
+    primaryButtonLink="#"
+    [primaryButtonExternal]="false"
+    secondaryButtonText="Our Values"
+    secondaryButtonLink="#"
+    [secondaryButtonExternal]="false">
+  </app-hero-section>
 
   <section class="story-section">
     <div class="story-text">
@@ -22,7 +24,7 @@
       <p>Today, Lukenya University serves over 1,000 students across multiple academic disciplines, maintaining our commitment to holistic education, research, and community impact.</p>
     </div>
     <div class="story-photo">
-      <img src="/lukenya/asset-06-image6_1_33-4096x2730.jpg" alt="Lukenya University campus view">
+      <img src="/home/home_bottom_hero.webp" alt="Lukenya University campus view">
     </div>
   </section>
 
@@ -90,34 +92,14 @@
     </div>
   </section>
 
-  <section class="stats-section" aria-label="University statistics">
-    <div class="stat-item">
-      <strong>33 Years</strong>
-      <span>of Educational Excellence</span>
-    </div>
-    <div class="stat-item">
-      <strong>1000+</strong>
-      <span>Students</span>
-    </div>
-    <div class="stat-item">
-      <strong>10+</strong>
-      <span>Academic Programs</span>
-    </div>
-    <div class="stat-item">
-      <strong>94%</strong>
-      <span>Graduate Employment</span>
-    </div>
-  </section>
 
   <section class="commitment">
-    <img src="/lukenya/asset-01-image1_1_33-2048x1365.jpg" alt="Lukenya University entrance">
+    <img src="/about/hero_bottom.webp" alt="Lukenya University entrance">
     <div class="commitment-overlay"></div>
     <div class="commitment-content">
-      <h2>Our Commitment to You</h2>
-      <p>We are dedicated to providing an environment where every student can thrive academically, develop leadership skills, and build meaningful connections that last a lifetime.</p>
+      <h2>We labour for the benefit of the future generation</h2>
       <div class="commitment-actions">
         <a class="button white" href="#">Apply Now</a>
-        <a class="button ghost" href="#">Contact Us</a>
       </div>
     </div>
   </section>

@@ -1,30 +1,21 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
+import {HeroSectionComponent} from "../shared/hero-section/hero-section";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.html',
   imports: [
-    RouterLink
+    RouterLink,
+    HeroSectionComponent
   ],
   styleUrl: './home.css'
 })
 export class HomeComponent {
-  heroLeftActive = false;
-  heroRightActive = false;
   facilityLeftActive = false;
   facilityRightActive = false;
 
-  onHeroArrow(direction: 'left' | 'right'): void {
-    if (direction === 'left') {
-      this.heroLeftActive = !this.heroLeftActive;
-      this.heroRightActive = false;
-    } else {
-      this.heroRightActive = !this.heroRightActive;
-      this.heroLeftActive = false;
-    }
-  }
 
   onFacilityArrow(direction: 'left' | 'right'): void {
     if (direction === 'left') {

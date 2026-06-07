@@ -1,27 +1,19 @@
 <main class="home-page">
-  <section class="hero">
-    <img src="/home/home_hero.webp" alt="Lukenya University main campus entrance">
-    <div class="hero-shade"></div>
-    <button class="hero-arrow left" (click)="onHeroArrow('left')" aria-label="Previous slide">
-      <img [src]="heroLeftActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
-           [class.flipped]="heroLeftActive" alt="">
-    </button>
-    <button class="hero-arrow right" (click)="onHeroArrow('right')" aria-label="Next slide">
-      <img [src]="heroRightActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'"
-           [class.flipped]="!heroRightActive" alt="">
-    </button>
-    <div class="hero-content">
-      <p class="hero-pill">
-          <img src="/home/academy-cap.svg" alt="academy_cap">
-          Ranked Among Top Kenyan Universities</p>
-      <h1>Where Knowledge Meets Purpose &amp; Innovation</h1>
-      <p class="hero-copy">For over 30 years, Lukenya University has shaped visionary leaders, groundbreaking researchers, and compassionate global citizens. Join a community committed to excellence, discovery, and meaningful impact.</p>
-      <div class="hero-actions">
-        <a class="button yellow" href="#">Apply Now</a>
-        <a class="button ghost" href="#">Explore Programs</a>
-      </div>
-    </div>
-  </section>
+  <app-hero-section
+    imageUrl="/home/home_hero.webp"
+    imageAlt="Lukenya University main campus entrance"
+    pillText="Ranked Among Top Kenyan Universities"
+    pillIconUrl="/home/academy-cap.svg"
+    pillIconAlt="Academy cap"
+    title="Where Knowledge Meets Purpose &amp; Innovation"
+    description="For over 30 years, Lukenya University has shaped visionary leaders, groundbreaking researchers, and compassionate global citizens. Join a community committed to excellence, discovery, and meaningful impact."
+    [showNavigation]="true"
+    [showBottomButtons]="true"
+    primaryButtonText="Apply Now"
+    primaryButtonLink="/contact"
+    secondaryButtonText="Explore Programs"
+    secondaryButtonLink="/academics">
+  </app-hero-section>
 
   <section class="story">
     <p>The story of Lukenya institutions starts in 1991 at the place known as Lukenya hills in Mavoko (Athi river), Kathiani (now Machakos), where the founders the Late Honourable. Rtd Justice Kasanga Mulwa and his wife Martha Kasanga Mulwa, decided to establish the Lukenya Academy primary school on their cattle farm. As they say, the rest is history.</p>

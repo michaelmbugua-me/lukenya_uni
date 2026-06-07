@@ -1,18 +1,56 @@
-<section class="hero-section">
-  <img [src]="imageUrl" [alt]="imageAlt" class="hero-image">
-  <div class="hero-overlay"></div>
+<section class="hero">
+  <img [src]="imageUrl" [alt]="imageAlt">
+  <div class="hero-shade"></div>
+
+  @if (showNavigation) {
+    <button class="hero-arrow left" (click)="onArrowClick('left')" aria-label="Previous slide">
+      <img [src]="leftActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'" [class.flipped]="leftActive" alt="">
+    </button>
+    <button class="hero-arrow right" (click)="onArrowClick('right')" aria-label="Next slide">
+      <img [src]="rightActive ? '/home/arrow_right.svg' : '/home/arrow_left.svg'" [class.flipped]="!rightActive" alt="">
+    </button>
+  }
+
   <div class="hero-content">
-    @if (eyebrow) {
-      <p class="eyebrow">{{ eyebrow }}</p>
+    @if (displayPillText) {
+      <p class="hero-pill">
+        @if (pillIconUrl) {
+          <img [src]="pillIconUrl" [alt]="pillIconAlt">
+        }
+        {{ displayPillText }}
+      </p>
     }
+
     <h1>{{ title }}</h1>
+
     @if (description) {
-      <p>{{ description }}</p>
+      <p class="hero-copy">{{ description }}</p>
     }
-    @if (!isExternalLink) {
-      <a [routerLink]="buttonLink" class="primary-button">{{ buttonText }}</a>
+
+    @if (showBottomButtons) {
+      <div class="hero-actions">
+        @if (primaryButtonText) {
+          @if (primaryButtonExternal) {
+            <a class="button yellow" [href]="primaryButtonLink">{{ primaryButtonText }}</a>
+          } @else {
+            <a class="button yellow" [routerLink]="primaryButtonLink">{{ primaryButtonText }}</a>
+          }
+        }
+
+        @if (secondaryButtonText) {
+          @if (secondaryButtonExternal) {
+            <a class="button ghost" [href]="secondaryButtonLink">{{ secondaryButtonText }}</a>
+          } @else {
+            <a class="button ghost" [routerLink]="secondaryButtonLink">{{ secondaryButtonText }}</a>
+          }
+        }
+      </div>
     } @else {
-      <a [href]="buttonLink" class="primary-button">{{ buttonText }}</a>
+      @if (!isExternalLink) {
+        <a [routerLink]="buttonLink" class="button yellow">{{ buttonText }}</a>
+      } @else {
+        <a [href]="buttonLink" class="button yellow">{{ buttonText }}</a>
+      }
     }
 
   </div>
