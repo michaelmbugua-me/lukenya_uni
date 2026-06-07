@@ -1,10 +1,10 @@
 :host {
   display: block;
-  --green: #065f46;
-  --dark-green: #004037;
-  --orange: #ff6a2a;
-  --muted: #737373;
-  font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --green: #01884e;
+  --dark-green: #003f2e;
+  --orange: #f9ce31;
+  --muted: #454545;
+  font-family: 'Plus Jakarta Sans', 'Inter', 'Source Sans 3', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .cta-faq-section {
@@ -58,11 +58,12 @@
   background: var(--orange);
   border: 0;
   border-radius: 999px;
-  color: #ffffff;
+  color: #141414;
   display: inline-flex;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 800;
   justify-content: center;
-  padding: 0 28px;
+  padding: 0 32px;
   white-space: nowrap;
 }
 

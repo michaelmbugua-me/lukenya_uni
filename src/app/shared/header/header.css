@@ -4,11 +4,11 @@
 
 .topbar {
   align-items: center;
-  background: #ffd229;
-  color: #0e0e0e;
+  background: #f9ce31;
+  color: #1e1e1e;
   display: flex;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   height: 60px;
   justify-content: space-between;
   padding: 0 95px;
@@ -44,12 +44,12 @@
 
 .brand {
   align-items: center;
-  color: #00884f;
+  color: #01884e;
   display: inline-flex;
   font-size: 22px;
   font-weight: 800;
   gap: 4px;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .primary-nav {
-  color: #444444;
+  color: #454545;
   font-size: 20px;
   gap: 34px;
   justify-content: center;
@@ -72,7 +72,7 @@
 }
 
 .primary-nav .active {
-  color: #00884f;
+  color: #01884e;
   font-weight: 700;
 }
 
@@ -81,12 +81,12 @@
   border: 0;
   border-radius: 999px;
   display: inline-flex;
-  font-weight: 700;
+  font-weight: 400;
   justify-content: center;
   white-space: nowrap;
   background: #f9ce31;
   color: #141414;
-  font-size: 17px;
+  font-size: 19px;
   height: 51px;
   text-decoration: none;
   padding: 0 32px;
