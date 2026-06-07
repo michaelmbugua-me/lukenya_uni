@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "portfoliowebsite": {
+    "lukenya_uni": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portfoliowebsite:build:production"
+              "buildTarget": "lukenya_uni:build:production"
             },
             "development": {
-              "buildTarget": "portfoliowebsite:build:development"
+              "buildTarget": "lukenya_uni:build:development"
             }
           },
           "defaultConfiguration": "development"
