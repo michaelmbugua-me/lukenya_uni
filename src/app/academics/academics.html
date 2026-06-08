@@ -1,12 +1,19 @@
 <main class="academics-page">
-  <section class="hero-section">
-    <img src="/design_svgs/Academics.png" alt="Academics">
-    <div class="hero-overlay"></div>
-    <div class="hero-intro">
-      <h1>Academic Excellence</h1>
-      <p>Discover world-class programs across diverse disciplines</p>
-    </div>
-  </section>
+    <app-hero-section
+            imageUrl="/academics/hero.webp"
+            imageAlt="Lukenya University main campus entrance"
+            pillText="Academics"
+            pillIconUrl="/home/academy-cap.svg"
+            pillIconAlt="Academy cap"
+            title="Academic Programmes"
+            description="We aim to be the best residential university in East Africa, by offering a wonderful learning experience for our students and faculty. We offer programs in undergraduate, diplomas and certificates levels at our main campus."
+            [showNavigation]="false"
+            [showBottomButtons]="false"
+            primaryButtonText="Apply Now"
+            primaryButtonLink="/contact"
+            secondaryButtonText="Explore Programs"
+            secondaryButtonLink="/academics">
+    </app-hero-section>
 
   <section class="schools-section">
     <article class="school-section school-section-right">
@@ -14,24 +21,28 @@
         <h2>School of Business &amp; Economics</h2>
         <p>The School of Business and Economics prepares students for the personnel needs of the changing business environment and for positions in the public and private sector.</p>
         <a href="#" class="school-link">
-          <span class="checkmark">✓</span>
+          <span class="checkmark">
+             <img src="/academics/arrow.svg" alt="arrow">
+          </span>
           Visit School of Business &amp; Economics
         </a>
       </div>
       <div class="school-image">
-        <img src="/home/asset-10-image10_1_33-4096x2731.jpg" alt="School of Business & Economics">
+        <img src="/academics/1.webp" alt="School of Business & Economics">
       </div>
     </article>
 
     <article class="school-section school-section-left">
       <div class="school-image">
-        <img src="/lukenya/asset-07-image7_1_33-4096x2731.jpg" alt="School of Agriculture, Technical Studies and Natural Sciences">
+        <img src="/academics/2.webp" alt="School of Agriculture, Technical Studies and Natural Sciences">
       </div>
       <div class="school-content">
         <h2>School of Agriculture, Technical Studies and Natural Sciences</h2>
         <p>The School of Agriculture and Applied Sciences provides high quality education which is based on current scientific teaching and research techniques.</p>
         <a href="#" class="school-link">
-          <span class="checkmark">✓</span>
+          <span class="checkmark">
+              <img src="/academics/arrow.svg" alt="arrow">
+          </span>
           Visit School of Agriculture, Technical Studies and Natural Sciences
         </a>
       </div>
@@ -42,28 +53,18 @@
         <h2>School of Education &amp; Social Sciences</h2>
         <p>The School of Education &amp; Social Sciences offers high-quality full-time faculty whose teaching, scholarship and service will enrich your learning experience.</p>
         <a href="#" class="school-link">
-          <span class="checkmark">✓</span>
+            <span class="checkmark">
+                <img src="/academics/arrow.svg" alt="arrow">
+            </span>
+
           Visit School of Education &amp; Social Sciences
         </a>
       </div>
       <div class="school-image">
-        <img src="/lukenya/asset-08-image8_1_33-4096x2731.jpg" alt="School of Education & Social Sciences">
+        <img src="/academics/3.webp" alt="School of Education & Social Sciences">
       </div>
     </article>
 
-    <article class="school-section school-section-left">
-      <div class="school-image">
-        <img src="/home/asset-12-image12_1_33-4096x2731.jpg" alt="School of Health Sciences">
-      </div>
-      <div class="school-content">
-        <h2>School of Health Sciences</h2>
-        <p>The School of Health Sciences prepares students with quality health education which is based on current scientific teaching and clinical experience training.</p>
-        <a href="#" class="school-link">
-          <span class="checkmark">✓</span>
-          Visit School of Health Sciences
-        </a>
-      </div>
-    </article>
   </section>
 
 </main>

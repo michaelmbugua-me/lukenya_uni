@@ -1,12 +1,19 @@
 <main class="board-page">
-  <section class="hero-section">
-    <img src="/design_svgs/bot.png" alt="Board of Trustees">
-    <div class="hero-overlay"></div>
-    <div class="hero-intro">
-      <h1>Board of Trustees</h1>
-      <p>Providing strategic vision and governance to Lukenya University</p>
-    </div>
-  </section>
+    <app-hero-section
+            imageUrl="/home/home_hero.webp"
+            imageAlt="Lukenya University main campus entrance"
+            pillText="About Us"
+            pillIconUrl="/home/academy-cap.svg"
+            pillIconAlt="Academy cap"
+            title="Board of Trustees"
+            description="Lukenya University is under the safe hands of a capable board that ensures the vision, mission and philosophy of the University is steered forward"
+            [showNavigation]="false"
+            [showBottomButtons]="false"
+            primaryButtonText="Apply Now"
+            primaryButtonLink="/contact"
+            secondaryButtonText="Explore Programs"
+            secondaryButtonLink="/academics">
+    </app-hero-section>
 
   <section class="timeline-section" style="padding: 60px 0 0;">
     <app-timeline-nav></app-timeline-nav>
@@ -14,16 +21,30 @@
 
   <section class="board-intro section-block">
     <div class="section-title">
-      <h2>Leadership That Guides Our Future</h2>
-      <p>The Board of Trustees at Lukenya University is composed of experienced and dedicated individuals committed to ensuring the university's academic excellence, financial stability, and strategic growth.</p>
+      <h2>Meet Our Board Members</h2>
+      <p>We Focus on the details of everything we do. All to help businesses around the world
+          Focus on what's most important to them.</p>
     </div>
   </section>
+
+    <section class="profile-section section-block">
+        <div class="profile-container">
+            <div class="profile-content">
+                <h2><span style="display: block; margin-bottom: 10px">Lukenya's Chairperson</span>
+                    <span style="display: block"> Heda, EBS, OGW</span></h2>
+                <p>Hon Sylvia Mueni Kasanga leads Lukenya University board currently</p>
+            </div>
+            <div class="profile-image">
+                <img src="/board_of_trustees/bot_1.png" alt="Vice Chancellor portrait">
+            </div>
+        </div>
+    </section>
 
   <section class="trustees-grid section-block">
     <div class="trustees-container">
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/home/asset-10-image10_1_33-4096x2731.jpg" alt="Trustee portrait">
+          <img src="/board_of_trustees/bot2.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>John Mwangi</h3>
@@ -34,7 +55,7 @@
 
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/home/asset-11-image11_1_33-4096x2726.jpg" alt="Trustee portrait">
+          <img src="/board_of_trustees/bot3.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>Sarah Kipchoge</h3>
@@ -45,7 +66,7 @@
 
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/home/asset-12-image12_1_33-4096x2731.jpg" alt="Trustee portrait">
+          <img src="/board_of_trustees/bot4.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>Dr. Peter Ochieng</h3>
@@ -56,7 +77,7 @@
 
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/lukenya/asset-07-image7_1_33-4096x2731.jpg" alt="Trustee portrait">
+          <img src="/board_of_trustees/bot5.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>Margaret Kariuki</h3>
@@ -67,7 +88,7 @@
 
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/lukenya/asset-08-image8_1_33-4096x2731.jpg" alt="Trustee portrait">
+          <img src="/board_of_trustees/bot6.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>Prof. David Kiplagat</h3>
@@ -78,7 +99,40 @@
 
       <article class="trustee-card">
         <div class="trustee-avatar">
-          <img src="/lukenya/asset-09-image9_1_33-2731x4096.jpg" alt="Trustee portrait">
+              <img src="/board_of_trustees/bot7.png" alt="Trustee portrait">
+        </div>
+        <div class="trustee-info">
+          <h3>Emily Njoroge</h3>
+          <p class="position">Board Member</p>
+          <p class="bio">Human resources specialist committed to institutional excellence and staff development.</p>
+        </div>
+      </article>
+
+        <article class="trustee-card">
+        <div class="trustee-avatar">
+          <img src="/board_of_trustees/bot8.png" alt="Trustee portrait">
+        </div>
+        <div class="trustee-info">
+          <h3>Margaret Kariuki</h3>
+          <p class="position">Board Member</p>
+          <p class="bio">Legal counsel specializing in institutional governance and compliance frameworks.</p>
+        </div>
+      </article>
+
+      <article class="trustee-card">
+        <div class="trustee-avatar">
+          <img src="/board_of_trustees/bot9.png" alt="Trustee portrait">
+        </div>
+        <div class="trustee-info">
+          <h3>Prof. David Kiplagat</h3>
+          <p class="position">Board Member</p>
+          <p class="bio">Renowned researcher with expertise in institutional development and strategic initiatives.</p>
+        </div>
+      </article>
+
+      <article class="trustee-card">
+        <div class="trustee-avatar">
+              <img src="/board_of_trustees/bot10.png" alt="Trustee portrait">
         </div>
         <div class="trustee-info">
           <h3>Emily Njoroge</h3>
@@ -88,29 +142,4 @@
       </article>
     </div>
   </section>
-
-  <section class="board-mission section-block">
-    <div class="mission-content">
-      <h2>Our Mission &amp; Responsibilities</h2>
-      <div class="mission-grid">
-        <article class="mission-item">
-          <h3>Strategic Vision</h3>
-          <p>Establish and communicate the long-term strategic direction of the university to ensure alignment with national educational goals and institutional values.</p>
-        </article>
-        <article class="mission-item">
-          <h3>Financial Oversight</h3>
-          <p>Ensure effective financial management, transparent resource allocation, and sustainable growth of university assets and investments.</p>
-        </article>
-        <article class="mission-item">
-          <h3>Academic Excellence</h3>
-          <p>Support the maintenance of high academic standards, robust curriculum development, and recognition of educational excellence across all programs.</p>
-        </article>
-        <article class="mission-item">
-          <h3>Governance &amp; Compliance</h3>
-          <p>Uphold ethical governance practices, ensure regulatory compliance, and promote accountability at all levels of institutional operations.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
 </main>
