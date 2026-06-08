@@ -1,147 +1,177 @@
 <main class="board-page">
     <app-hero-section
-            imageUrl="/home/home_hero.webp"
-            imageAlt="Lukenya University main campus entrance"
-            pillText="About Us"
-            pillIconUrl="/home/academy-cap.svg"
-            pillIconAlt="Academy cap"
-            title="Board of Trustees"
-            description="Lukenya University is under the safe hands of a capable board that ensures the vision, mission and philosophy of the University is steered forward"
-            [showNavigation]="false"
             [showBottomButtons]="false"
-            primaryButtonText="Apply Now"
+            [showNavigation]="false"
+            description="Lukenya University is under the safe hands of a capable board that ensures the vision, mission and philosophy of the University is steered forward"
+            imageAlt="Lukenya University main campus entrance"
+            imageUrl="/home/home_hero.webp"
+            pillIconAlt="Academy cap"
+            pillIconUrl="/home/academy-cap.svg"
+            pillText="About Us"
             primaryButtonLink="/contact"
+            primaryButtonText="Apply Now"
+            secondaryButtonLink="/academics"
             secondaryButtonText="Explore Programs"
-            secondaryButtonLink="/academics">
+            title="Board of Trustees">
     </app-hero-section>
 
-  <section class="timeline-section" style="padding: 60px 0 0;">
-    <app-timeline-nav></app-timeline-nav>
-  </section>
+    <section class="timeline-section">
+        <app-timeline-nav></app-timeline-nav>
+    </section>
 
-  <section class="board-intro section-block">
-    <div class="section-title">
-      <h2>Meet our board members</h2>
-      <p>We focus on the details of everything we do. All to help businesses around the world focus on what's most important to them.</p>
-    </div>
-  </section>
+    <section class="board-intro">
+        <div class="board-copy">
+            <h2>Meet our board members</h2>
+            <p>We focus on the details of everything we do. All to help businesses around the world focus on what's most
+                important to them.</p>
+        </div>
+    </section>
 
-  <section class="profile-section section-block">
-    <div class="profile-container">
-      <div class="profile-content">
-        <h2>Lukenya's Chairperson</h2>
-        <p class="chairman-title">Hon Sylvia Mueni Kasanga leads Lukenya University board currently</p>
-        <div class="chairman-badge">
-          <span class="badge-icon">👤</span>
-          <span class="badge-text">Hold the Office of the Chairperson</span>
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-content">
+                <h2>Lukenya’s Chairperson</h2>
+                <p class="chairman-title">Hon Sylvia Mueni Kasanga leads Lukenya University board currently</p>
+                <div class="chairman-badge">
+          <span class="checkmark">
+             <img alt="arrow" src="/academics/arrow.svg">
+          </span>
+                    <span class="badge-text">Visit the Office of the Chairperson</span>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img alt="Chairperson portrait" src="/board_of_trustees/bot_1.png">
+            </div>
         </div>
-      </div>
-      <div class="profile-image">
-        <img src="/board_of_trustees/bot_1.png" alt="Chairperson portrait">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="trustees-grid section-block">
-    <div class="trustees-container">
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot2.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>John Mwangi</h3>
-          <p class="position">Chairman, Board of Trustees</p>
-          <p class="bio">Over 25 years of experience in educational governance and institutional management.</p>
-        </div>
-      </article>
+    <section class="trustees-grid">
+        <div class="trustees-container">
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot2.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Mr. Benjamin Kasanga</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Pop music lover, seeks joy and exciting pop concerts</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot3.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Sarah Kipchoge</h3>
-          <p class="position">Vice Chair, Board of Trustees</p>
-          <p class="bio">Finance executive with extensive background in higher education strategic planning.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot3.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Dr. David Kasanga</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Bookworm, creative software developer with precision</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot4.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Dr. Peter Ochieng</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Academic leader with Ph.D. in Educational Administration from reputable institution.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot4.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Ms. Mutheu Kasanga</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Creative painter capturing beauty with imaginative artwork</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot5.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Margaret Kariuki</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Legal counsel specializing in institutional governance and compliance frameworks.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot5.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Ms. Eunice Nyiero</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Football enthusiast, enjoys movie nights with friends</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot6.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Prof. David Kiplagat</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Renowned researcher with expertise in institutional development and strategic initiatives.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot6.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Ms. Felistas Kavete</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Culinary artist, explores diverse flavors, skilled in cooking</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-              <img src="/board_of_trustees/bot7.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Emily Njoroge</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Human resources specialist committed to institutional excellence and staff development.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot7.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Mr. Wilson Mutunga</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Culinary artist, explores diverse flavors, skilled in cooking</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-        <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot8.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Margaret Kariuki</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Legal counsel specializing in institutional governance and compliance frameworks.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot8.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Mr. Stanslaus Mwillu</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Culinary artist, explores diverse flavors, skilled in cooking</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-          <img src="/board_of_trustees/bot9.png" alt="Trustee portrait">
-        </div>
-        <div class="trustee-info">
-          <h3>Prof. David Kiplagat</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Renowned researcher with expertise in institutional development and strategic initiatives.</p>
-        </div>
-      </article>
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot9.png">
+                </div>
+                <div class="trustee-info">
+                    <h3>Ms. Juliana Ndolo</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Culinary artist, explores diverse flavors, skilled in cooking</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
 
-      <article class="trustee-card">
-        <div class="trustee-avatar">
-              <img src="/board_of_trustees/bot10.png" alt="Trustee portrait">
+            <article class="trustee-card">
+                <div class="trustee-avatar">
+                    <img alt="Trustee portrait" src="/board_of_trustees/bot10.svg">
+                </div>
+                <div class="trustee-info">
+                    <h3>Mr. John Ndolo</h3>
+                    <p class="position">Board Member</p>
+                    <p class="bio">Culinary artist, explores diverse flavors, skilled in cooking</p>
+                    <span aria-hidden="true" class="card-plus">
+              <img alt="Chairperson portrait" src="/board_of_trustees/linkedIn.svg">
+          </span>
+                </div>
+            </article>
         </div>
-        <div class="trustee-info">
-          <h3>Emily Njoroge</h3>
-          <p class="position">Board Member</p>
-          <p class="bio">Human resources specialist committed to institutional excellence and staff development.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+    </section>
 </main>
