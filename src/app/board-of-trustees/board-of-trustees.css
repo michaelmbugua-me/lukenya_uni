@@ -237,16 +237,6 @@ img {
   border-radius: 12px;
 }
 
-.profile-accent {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  height: 8px;
-  background: #00884f;
-  border-radius: 0 0 12px 12px;
-}
-
 .section-block {
   align-items: center;
   display: flex;
