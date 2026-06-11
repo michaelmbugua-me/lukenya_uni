@@ -24,6 +24,7 @@ export class HeroSectionComponent {
   @Input() titlePrefix = '';
   @Input() titleHighlight = '';
   @Input() titleSuffix = '';
+  @Input() titleBreakBeforeHighlight = false;
   @Input() titleBreakAfterHighlight = false;
   @Input() description = '';
 
