@@ -4,14 +4,14 @@
 
 .topbar {
   align-items: center;
-  background: #f9ce31;
-  color: #0e0e0e;
+  background: #008f4d;
+  color: #ffffff;
   display: flex;
   font-size: 16px;
-  /*font-weight: 600;*/
-  height: 60px;
+  font-weight: 400;
+  height: 32px;
   justify-content: space-between;
-  padding: 0 95px;
+  padding: 0 clamp(16px, 2vw, 32px);
 }
 
 .contact-line,
@@ -22,7 +22,7 @@
 }
 
 .contact-line {
-  gap: 18px;
+  gap: 8px;
 }
 
 .contact-line span:nth-child(2) {
@@ -30,15 +30,15 @@
 }
 
 .utility-nav {
-  gap: 36px;
+  gap: 22px;
 }
 
 .main-nav {
   align-items: center;
   display: grid;
-  grid-template-columns: 320px 1fr 132px;
-  height: 132px;
-  padding: 0 99px;
+  grid-template-columns: 220px 1fr 112px;
+  height: 76px;
+  padding: 0 clamp(16px, 2vw, 32px);
   background: #ffffff;
 }
 
@@ -46,7 +46,7 @@
   align-items: center;
   color: #01884e;
   display: inline-flex;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   gap: 4px;
   letter-spacing: -0.01em;
@@ -54,15 +54,15 @@
 }
 
 .brand img {
-  height: 66px;
+  height: 34px;
   object-fit: contain;
-  width: 54px;
+  width: 30px;
 }
 
 .primary-nav {
   color: #444444;
-  font-size: 20px;
-  gap: 34px;
+  font-size: 18px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -81,15 +81,15 @@
   border: 0;
   border-radius: 999px;
   display: inline-flex;
-  /*font-weight: 800;*/
+  font-weight: 800;
   justify-content: center;
   white-space: nowrap;
   background: #f9ce31;
   color: #141414;
-  font-size: 19px;
-  height: 51px;
+  font-size: 12px;
+  height: 38px;
   text-decoration: none;
-  padding: 0 32px;
+  padding: 0 22px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -101,8 +101,8 @@
 @media (max-width: 1180px) {
   .topbar,
   .main-nav {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .topbar,
@@ -114,8 +114,8 @@
   .main-nav {
     grid-template-columns: 1fr;
     height: auto;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-top: 18px;
   }
 
   .primary-nav,
@@ -132,5 +132,9 @@
     height: auto;
     padding-bottom: 16px;
     padding-top: 16px;
+  }
+
+  .utility-nav {
+    gap: 12px;
   }
 }
