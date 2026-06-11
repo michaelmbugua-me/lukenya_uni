@@ -65,9 +65,13 @@
   display: inline-block;
   line-height: 1;
   padding: 0 18px 6px;
+  vertical-align: baseline;
 }
 
 .hero h1 .title-prefix-highlight {
+  align-items: baseline;
+  display: inline-flex;
+  gap: 0.18em;
   white-space: nowrap;
 }
 
