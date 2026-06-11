@@ -23,7 +23,13 @@
 
     @if (titleHighlight) {
       <h1 [id]="titleId">
-        {{ titlePrefix }} <span>{{ titleHighlight }}</span>
+        @if (titleBreakBeforeHighlight) {
+          {{ titlePrefix }}
+          <br>
+          <span class="title-highlight">{{ titleHighlight }}</span>
+        } @else {
+          <span class="title-prefix-highlight">{{ titlePrefix }} <span class="title-highlight">{{ titleHighlight }}</span></span>
+        }
         @if (titleBreakAfterHighlight) {
           <br>
         }

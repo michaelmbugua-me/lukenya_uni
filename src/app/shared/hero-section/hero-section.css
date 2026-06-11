@@ -59,12 +59,16 @@
   margin: 0 0 18px;
 }
 
-.hero h1 span {
+.hero h1 .title-highlight {
   background: #f4ce2f;
   color: #1f201f;
   display: inline-block;
   line-height: 1;
   padding: 0 18px 6px;
+}
+
+.hero h1 .title-prefix-highlight {
+  white-space: nowrap;
 }
 
 .hero-content > p {
