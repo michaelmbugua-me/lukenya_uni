@@ -31,23 +31,11 @@ img {
   max-width: 100%;
 }
 
-.button {
-  align-items: center;
-  border: 0;
-  border-radius: 999px;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 14px;
-  font-weight: 700;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0 24px;
-  white-space: nowrap;
-}
 
 .button.yellow {
   background: var(--yellow);
   color: #1b1b1b;
+  margin: 16px 0;
 }
 
 .campus-intro {
@@ -331,6 +319,7 @@ img {
 }
 
 .campus-life .section-heading{display:block}
+.news .section-heading{display:block}
 
 .life-grid {
   display: grid;

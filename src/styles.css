@@ -203,11 +203,6 @@ app-contact {
   position: absolute;
 }
 
-.hero-image {
-  /*height: 100%;*/
-  /*object-fit: cover;*/
-  /*width: 100%;*/
-}
 
 .hero-overlay {
   background: rgba(7, 83, 50, 0.8);
@@ -216,7 +211,7 @@ app-contact {
 .hero-content {
   color: #ffffff;
   left: clamp(48px, 12vw, 226px);
-  max-width: 880px;
+  max-width: 950px;
   position: absolute;
   top: 50%;
   transform: translateY(-40%);
@@ -365,4 +360,18 @@ app-contact {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.button {
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 44px!important;
+  padding: 0 24px;
+  white-space: nowrap;
 }
