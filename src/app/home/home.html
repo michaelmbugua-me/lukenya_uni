@@ -1,32 +1,23 @@
 <main class="home-page">
-  <section class="hero" aria-labelledby="home-hero-title">
-    <img src="/home/home_hero.webp" alt="Graduating students celebrating on campus">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="eyebrow">• EST. 1991 • EXCELLENCE IN EDUCATION</p>
-      <h1 id="home-hero-title">Shape the <span>Future</span><br>of Tomorrow.</h1>
-      <p>For over the years, Lukenya University has shaped visionary leaders, groundbreaking researchers, and compassionate global citizens. Join a community committed to excellence, discovery, and meaningful impact.</p>
-      <div class="hero-actions">
-        <a class="button yellow" routerLink="/contact">Apply for 2026</a>
-        <a class="button outline" routerLink="/academics">Explore Programs</a>
-      </div>
-      <div class="hero-stats" aria-label="Lukenya University highlights">
-        <div>
-          <strong>10+</strong>
-          <span>YEARS OF EXCELLENCE</span>
-        </div>
-        <div>
-          <strong>10+</strong>
-          <span>ACADEMIC PROGRAMS</span>
-        </div>
-        <div>
-          <strong>1000+</strong>
-          <span>ENROLLED STUDENTS</span>
-        </div>
-      </div>
-    </div>
-    <button class="round-control" type="button" aria-label="Scroll to next section">↑</button>
-  </section>
+  <app-hero-section
+    imageUrl="/home/home_hero.webp"
+    imageAlt="Graduating students celebrating on campus"
+    pillText="• EST. 1991 • EXCELLENCE IN EDUCATION"
+    titlePrefix="Shape the"
+    titleHighlight="Future"
+    titleSuffix="of Tomorrow."
+    [titleBreakAfterHighlight]="true"
+    titleId="home-hero-title"
+    description="For over the years, Lukenya University has shaped visionary leaders, groundbreaking researchers, and compassionate global citizens. Join a community committed to excellence, discovery, and meaningful impact."
+    [showBottomButtons]="true"
+    primaryButtonText="Apply for 2026"
+    primaryButtonLink="/contact"
+    secondaryButtonText="Explore Programs"
+    secondaryButtonLink="/academics"
+    [showStats]="true"
+    [stats]="heroStats"
+    [showScrollControl]="true">
+  </app-hero-section>
 
   <section class="campus-intro" aria-label="Campus overview">
     <div class="campus-frame">

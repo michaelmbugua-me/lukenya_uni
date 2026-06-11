@@ -1,12 +1,16 @@
 <main class="vice-chancellor-page">
-  <section class="hero-section">
-    <img src="/board_of_trustees/vice_chancellor_hero.webp" alt="Vice Chancellor">
-    <div class="hero-overlay"></div>
-    <div class="hero-intro">
-      <h1>The Vice Chancellor</h1>
-      <p>Lukenya University is under the safe hands of a capable vice chancellor who ensures the vision, mission and philosophy of the University is steered forward</p>
-    </div>
-  </section>
+  <app-hero-section
+    [showBottomButtons]="false"
+    [showNavigation]="false"
+    [showStats]="false"
+    [showScrollControl]="false"
+    description="Lukenya University is under the safe hands of a capable vice chancellor who ensures the vision, mission and philosophy of the University is steered forward"
+    imageAlt="Vice Chancellor"
+    imageUrl="/board_of_trustees/vice_chancellor_hero.webp"
+    pillText="• EST. 1991 • EXCELLENCE IN EDUCATION"
+    titlePrefix="The Vice"
+    titleHighlight="Chancellor">
+  </app-hero-section>
 
   <section class="timeline-section timeline-section-compact">
     <app-timeline-nav></app-timeline-nav>

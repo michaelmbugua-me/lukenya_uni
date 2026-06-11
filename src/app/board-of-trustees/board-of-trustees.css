@@ -26,47 +26,6 @@ img {
   padding: 36px 34px 0;
 }
 
-:host ::ng-deep app-hero-section .hero {
-  border-radius: 14px;
-  height: 500px;
-  margin-inline: 34px;
-}
-
-:host ::ng-deep app-hero-section .hero-content {
-  max-width: 780px;
-  width: calc(100% - 96px);
-}
-
-:host ::ng-deep app-hero-section .hero-pill {
-  font-size: 14px;
-  margin-bottom: 15px;
-  min-height: 34px;
-  padding: 0 18px;
-}
-
-:host ::ng-deep app-hero-section .hero-pill img {
-  height: 15px;
-  margin: 7px;
-  width: 15px;
-}
-
-:host ::ng-deep app-hero-section .hero h1 {
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1.06;
-  margin-bottom: 17px;
-}
-
-:host ::ng-deep app-hero-section .hero-copy {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.45;
-}
-
-:host ::ng-deep app-hero-section .hero-content > .button {
-  display: none;
-}
-
 :host ::ng-deep app-timeline-nav .timeline-nav {
   border-radius: 16px;
   gap: 14px;

@@ -10,4 +10,10 @@ import { TimelineNavComponent } from '../shared/timeline-nav/timeline-nav';
   imports: [CommonModule, HeroSectionComponent, TimelineNavComponent],
   styleUrl: './about.css'
 })
-export class AboutComponent {}
+export class AboutComponent {
+  protected readonly heroStats = [
+    { value: '10+', label: 'YEARS OF EXCELLENCE' },
+    { value: '10+', label: 'ACADEMIC PROGRAMS' },
+    { value: '1000+', label: 'ENROLLED STUDENTS' }
+  ];
+}
