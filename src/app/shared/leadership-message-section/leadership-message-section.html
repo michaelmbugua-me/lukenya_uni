@@ -1,0 +1,13 @@
+<section class="message-section">
+  <div class="message-content">
+    @if (title) {
+      <h2>{{ title }}</h2>
+    }
+
+    <ng-content></ng-content>
+
+    <div class="story">
+      <a class="button yellow story-button" [routerLink]="buttonLink">{{ buttonText }}</a>
+    </div>
+  </div>
+</section>

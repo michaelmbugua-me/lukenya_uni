@@ -1,0 +1,85 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.message-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 99px 80px;
+  width: 100%;
+}
+
+.message-content {
+  max-width: 1120px;
+  width: 100%;
+}
+
+.message-content h2 {
+  color: #00884f;
+  font-size: clamp(46px, 4.1vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0 0 28px;
+}
+
+:host ::ng-deep .message-paragraph {
+  color: #393c40;
+  font-size: clamp(18px, 1.2vw, 28px);
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0;
+}
+
+:host ::ng-deep .message-paragraph .emphasis {
+  color: #00884f;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.story {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button {
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  padding: 0 28px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.button.yellow {
+  background: #ffd229;
+  color: #141414;
+}
+
+.button.yellow:hover {
+  box-shadow: 0 4px 12px rgba(249, 206, 49, 0.3);
+}
+
+@media (max-width: 820px) {
+  .message-section {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
