@@ -41,8 +41,8 @@
   font-size: clamp(14px, 1.05vw, 18px);
   font-weight: 700;
   gap: 10px;
-  margin: 0 0 26px;
-  padding: 8px 18px;
+  margin: 0 0 26px!important;
+  padding: 8px 18px!important;
   background: rgba(249, 206, 49, 0.34);
 }
 
