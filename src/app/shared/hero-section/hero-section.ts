@@ -20,10 +20,15 @@ export class HeroSectionComponent {
   @Input() pillIconAlt = '';
 
   @Input() title = '';
+  @Input() titleId = 'hero-title';
+  @Input() titlePrefix = '';
+  @Input() titleHighlight = '';
+  @Input() titleSuffix = '';
+  @Input() titleBreakAfterHighlight = false;
   @Input() description = '';
 
   // Backward-compatible single CTA
-  @Input() buttonText = 'Get Started';
+  @Input() buttonText = '';
   @Input() buttonLink = '/contact';
   @Input() isExternalLink = false;
 
@@ -38,6 +43,11 @@ export class HeroSectionComponent {
 
   // Optional navigation arrows
   @Input() showNavigation = false;
+  @Input() showStats = false;
+  @Input() showScrollControl = false;
+  @Input() scrollButtonLabel = 'Scroll to next section';
+  @Input() scrollButtonText = '↑';
+  @Input() stats: Array<{ value: string; label: string }> = [];
   leftActive = false;
   rightActive = false;
 
@@ -61,4 +71,3 @@ export class HeroSectionComponent {
     this.rightArrowClick.emit();
   }
 }
-

@@ -1,6 +1,6 @@
-<section class="hero">
+<section class="hero" [attr.aria-labelledby]="titleId">
   <img [src]="imageUrl" [alt]="imageAlt">
-  <div class="hero-shade"></div>
+  <div class="hero-overlay"></div>
 
   @if (showNavigation) {
     <button class="hero-arrow left" (click)="onArrowClick('left')" aria-label="Previous slide">
@@ -13,7 +13,7 @@
 
   <div class="hero-content">
     @if (displayPillText) {
-      <p class="hero-pill">
+      <p class="eyebrow">
         @if (pillIconUrl) {
           <img [src]="pillIconUrl" [alt]="pillIconAlt">
         }
@@ -21,10 +21,20 @@
       </p>
     }
 
-    <h1>{{ title }}</h1>
+    @if (titleHighlight) {
+      <h1 [id]="titleId">
+        {{ titlePrefix }} <span>{{ titleHighlight }}</span>
+        @if (titleBreakAfterHighlight) {
+          <br>
+        }
+        {{ titleSuffix }}
+      </h1>
+    } @else {
+      <h1 [id]="titleId">{{ title }}</h1>
+    }
 
     @if (description) {
-      <p class="hero-copy">{{ description }}</p>
+      <p>{{ description }}</p>
     }
 
     @if (showBottomButtons) {
@@ -39,20 +49,35 @@
 
         @if (secondaryButtonText) {
           @if (secondaryButtonExternal) {
-            <a class="button ghost" [href]="secondaryButtonLink">{{ secondaryButtonText }}</a>
+            <a class="button outline" [href]="secondaryButtonLink">{{ secondaryButtonText }}</a>
           } @else {
-            <a class="button ghost" [routerLink]="secondaryButtonLink">{{ secondaryButtonText }}</a>
+            <a class="button outline" [routerLink]="secondaryButtonLink">{{ secondaryButtonText }}</a>
           }
         }
       </div>
     } @else {
-      @if (!isExternalLink) {
-        <a [routerLink]="buttonLink" class="button yellow">{{ buttonText }}</a>
-      } @else {
-        <a [href]="buttonLink" class="button yellow">{{ buttonText }}</a>
+      @if (buttonText) {
+        @if (!isExternalLink) {
+          <a [routerLink]="buttonLink" class="button yellow">{{ buttonText }}</a>
+        } @else {
+          <a [href]="buttonLink" class="button yellow">{{ buttonText }}</a>
+        }
       }
     }
 
+    @if (showStats && stats.length > 0) {
+      <div class="hero-stats" aria-label="Highlights">
+        @for (stat of stats; track stat.label) {
+          <div>
+            <strong>{{ stat.value }}</strong>
+            <span>{{ stat.label }}</span>
+          </div>
+        }
+      </div>
+    }
   </div>
-</section>
 
+  @if (showScrollControl) {
+    <button class="round-control" type="button" [attr.aria-label]="scrollButtonLabel">{{ scrollButtonText }}</button>
+  }
+</section>

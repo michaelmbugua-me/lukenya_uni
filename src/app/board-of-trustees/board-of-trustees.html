@@ -1,7 +1,11 @@
 <main class="board-page">
     <app-hero-section
+            [primaryButtonExternal]="false"
+            [secondaryButtonExternal]="false"
             [showBottomButtons]="false"
             [showNavigation]="false"
+            [showStats]="false"
+            [showScrollControl]="false"
             description="Lukenya University is under the safe hands of a capable board that ensures the vision, mission and philosophy of the University is steered forward"
             imageAlt="Lukenya University main campus entrance"
             imageUrl="/home/home_hero.webp"
@@ -12,9 +16,10 @@
             primaryButtonText="Apply Now"
             secondaryButtonLink="/academics"
             secondaryButtonText="Explore Programs"
-            title="Board of Trustees">
+            titlePrefix="Board of"
+            titleHighlight="Trustees"
+            titleSuffix="">
     </app-hero-section>
-
     <section class="timeline-section">
         <app-timeline-nav></app-timeline-nav>
     </section>
