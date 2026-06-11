@@ -192,7 +192,7 @@ app-contact {
    =========================== */
 .hero-section {
   border-radius: 30px;
-  height: clamp(520px, 41.7vw, 800px);
+  height: clamp(520px, 41.43vw, 800px);
   margin: 0 clamp(24px, 4.16vw, 80px);
   overflow: hidden;
   position: relative;

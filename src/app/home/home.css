@@ -396,7 +396,7 @@ img {
 .program-grid small {
   align-items: center;
   display: inline-flex;
-  font-size:clamp(14px,0.92vw,17px);
+  font-size:clamp(14px,0.95vw,17px);
   gap: 12px;
 }
 
@@ -614,18 +614,17 @@ img {
 }
 
 .next-step {
-  align-items:center;
-  background:var(--green);
-  border-radius:20px;
-  display:grid;
-  gap:22px;
-  grid-template-columns:minmax(150px,240px) minmax(0,1fr) auto;
-  margin-bottom:34px;
-  overflow:hidden;
-  padding:0 clamp(18px,2.4vw,52px);
-  width:min(100% - 72px,1560px);
+  align-items: center;
+  background: var(--green);
+  border-radius: 20px;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(120px, 1fr) minmax(180px, 2fr) minmax(120px, 1fr);
+  margin-bottom: 34px;
+  overflow: hidden;
+  padding: 0 clamp(18px, 2.4vw, 52px);
+  width: min(100% - 72px, 1560px);
 }
-
 .next-step img {
   height:100%;
   object-fit:cover;
@@ -633,7 +632,7 @@ img {
 
 .next-step h2 {
   color:#ffffff;
-  font-size:clamp(30px,2.3vw,48px);
+  font-size: clamp(24px, 1.78vw, 48px);
   margin:0;
 }
 
@@ -660,10 +659,10 @@ img {
 }
 
 .button.yellow-square {
+  background: var(--yellow);
   border-radius:0;
   justify-content:flex-start;
   min-height:72px;
-  padding:0 0 0 34px;
 }
 
 @media (max-width: 1040px) {
