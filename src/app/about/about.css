@@ -31,6 +31,11 @@ img {
 }
 
 
+.button.yellow {
+  background: var(--yellow);
+  color: #1b1b1b;
+  margin: 16px 0;
+}
 
 .commitment {
   margin: 0 40px;
