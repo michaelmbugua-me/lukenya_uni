@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import { HeroSectionComponent } from '../shared/hero-section/hero-section';
 
@@ -18,4 +18,14 @@ export class HomeComponent {
     { value: '10+', label: 'ACADEMIC PROGRAMS' },
     { value: '1000+', label: 'ENROLLED STUDENTS' }
   ];
+
+  @ViewChild('localPlayer') playerElement!: ElementRef<HTMLVideoElement>;
+
+  playVideo() {
+    this.playerElement.nativeElement.play();
+  }
+
+  pauseVideo() {
+    this.playerElement.nativeElement.pause();
+  }
 }
