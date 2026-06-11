@@ -192,6 +192,7 @@ img {
   font-size:clamp(14px,1.06vw,17px);
   line-height: 1.55;
   margin: 0 0 32px;
+  max-width: 60%;
 }
 
 .campus-copy a {
@@ -290,7 +291,7 @@ img {
 }
 
 .levels p {
-  font-size:clamp(14px,1.06vw,17px);
+  font-size: clamp(15px, 0.95vw, 21px);
   line-height: 1.55;
   margin: 0 0 12px;
 }
@@ -306,7 +307,7 @@ img {
 
 .study-mode,
 .study-meta {
-  font-size:clamp(14px,1vw,16px);
+  font-size: clamp(15px, 0.95vw, 21px);
 }
 
 .levels .study-meta {
@@ -433,6 +434,7 @@ img {
   font-size:clamp(34px,2.6vw,46px);
   line-height: 1.18;
   margin: 0 0 14px;
+  font-weight: 500;
 }
 
 .section-heading p {
@@ -440,6 +442,7 @@ img {
   font-size:clamp(16px,1.17vw,19px);
   line-height: 1.65;
   margin: 0;
+  font-weight: 400;
 }
 
 .campus-life .section-heading{display:block}
@@ -632,8 +635,9 @@ img {
 
 .next-step h2 {
   color:#ffffff;
-  font-size: clamp(24px, 1.78vw, 48px);
+  font-size: clamp(14px, 1.5vw, 24px);
   margin:0;
+  width: 60%;
 }
 
 .next-step-actions {
@@ -729,9 +733,8 @@ img {
     padding: 26px 22px 30px;
   }
 
-  .next-step img {
-    height: 220px;
-    width: 200px;
+  .next-step h2 {
+    width: 100%;
   }
 
 }
@@ -795,5 +798,9 @@ img {
 
   .section-heading h2 {
     font-size: 34px;
+  }
+
+  .campus-copy {
+    max-width: min(100%, 760px);
   }
 }
