@@ -1,0 +1,366 @@
+/* Common School Page Styles */
+
+.school-page {
+  padding-bottom: 4rem;
+}
+
+.content-section {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* ── Reset / Base ───────────────────────────────────── */
+.page {
+  background: #ffffff;
+}
+
+/* ── Dean section ───────────────────────────────────── */
+.dean-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  gap: 0;
+}
+
+.dean-left {
+  padding-right: 40px;
+}
+
+.dean-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.dean-subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 16px;
+}
+
+.dean-salutation {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.dean-body {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.dean-read-more {
+  display: inline-block;
+  color: #16a34a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px solid #16a34a;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+
+.dean-read-more:hover {
+  color: #15803d;
+}
+
+/* Blue dashed vertical divider */
+.dean-divider {
+  position: absolute;
+  left: 50%;
+  top: 32px;
+  bottom: 32px;
+  width: 0;
+  border-left: 2px dashed #60a5fa;
+}
+
+.dean-right {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dean-photo {
+  width: 100%;
+  height: 288px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 2px;
+}
+
+/* ── Browse heading ─────────────────────────────────── */
+.browse-heading-wrap {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.browse-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.browse-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browse-deco-line {
+  width: 176px;
+  border-top: 2px dashed #60a5fa;
+}
+
+.browse-deco-tick {
+  width: 2px;
+  height: 16px;
+  background: #60a5fa;
+}
+
+/* ── Purple separator ───────────────────────────────── */
+.purple-bar {
+  height: 4px;
+  background: #3730a3;
+  width: 100%;
+}
+
+/* ── Main layout ────────────────────────────────────── */
+.main-layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  gap: 32px;
+}
+
+/* ── Sidebar ────────────────────────────────────────── */
+.sidebar {
+  width: 208px;
+  flex-shrink: 0;
+}
+
+.filter-group {
+  margin-bottom: 24px;
+}
+
+.filter-heading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+
+.filter-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.filter-item input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  accent-color: #16a34a;
+  cursor: pointer;
+}
+
+.filter-item span {
+  font-size: 0.75rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+/* ── Programs area ──────────────────────────────────── */
+.programs-area {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Search bar ─────────────────────────────────────── */
+.search-bar {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.search-input {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-right: none;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  outline: none;
+  color: #374151;
+}
+
+.search-input:focus {
+  border-color: #9ca3af;
+}
+
+.search-btn {
+  background: #15803d;
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #166534;
+}
+
+.search-btn svg {
+  display: block;
+}
+
+/* ── Program group ──────────────────────────────────── */
+.program-group {
+  margin-bottom: 32px;
+}
+
+.program-group-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.program-group-sub {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ── Program card ───────────────────────────────────── */
+.card {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-wrap {
+  height: 176px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.card-school {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #16a34a;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 0.75rem;
+  color: #4b5563;
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.card-meta svg {
+  flex-shrink: 0;
+}
+
+.card-learn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #16a34a;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 12px;
+  transition: opacity 0.2s;
+}
+
+.card-learn:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dean-section {
+    grid-template-columns: 1fr;
+  }
+  .dean-left {
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+  .dean-right {
+    padding-left: 0;
+  }
+  .dean-divider {
+    display: none;
+  }
+  .main-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
