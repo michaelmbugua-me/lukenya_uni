@@ -1,33 +1,32 @@
 <div class="topbar">
-  <div class="contact-line">
-    <span>☎</span>
-    <span>0722 370 485</span>
-    <span>✉</span>
-    <span>info&#64;lukenyauniversity.ac.ke</span>
-  </div>
-  <nav class="utility-nav" aria-label="Utility navigation">
-    <a href="#">Library</a>
-    <a href="#">Students</a>
-    <a href="#">Staff &amp; Faculty</a>
-    <a href="#">Quick Links</a>
-  </nav>
+    <div class="contact-line"><span>☎</span><span>0722 370 485</span><span>✉</span><span>info&#64;lukenyauniversity.ac.ke</span>
+    </div>
+    <nav aria-label="Utility navigation" class="utility-nav"><a href="#">Library</a><a href="#">Students</a><a href="#">Staff
+        &amp; Faculty</a><a href="#">Quick Links</a></nav>
 </div>
-
-<div class="main-nav">
-  <a class="brand" routerLink="/" aria-label="Lukenya University home">
-    <span>LUKENYA</span>
-    <img src="/home/lukenya_logo.svg" alt="">
-    <span>UNIVERSITY</span>
-  </a>
-  <nav class="primary-nav" aria-label="Primary navigation">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/academics" routerLinkActive="active">Academics</a>
-    <a href="/campus-life">Student</a>
-    <a href="#">Graduations</a>
-    <a href="#">KUCCPS</a>
-    <a href="#">Research</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  </nav>
-  <a class="nav-cta" href="#">Apply Now</a>
-</div>
+<div class="main-nav"><a aria-label="Lukenya University home" class="brand" routerLink="/"><span>LUKENYA</span><img
+        alt="" src="/home/lukenya_logo.svg"><span>UNIVERSITY</span></a>
+    <nav aria-label="Primary navigation" class="primary-nav"><a [routerLinkActiveOptions]="{exact: true}" class="nav-link"
+                                                                routerLink="/"
+                                                                routerLinkActive="active">Home</a>
+        <div class="nav-item has-dropdown"><a class="nav-link nav-link-with-icon" routerLink="/about"
+                                              routerLinkActive="active"><span>About</span><span aria-hidden="true"
+                                                                                                class="chevron"></span></a>
+        </div>
+        <div class="nav-item has-dropdown academics-dropdown"><a class="nav-link nav-link-with-icon"
+                                                                 routerLink="/academics"
+                                                                 routerLinkActive="active"><span>Academics</span><span
+                aria-hidden="true" class="chevron"></span></a>
+            <div aria-label="Academics submenu" class="dropdown-menu">
+                <a class="dropdown-link" routerLink="/academics">Students Overview</a>
+                <a class="dropdown-link highlighted" routerLink="/campus-life">Campus Life</a>
+                <a class="dropdown-link" href="#">Virtual campus</a>
+                <a class="dropdown-link" routerLink="/campus-life">Lukenya Cultural Week Festival</a>
+                <a class="dropdown-link" href="#">Student Portal</a><a class="dropdown-link"href="#">Download
+                Student Handbook</a><a class="dropdown-link" href="#">KUCCPS</a>
+            </div>
+        </div>
+        <a class="nav-link" routerLink="/campus-life">Student</a><a class="nav-link" href="#">Graduations</a><a
+                class="nav-link" href="#">Research</a><a class="nav-link" routerLink="/contact"
+                                                         routerLinkActive="active">Contact</a></nav>
+    <a class="nav-cta" href="#">Apply Now</a></div>
