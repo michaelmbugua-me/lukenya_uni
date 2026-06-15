@@ -9,8 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    RouterLink
-  ],
+    ],
   styleUrl: './business-economics.css'
 })
 export class BusinessEconomicsComponent {
