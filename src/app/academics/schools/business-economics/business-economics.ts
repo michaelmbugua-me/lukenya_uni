@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {HeroSectionComponent} from "../../../shared/hero-section/hero-section";
 @Component({
   selector: 'app-business-economics',
   standalone: true,
@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    ],
+    HeroSectionComponent,
+  ],
   styleUrl: './business-economics.css'
 })
 export class BusinessEconomicsComponent {
