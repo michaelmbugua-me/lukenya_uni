@@ -17,7 +17,7 @@
 }
 
 .message-content h2 {
-  color: #00884f;
+  color: #038851;
   font-size: clamp(46px, 4.1vw, 72px);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -34,7 +34,7 @@
 }
 
 :host ::ng-deep .message-paragraph .emphasis {
-  color: #00884f;
+  color: #038851;
   font-style: italic;
   font-weight: 600;
 }
@@ -69,7 +69,7 @@
 }
 
 .button.yellow {
-  background: #ffd229;
+  background: #f9ce32;
   color: #141414;
 }
 

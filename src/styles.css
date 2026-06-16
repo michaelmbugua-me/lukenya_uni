@@ -11,19 +11,25 @@
   --font-sans: 'Plus Jakarta Sans', 'Source Sans 3';
   --font-serif: 'Playfair Display', serif;
 
-  --color-brand-green: #01884e;
-  --color-brand-yellow: #f9ce31;
+  --color-brand-green: #038851;
+  --color-brand-yellow: #f9ce32;
   --color-text-dark: #1e1e1e;
 
-  /* LU Colors */
-  --color-lu-green: #0f5c2a;
-  --color-lu-green-mid: #1d7a3e;
-  --color-lu-green-light: #2a9a52;
-  --color-lu-green-dark: #0a4d22;
-  --color-lu-yellow: #f5c518;
-  --color-lu-yellow-dark: #d4a80e;
-  --color-lu-dark: #0f172a; /* Added for lukenya-dark equivalent */
-  --color-lu-gold: #f5c518; /* Added for gold equivalent */
+  /* LU Colors - Primary & Main Accent */
+  --color-lu-green: #038851;
+  --color-lu-yellow: #f9ce32;
+  --color-lu-yellow-hover: #ffcb05;
+  
+  /* Green Variations */
+  --color-lu-green-muted: #387355;
+  --color-lu-green-mid: #327152;
+  --color-lu-green-light: #367352;
+  --color-lu-green-dark: #09452b;
+  --color-lu-green-deep: #002214;
+  
+  /* Aliases for convenience */
+  --color-lu-dark: #002214;
+  --color-lu-gold: #f9ce32;
 }
 
 @layer base {
@@ -42,8 +48,8 @@
    Shared CSS Variables
    =========================== */
 :root {
-  --green: #065f46;
-  --dark-green: #004037;
+  --green: #038851;
+  --dark-green: #09452b;
   --orange: #ff6a2a;
   --cream: #fff3ee;
   --peach: #fff2eb;
@@ -114,7 +120,7 @@ app-contact {
 }
 
 .primary-button.dark {
-  background: #003f2e;
+  background: #09452b;
 }
 
 .primary-button svg {
@@ -218,7 +224,7 @@ app-contact {
 
 
 .hero-overlay {
-  background: rgba(7, 83, 50, 0.8);
+  background: rgba(56, 115, 85, 0.85);
 }
 
 .hero-content {

@@ -7,17 +7,17 @@
 }
 
 .academics-page {
-  --green: #00884f;
-  --deep-green: #003f2e;
-  --yellow: #ffd229;
+  --green: #038851;
+  --deep-green: #09452b;
+  --yellow: #f9ce32;
   --ink: #303030;
   --muted: #6d6d6d;
   --line: #d7eee4;
-  --green-link: #00884f;
+  --green-link: #038851;
   --text-dark: #1e1e1e;
   --text-mid: #6d6d6d;
   --white: #ffffff;
-  --green-dark: #003f2e;
+  --green-dark: #09452b;
   --content: min(100% - 40px, 1120px);
   background: #ffffff;
   color: var(--ink);
@@ -304,7 +304,7 @@ img {
 }
 
 .line.red { background-color: #e31b23; }
-.line.green { background-color: #00884f; }
+.line.green { background-color: #038851; }
 .line.teal { background-color: #00a4a6; }
 
 .program-grid h3 {

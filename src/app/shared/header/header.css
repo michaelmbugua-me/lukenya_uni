@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #008f4d;
+  background: #038851;
   color: #ffffff;
   padding: 0 clamp(16px, 2vw, 32px);
   min-height: 32px;
@@ -61,7 +61,7 @@
   display: inline-flex;
   align-items: center;
   gap: clamp(4px, 1.5vw, 8px);
-  color: #01884e;
+  color: #038851;
   font-weight: 800;
   font-size: clamp(12px, 2.5vw, 16px);
   min-width: 0;
@@ -138,7 +138,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #f9ce31;
+  background: #f9ce32;
   color: #141414;
   border-radius: 999px;
   height: 38px;
@@ -160,7 +160,7 @@
   display: none;
   background: none;
   border: none;
-  color: #01884e;
+  color: #038851;
   cursor: pointer;
   padding: 4px;
 }
@@ -230,11 +230,11 @@
 }
 
 .mobile-nav a:hover, .mobile-nav a.active {
-  color: #f9ce31;
+  color: #f9ce32;
 }
 
 .mobile-cta {
-  background: #f9ce31;
+  background: #f9ce32;
   color: #141414;
   padding: 16px 40px;
   border-radius: 999px;
