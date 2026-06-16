@@ -12,11 +12,12 @@ import { BusinessEconomicsComponent } from './academics/schools/business-economi
 import { AgricultureNaturalSciencesComponent } from './academics/schools/agriculture-natural-sciences/agriculture-natural-sciences';
 import { EducationSocialSciencesComponent } from './academics/schools/education-social-sciences/education-social-sciences';
 import { HealthScienceComponent } from './academics/schools/health-sciences/health-sciences';
-import {CampusLifeComponent} from "./campus-life/campus-life";
+import {OverviewComponent} from "./campus-life-module/overview/overview";
 import {GraduationComponent} from "./graduation/graduation";
 import {GraduationItemComponent} from "./graduation-item/graduation-item";
 import {ApplicationOverviewComponent} from "./application/application-overview/application-overview";
 import {ApplicationFormComponent} from "./application/application-form/application-form";
+import {CampusLifeComponent} from "./campus-life-module/campus-life/campus-life";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,11 +27,12 @@ export const routes: Routes = [
   { path: 'case-studies', component: CaseStudiesComponent },
   { path: 'board-of-trustees', component: BoardOfTrusteesComponent },
   { path: 'academics', component: AcademicsComponent },
-  { path: 'academics/schools/business-economics', component: BusinessEconomicsComponent },
-  { path: 'academics/schools/agriculture-natural-sciences', component: AgricultureNaturalSciencesComponent },
-  { path: 'academics/schools/education-social-sciences', component: EducationSocialSciencesComponent },
-  { path: 'campus-life', component: CampusLifeComponent },
-  { path: 'academics/schools/health-sciences', component: HealthScienceComponent },
+  { path: 'academics/overview/business-economics', component: BusinessEconomicsComponent },
+  { path: 'academics/overview/agriculture-natural-sciences', component: AgricultureNaturalSciencesComponent },
+  { path: 'academics/overview/education-social-sciences', component: EducationSocialSciencesComponent },
+  { path: 'campus-life-overview', component: OverviewComponent },
+  { path: 'campus-life-main', component: CampusLifeComponent },
+  { path: 'academics/overview/health-sciences', component: HealthScienceComponent },
   { path: 'graduation', component: GraduationComponent },
   { path: 'graduation-item', component: GraduationItemComponent },
   { path: 'chancellor', component: ChancellorComponent },
