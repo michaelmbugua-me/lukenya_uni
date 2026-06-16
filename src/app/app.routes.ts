@@ -18,6 +18,7 @@ import {GraduationItemComponent} from "./graduation-item/graduation-item";
 import {ApplicationOverviewComponent} from "./application/application-overview/application-overview";
 import {ApplicationFormComponent} from "./application/application-form/application-form";
 import {CampusLifeComponent} from "./campus-life-module/campus-life/campus-life";
+import {CultureWeekComponent} from "./campus-life-module/culture-week/culture-week";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +34,7 @@ export const routes: Routes = [
   { path: 'academics/schools/health-sciences', component: HealthScienceComponent },
   { path: 'campus-life-overview', component: OverviewComponent },
   { path: 'campus-life-main', component: CampusLifeComponent },
+  { path: 'campus-culture-week', component: CultureWeekComponent },
   { path: 'academics/overview/health-sciences', component: HealthScienceComponent },
   { path: 'graduation', component: GraduationComponent },
   { path: 'graduation-item', component: GraduationItemComponent },
