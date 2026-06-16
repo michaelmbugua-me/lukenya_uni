@@ -18,6 +18,7 @@
   font-family: "Plus Jakarta Sans", "Inter", "Source Sans 3", "Segoe UI", Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -41,9 +42,6 @@ img {
   margin: 0 40px;
   overflow: hidden;
   position: relative;
-}
-
-.commitment {
   border-radius: 14px;
 }
 
@@ -58,6 +56,8 @@ img {
   justify-content: flex-start;
   padding-left: 40px;
   margin-top: 36px;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline-section {
@@ -75,6 +75,7 @@ img {
   border-radius: 24px;
   overflow: hidden;
   height: 400px;
+  width: 100%;
 }
 
 .timeline-image img {
@@ -187,6 +188,14 @@ img {
   padding: 60px 58px;
 }
 
+@media (max-width: 1024px) {
+  .mission-vision-values {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    margin: 0 20px;
+  }
+}
+
 .value-card {
   background: var(--light-bg);
   border-radius: 12px;
@@ -205,7 +214,7 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -220,6 +229,12 @@ img {
   /* fade out bottom ~2 lines */
   -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
+}
+
+@media (max-width: 768px) {
+  .story-section p {
+    font-size: 20px;
+  }
 }
 
 .mission-card p,
@@ -397,6 +412,16 @@ img {
   text-align: start;
 }
 
+@media (max-width: 768px) {
+  .commitment {
+    height: auto;
+    padding: 60px 20px;
+    margin: 14px 20px 40px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .commitment img,
 .commitment-overlay {
   position: absolute;
@@ -418,6 +443,17 @@ img {
   font-weight: 500;
   line-height: 1.2;
   margin: 0 0 14px 40px;
+}
+
+@media (max-width: 768px) {
+  .commitment-content h2 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+  .commitment-actions {
+    justify-content: center;
+    padding-left: 0;
+  }
 }
 
 .commitment-content p {
@@ -447,6 +483,10 @@ img {
 
   .timeline-text-block:nth-child(3) {
     order: 3;
+  }
+
+  .timeline-image {
+    height: 300px;
   }
 }
 
