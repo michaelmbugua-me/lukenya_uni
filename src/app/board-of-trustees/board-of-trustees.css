@@ -180,14 +180,14 @@ img {
 .trustees-container {
   display: grid;
   gap: 42px 48px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   max-width: 960px;
   width: 100%;
 }
 
 .trustee-card {
   background: #f8f8f8;
-  border-radius: 5px;
+  border-radius: 14px;
   box-shadow: none;
   overflow: hidden;
 }
