@@ -56,7 +56,7 @@
         </nav>
 
         <div class="nav-actions">
-            <a class="nav-cta desktop-only" href="#">Apply Now</a>
+            <a class="nav-cta desktop-only" routerLink="/application-overview">Apply Now</a>
 
             <!-- Hamburger Button -->
             <button type="button" (click)="toggleMenu()" class="mobile-toggle" aria-label="Toggle menu">
@@ -90,6 +90,6 @@
             <a routerLink="/contact" (click)="isMenuOpen = false" routerLinkActive="active">Contact</a>
         </nav>
 
-        <a href="#" class="mobile-cta bg-brand-yellow" (click)="isMenuOpen = false">Apply Now</a>
+        <a routerLink="/application-overview" class="mobile-cta bg-brand-yellow" (click)="isMenuOpen = false">Apply Now</a>
     </div>
 </div>
