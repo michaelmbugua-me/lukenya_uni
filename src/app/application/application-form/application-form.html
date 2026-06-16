@@ -1,11 +1,19 @@
 <main class="case-page">
-
     <app-hero-section
-            imageAlt="Application showcase"
-            eyebrow="Admissions"
-            title="Apply to Lukenya University"
+            [showBottomButtons]="true"
+            [showNavigation]="false"
+            [showStats]="false"
+            [showScrollControl]="false"
+            primaryButtonLink="/application-overview"
+            primaryButtonText="Apply Now"
+            secondaryButtonLink="/academics"
+            secondaryButtonText="Explore Programs"
             description="Start your journey with us today by filling out the application form below."
-            buttonLink="#application-form">
+            imageAlt="Vice Chancellor"
+            imageUrl="/application/form.webp"
+            pillText="Students"
+            titlePrefix="How to"
+            titleHighlight="Apply">
     </app-hero-section>
 
     <section class="py-14">

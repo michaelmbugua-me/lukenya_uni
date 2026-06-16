@@ -31,7 +31,7 @@
       </div>
       <div class="grad-2025-image">
         <img
-          src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src="/graduation/one.webp"
           alt="Graduating students"
         />
         <div class="image-accent"></div>
@@ -39,14 +39,13 @@
     </div>
   </section>
 
+  <video #localPlayer [muted]="true" class="study-image" controls preload="metadata" width="100%">
+      <source src="/campus-life/pool-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
   <!-- Stats Section -->
   <section class="stats-section">
-    <div class="stats-photo">
-      <img
-        src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Graduates celebrating"
-      />
-    </div>
     <div class="stats-bar">
       <div class="container stats-inner">
         <div class="stat-item">
@@ -79,10 +78,9 @@
       </p>
 
       <div class="gallery-grid">
-        <!-- Featured item -->
         <div class="gallery-item gallery-featured">
           <img
-            src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="/graduation/two.jpg"
             alt="Class of 2025"
           />
           <div class="gallery-overlay">
@@ -95,50 +93,47 @@
           </div>
         </div>
 
-        <!-- Right column items -->
-        <div class="gallery-column-right">
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2024"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">02</span>
-                <span class="gallery-label">2024 GRADUATION</span>
-                <h3>Class Of 2024</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
+        <div class="gallery-item">
+          <img
+            src="/graduation/three.jpg"
+            alt="Class of 2024"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-year">02</span>
+              <span class="gallery-label">2024 GRADUATION</span>
+              <h3>Class Of 2024</h3>
+              <a href="#" class="gallery-link">View More &#8594;</a>
             </div>
           </div>
+        </div>
 
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2023"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">03</span>
-                <span class="gallery-label">2023 GRADUATION</span>
-                <h3>Class Of 2023</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
+        <div class="gallery-item">
+          <img
+            src="/graduation/four.jpg"
+            alt="Class of 2023"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-year">03</span>
+              <span class="gallery-label">2023 GRADUATION</span>
+              <h3>Class Of 2023</h3>
+              <a href="#" class="gallery-link">View More &#8594;</a>
             </div>
           </div>
+        </div>
 
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2022"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">04</span>
-                <span class="gallery-label">2022 GRADUATION</span>
-                <h3>Class Of 2022</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
+        <div class="gallery-item">
+          <img
+            src="/graduation/five.jpg"
+            alt="Class of 2022"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-year">04</span>
+              <span class="gallery-label">2022 GRADUATION</span>
+              <h3>Class Of 2022</h3>
+              <a href="#" class="gallery-link">View More &#8594;</a>
             </div>
           </div>
         </div>
@@ -150,28 +145,5 @@
     </div>
   </section>
 
-  <!-- Scholarship Programs -->
-  <section class="scholarship-section">
-    <div class="container scholarship-inner">
-      <div class="scholarship-left">
-        <h2>Scholarship<br/>Programs</h2>
-      </div>
-      <div class="scholarship-mid">
-        <p>
-          Lukenya University offers a variety of scholarships, grants, and work-study
-          opportunities to help students finance their education and achieve their
-          academic goals.
-        </p>
-      </div>
-      <div class="scholarship-right">
-        <a href="#" class="btn-dark">Financial Aid &#8594;</a>
-      </div>
-      <div class="scholarship-image">
-        <img
-          src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=400"
-          alt="Students"
-        />
-      </div>
-    </div>
-  </section>
+  <app-scholarship-section></app-scholarship-section>
 </main>
