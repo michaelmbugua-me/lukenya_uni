@@ -29,6 +29,23 @@ export class SchoolPageComponent {
   schoolChecked: Record<string, boolean> = {};
   search = '';
 
+  isDrawerOpen = false;
+  selectedMenu: string | null = null;
+
+  toggleDrawer() {
+    this.isDrawerOpen = !this.isDrawerOpen;
+    if (this.isDrawerOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      this.selectedMenu = null;
+    }
+  }
+
+  setSelectedMenu(menu: string | null) {
+    this.selectedMenu = menu;
+  }
+
   get filteredPostGrad() {
     return this.postGradPrograms.filter(p =>
       (this.search === '' || p.title.toLowerCase().includes(this.search.toLowerCase())) &&

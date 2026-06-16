@@ -19,8 +19,11 @@
   --color-lu-green: #0f5c2a;
   --color-lu-green-mid: #1d7a3e;
   --color-lu-green-light: #2a9a52;
+  --color-lu-green-dark: #0a4d22;
   --color-lu-yellow: #f5c518;
   --color-lu-yellow-dark: #d4a80e;
+  --color-lu-dark: #0f172a; /* Added for lukenya-dark equivalent */
+  --color-lu-gold: #f5c518; /* Added for gold equivalent */
 }
 
 @layer base {
