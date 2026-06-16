@@ -2,46 +2,94 @@
     <div class="contact-line"><span>☎</span><span>0722 370 485</span><span>✉</span><span>info&#64;lukenyauniversity.ac.ke</span></div>
     <nav aria-label="Utility navigation" class="utility-nav"><a href="#">Library</a><a href="#">Students</a><a href="#">Staff &amp; Faculty</a><a href="#">Quick Links</a></nav>
 </div>
-<div class="main-nav"><a aria-label="Lukenya University home" class="brand" routerLink="/"><span>LUKENYA</span><img
-        alt="" src="/home/lukenya_logo.svg"><span>UNIVERSITY</span></a>
-    <nav aria-label="Primary navigation" class="primary-nav"><a [routerLinkActiveOptions]="{exact: true}"
-                                                                class="nav-link"
-                                                                routerLink="/"
-                                                                routerLinkActive="active">Home</a>
-        <div class="nav-item has-dropdown"><a class="nav-link nav-link-with-icon" routerLink="/about"
-                                              routerLinkActive="active"><span>About</span><span aria-hidden="true"
-                                                                                                class="chevron"></span></a>
-        </div>
-        <div class="nav-item has-dropdown academics-dropdown"><a class="nav-link nav-link-with-icon"
-                                                                 routerLink="/academics"
-                                                                 routerLinkActive="active"><span>Academics</span><span
-                aria-hidden="true" class="chevron"></span></a>
-            <div aria-label="Academics submenu" class="dropdown-menu">
-                <a class="dropdown-link" routerLink="/academics/schools/agriculture-natural-sciences">School of Agriculture, Technical Studies and Natural Sciences</a>
-                <a class="dropdown-link" routerLink="/academics/schools/health-sciences">School of Health Sciences</a>
-                <a class="dropdown-link" routerLink="/academics/schools/business-economics">School of Business and Economics</a>
-                <a class="dropdown-link" routerLink="/academics/schools/education-social-sciences">School of Education &amp; Social Sciences</a>
-                <a class="dropdown-link" href="#">Short Courses</a>
-                <a class="dropdown-link" href="#">HELB Loan Applications</a>
+<div class="main-nav">
+    <div class="nav-container">
+        <a aria-label="Lukenya University home" class="brand" routerLink="/">
+            <span>LUKENYA</span>
+            <img alt="Lukenya Logo" src="/home/lukenya_logo.svg">
+            <span>UNIVERSITY</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Primary navigation" class="primary-nav desktop-only">
+            <a [routerLinkActiveOptions]="{exact: true}" class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+            <div class="nav-item has-dropdown">
+                <a class="nav-link nav-link-with-icon" routerLink="/about" routerLinkActive="active">
+                    <span>About</span>
+                    <span aria-hidden="true" class="chevron"></span>
+                </a>
             </div>
+            <div class="nav-item has-dropdown academics-dropdown">
+                <a class="nav-link nav-link-with-icon" routerLink="/academics" routerLinkActive="active">
+                    <span>Academics</span>
+                    <span aria-hidden="true" class="chevron"></span>
+                </a>
+                <div aria-label="Academics submenu" class="dropdown-menu">
+                    <a class="dropdown-link" routerLink="/academics/schools/agriculture-natural-sciences">School of Agriculture, Technical Studies and Natural Sciences</a>
+                    <a class="dropdown-link" routerLink="/academics/schools/health-sciences">School of Health Sciences</a>
+                    <a class="dropdown-link" routerLink="/academics/schools/business-economics">School of Business and Economics</a>
+                    <a class="dropdown-link" routerLink="/academics/schools/education-social-sciences">School of Education &amp; Social Sciences</a>
+                    <a class="dropdown-link" href="#">Short Courses</a>
+                    <a class="dropdown-link" href="#">HELB Loan Applications</a>
+                </div>
+            </div>
+
+            <div class="nav-item has-dropdown academics-dropdown">
+                <a class="nav-link nav-link-with-icon" routerLink="/campus-life" routerLinkActive="active">
+                    <span>Student</span>
+                    <span aria-hidden="true" class="chevron"></span>
+                </a>
+                <div aria-label="Student submenu" class="dropdown-menu">
+                    <a class="dropdown-link" routerLink="/academics">Students Overview</a>
+                    <a class="dropdown-link highlighted" routerLink="/campus-life">Campus Life</a>
+                    <a class="dropdown-link" href="#">Virtual campus</a>
+                    <a class="dropdown-link" routerLink="/campus-life">Lukenya Cultural Week Festival</a>
+                    <a class="dropdown-link" href="#">Student Portal</a>
+                    <a class="dropdown-link" href="#">Download Student Handbook</a>
+                    <a class="dropdown-link" href="#">KUCCPS</a>
+                </div>
+            </div>
+
+            <a class="nav-link" routerLink="/graduation">Graduations</a>
+            <a class="nav-link" href="#">Research</a>
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a class="nav-cta desktop-only" href="#">Apply Now</a>
+
+            <!-- Hamburger Button -->
+            <button type="button" (click)="toggleMenu()" class="mobile-toggle" aria-label="Toggle menu">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8h16M4 12h16M4 16h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div [class.hidden]="!isMenuOpen" class="mobile-menu-overlay animate-fadeIn bg-movara-dark">
+    <button (click)="toggleMenu()" class="close-menu" aria-label="Close menu">
+        <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+
+    <div class="mobile-menu-content">
+        <div class="mobile-logo">
+            <img src="/home/lukenya_logo.svg" alt="Lukenya University" class="h-16 w-auto">
         </div>
 
-        <div class="nav-item has-dropdown academics-dropdown"><a class="nav-link nav-link-with-icon"
-                                                                 routerLink="/campus-life"
-                                                                 routerLinkActive="active"><span>Student</span><span
-                aria-hidden="true" class="chevron"></span></a>
-            <div aria-label="Student submenu" class="dropdown-menu">
-                <a class="dropdown-link" routerLink="/academics">Students Overview</a>
-                <a class="dropdown-link highlighted" routerLink="/campus-life">Campus Life</a>
-                <a class="dropdown-link" href="#">Virtual campus</a>
-                <a class="dropdown-link" routerLink="/campus-life">Lukenya Cultural Week Festival</a>
-                <a class="dropdown-link" href="#">Student Portal</a>
-                <a class="dropdown-link" href="#">Download
-                Student Handbook</a><a class="dropdown-link" href="#">KUCCPS</a>
-            </div>
-        </div>
+        <nav class="mobile-nav">
+            <a routerLink="/" (click)="isMenuOpen = false" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            <a routerLink="/about" (click)="isMenuOpen = false" routerLinkActive="active">About</a>
+            <a routerLink="/academics" (click)="isMenuOpen = false" routerLinkActive="active">Academics</a>
+            <a routerLink="/campus-life" (click)="isMenuOpen = false" routerLinkActive="active">Student Life</a>
+            <a routerLink="/graduation" (click)="isMenuOpen = false" routerLinkActive="active">Graduations</a>
+            <a routerLink="/contact" (click)="isMenuOpen = false" routerLinkActive="active">Contact</a>
+        </nav>
 
-        <a class="nav-link" routerLink="/graduation">Graduations</a>
-        <a class="nav-link" href="#">Research</a>
-        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></nav>
-    <a class="nav-cta" href="#">Apply Now</a></div>
+        <a href="#" class="mobile-cta bg-brand-yellow" (click)="isMenuOpen = false">Apply Now</a>
+    </div>
+</div>
