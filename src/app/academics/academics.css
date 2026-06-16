@@ -7,7 +7,7 @@
 }
 
 .academics-page {
-  --green: #038851;
+  --green: #01884E;
   --deep-green: #09452b;
   --yellow: #f9ce32;
   --ink: #303030;
@@ -287,7 +287,7 @@ img {
 }
 
 .line.red { background-color: #e31b23; }
-.line.green { background-color: #038851; }
+.line.green { background-color: #01884E; }
 .line.teal { background-color: #00a4a6; }
 
 .program-grid h3 {

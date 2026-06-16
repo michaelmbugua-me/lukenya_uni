@@ -17,7 +17,7 @@
 }
 
 .message-content h2 {
-  color: #038851;
+  color: #01884E;
   font-size: clamp(46px, 4.1vw, 72px);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -34,7 +34,7 @@
 }
 
 :host ::ng-deep .message-paragraph .emphasis {
-  color: #038851;
+  color: #01884E;
   font-style: italic;
   font-weight: 600;
 }

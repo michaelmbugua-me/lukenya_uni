@@ -7,13 +7,13 @@
 }
 
 .academics-page {
-  --green: #038851;
+  --green: #01884E;
   --deep-green: #09452b;
   --yellow: #f9ce32;
   --ink: #303030;
   --muted: #6d6d6d;
   --line: #d7eee4;
-  --green-link: #038851;
+  --green-link: #01884E;
   --text-dark: #1e1e1e;
   --text-mid: #6d6d6d;
   --white: #ffffff;
@@ -328,7 +328,7 @@ img {
 }
 
 .line.red { background-color: #e31b23; }
-.line.green { background-color: #038851; }
+.line.green { background-color: #01884E; }
 .line.teal { background-color: #00a4a6; }
 
 .program-grid h3 {

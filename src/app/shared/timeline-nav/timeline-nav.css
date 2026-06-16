@@ -24,11 +24,11 @@
 }
 
 .timeline-nav-item:hover {
-  color: #038851;
+  color: #01884E;
 }
 
 .timeline-nav-item.active {
-  color: #038851;
+  color: #01884E;
   font-weight: 700;
 }
 

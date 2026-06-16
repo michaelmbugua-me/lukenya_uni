@@ -11,12 +11,12 @@
   --font-sans: 'Plus Jakarta Sans', 'Source Sans 3';
   --font-serif: 'Playfair Display', serif;
 
-  --color-brand-green: #038851;
+  --color-brand-green: #01884E;
   --color-brand-yellow: #f9ce32;
   --color-text-dark: #1e1e1e;
 
   /* LU Colors - Primary & Main Accent */
-  --color-lu-green: #038851;
+  --color-lu-green: #01884E;
   --color-lu-yellow: #f9ce32;
   --color-lu-yellow-hover: #ffcb05;
   
@@ -48,7 +48,7 @@
    Shared CSS Variables
    =========================== */
 :root {
-  --green: #038851;
+  --green: #01884E;
   --dark-green: #09452b;
   --orange: #ff6a2a;
   --cream: #fff3ee;

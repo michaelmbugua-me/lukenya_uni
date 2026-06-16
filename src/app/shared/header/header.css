@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #038851;
+  background: #01884E;
   color: #ffffff;
   padding: 0 clamp(16px, 2vw, 32px);
   min-height: 32px;
@@ -61,7 +61,7 @@
   display: inline-flex;
   align-items: center;
   gap: clamp(4px, 1.5vw, 8px);
-  color: #038851;
+  color: #01884E;
   font-weight: 800;
   font-size: clamp(12px, 2.5vw, 16px);
   min-width: 0;
@@ -222,7 +222,7 @@
   display: none;
   background: none;
   border: none;
-  color: #038851;
+  color: #01884E;
   cursor: pointer;
   padding: 4px;
 }
