@@ -63,6 +63,171 @@ export const AGRICULTURE_PROGRAMS: { postGrad: Program[], undergrad: Program[] }
   ]
 };
 
+export const HEALTH_SCIENCE_PROGRAMS: { postGrad: Program[], undergrad: Program[] } = {
+  postGrad: [
+    {
+      title: 'PhD General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Master's degree in Agriculture or related field from a recognized institution.",
+      duration: '3 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Crop Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Animal Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199563/pexels-photo-8199563.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ],
+  undergrad: [
+    {
+      title: 'Bachelor of Science in Dryland Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199561/pexels-photo-8199561.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science in Ecology and Environment',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects.',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212325/pexels-photo-5212325.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ]
+};
+
+export const EDUCATION_SOCIAL_SCIENCES_PROGRAMS: { postGrad: Program[], undergrad: Program[] } = {
+  postGrad: [
+    {
+      title: 'PhD General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Master's degree in Agriculture or related field from a recognized institution.",
+      duration: '3 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Crop Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Animal Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199563/pexels-photo-8199563.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ],
+  undergrad: [
+    {
+      title: 'Bachelor of Science in Dryland Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199561/pexels-photo-8199561.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science in Ecology and Environment',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects.',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212325/pexels-photo-5212325.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ]
+};
+
+export const BUSINESS_ECONOMICS_PROGRAMS: { postGrad: Program[], undergrad: Program[] } = {
+  postGrad: [
+    {
+      title: 'PhD General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Master's degree in Agriculture or related field from a recognized institution.",
+      duration: '3 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Crop Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Master of Science in Agriculture Specializations in Animal Production',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: "A Bachelor's degree in Agriculture or related field with at least Second-Class Honors (Upper Division) from...",
+      duration: '2 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199563/pexels-photo-8199563.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ],
+  undergrad: [
+    {
+      title: 'Bachelor of Science in Dryland Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science General Agriculture',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects OR a Diploma in Agriculture...',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/8199561/pexels-photo-8199561.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+      title: 'Bachelor of Science in Ecology and Environment',
+      school: 'School of Agriculture, Technical Studies and Natural Sciences',
+      description: 'KCSE Mean Grade C+ (plus) or its equivalent and at least C+ in relevant subjects.',
+      duration: '4 Years',
+      mode: 'On Campus',
+      image: 'https://images.pexels.com/photos/5212325/pexels-photo-5212325.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+  ]
+};
+
 export const COMMON_DEAN_MESSAGE: DeanMessage = {
   name: 'Dr. Virginia Mwanzia',
   title: 'Dean',
@@ -75,6 +240,16 @@ export const COMMON_DEAN_MESSAGE: DeanMessage = {
   image: 'https://images.pexels.com/photos/7713533/pexels-photo-7713533.jpeg?auto=compress&cs=tinysrgb&w=600',
 };
 
+export const HEALTH_SCIENCE_HERO: HeroData = {
+  description: 'The School of Business and Economics prepares students for the personnel needs of the changing business environment and for participation in the global economy.',
+  imageAlt: 'Business students discussing classwork',
+  imageUrl: '/home/sob.webp',
+  pillText: 'School of Business & Economics',
+  pillIconUrl: '/home/academy-cap.svg',
+  titlePrefix: 'Business & ',
+  titleHighlight: 'Economics',
+  titleSuffix: ''
+};
 export const BUSINESS_ECONOMICS_HERO: HeroData = {
   description: 'The School of Business and Economics prepares students for the personnel needs of the changing business environment and for participation in the global economy.',
   imageAlt: 'Business students discussing classwork',
