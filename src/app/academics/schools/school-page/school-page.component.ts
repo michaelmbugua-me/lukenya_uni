@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeroSectionComponent } from "../../../shared/hero-section/hero-section";
+import { SideDrawerComponent } from '../../../shared/side-drawer/side-drawer';
 import { DeanMessage, HeroData, Program } from '../school.model';
 
 @Component({
@@ -9,7 +10,7 @@ import { DeanMessage, HeroData, Program } from '../school.model';
   standalone: true,
   templateUrl: './school-page.component.html',
   styleUrl: './school-page.component.css',
-  imports: [CommonModule, FormsModule, HeroSectionComponent]
+  imports: [CommonModule, FormsModule, HeroSectionComponent, SideDrawerComponent]
 })
 export class SchoolPageComponent {
   @Input() heroData!: HeroData;
@@ -34,10 +35,7 @@ export class SchoolPageComponent {
 
   toggleDrawer() {
     this.isDrawerOpen = !this.isDrawerOpen;
-    if (this.isDrawerOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
+    if (!this.isDrawerOpen) {
       this.selectedMenu = null;
     }
   }
