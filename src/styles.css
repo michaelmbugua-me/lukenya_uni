@@ -15,10 +15,12 @@
   --color-brand-yellow: #f9ce31;
   --color-text-dark: #1e1e1e;
 
-  --color-lu-green: #01884e;
-  --color-lu-green-mid: #006D5B;
-  --color-lu-yellow: #f9ce31;
-  --color-lu-yellow-dark: #e5bc2c;
+  /* LU Colors */
+  --color-lu-green: #0f5c2a;
+  --color-lu-green-mid: #1d7a3e;
+  --color-lu-green-light: #2a9a52;
+  --color-lu-yellow: #f5c518;
+  --color-lu-yellow-dark: #d4a80e;
 }
 
 @layer base {
