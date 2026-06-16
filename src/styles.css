@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Sans+3:wght@400;600&display=swap');
-/* @import "tailwindcss"; */
+@import "tailwindcss";
 @source "./**/*.html";
 @source "./**/*.ts";
 
@@ -16,12 +16,12 @@
   --color-text-dark: #1e1e1e;
 }
 
-body {
-  @apply font-sans m-0 p-0 text-[#1e1e1e];
-  font-family: 'Plus Jakarta Sans', serif;
-}
-
 @layer base {
+  body {
+    @apply font-sans m-0 p-0 text-[#1e1e1e];
+    font-family: 'Plus Jakarta Sans', serif;
+  }
+
   html {
     @apply scroll-smooth;
   }
