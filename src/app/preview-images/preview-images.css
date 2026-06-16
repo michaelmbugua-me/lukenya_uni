@@ -1,0 +1,10 @@
+/* Preview Images Styles */
+h2 {
+  margin-top: 2rem;
+  color: #333;
+}
+img {
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+

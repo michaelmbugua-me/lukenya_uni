@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SchoolPageComponent } from '../school-page/school-page.component';
-import { AGRICULTURE_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSAGE } from '../school-data';
+import { BUSINESS_ECONOMICS_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSAGE } from '../school-data';
 
 @Component({
   selector: 'app-business-economics',
@@ -20,6 +20,6 @@ import { AGRICULTURE_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSAGE } fr
 export class BusinessEconomicsComponent {
   heroData = BUSINESS_ECONOMICS_HERO;
   deanMessage = COMMON_DEAN_MESSAGE;
-  postGradPrograms = AGRICULTURE_PROGRAMS.postGrad;
-  undergradPrograms = AGRICULTURE_PROGRAMS.undergrad;
+  postGradPrograms = BUSINESS_ECONOMICS_PROGRAMS.postGrad;
+  undergradPrograms = BUSINESS_ECONOMICS_PROGRAMS.undergrad;
 }

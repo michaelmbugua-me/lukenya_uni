@@ -11,8 +11,10 @@ import { ViceChancellorComponent } from './vice-chancellor/vice-chancellor';
 import { BusinessEconomicsComponent } from './academics/schools/business-economics/business-economics';
 import { AgricultureNaturalSciencesComponent } from './academics/schools/agriculture-natural-sciences/agriculture-natural-sciences';
 import { EducationSocialSciencesComponent } from './academics/schools/education-social-sciences/education-social-sciences';
+import { HealthScienceComponent } from './academics/schools/health-sciences/health-sciences';
 import {CampusLifeComponent} from "./campus-life/campus-life";
 import {GraduationComponent} from "./graduation/graduation";
+import {GraduationItemComponent} from "./graduation-item/graduation-item";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +28,9 @@ export const routes: Routes = [
   { path: 'academics/schools/agriculture-natural-sciences', component: AgricultureNaturalSciencesComponent },
   { path: 'academics/schools/education-social-sciences', component: EducationSocialSciencesComponent },
   { path: 'campus-life', component: CampusLifeComponent },
+  { path: 'academics/schools/health-sciences', component: HealthScienceComponent },
   { path: 'graduation', component: GraduationComponent },
+  { path: 'graduation-item', component: GraduationItemComponent },
   { path: 'chancellor', component: ChancellorComponent },
   { path: 'pro-chancellor', component: ProChancellorComponent },
   { path: 'vice-chancellor', component: ViceChancellorComponent }

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { SchoolPageComponent } from '../school-page/school-page.component';
-import { EDUCATION_SOCIAL_SCIENCES_PROGRAMS, COMMON_DEAN_MESSAGE, EDUCATION_HERO } from '../school-data';
+import { HEALTH_SCIENCE_PROGRAMS, HEALTH_SCIENCE_HERO, COMMON_DEAN_MESSAGE } from '../school-data';
 
 @Component({
-  selector: 'app-education-social-sciences',
+  selector: 'app-health-science',
   standalone: true,
   template: `
     <app-school-page
@@ -17,9 +17,10 @@ import { EDUCATION_SOCIAL_SCIENCES_PROGRAMS, COMMON_DEAN_MESSAGE, EDUCATION_HERO
     SchoolPageComponent
   ]
 })
-export class EducationSocialSciencesComponent {
-  heroData = EDUCATION_HERO;
+export class HealthScienceComponent {
+  heroData = HEALTH_SCIENCE_HERO;
   deanMessage = COMMON_DEAN_MESSAGE;
-  postGradPrograms = EDUCATION_SOCIAL_SCIENCES_PROGRAMS.postGrad;
-  undergradPrograms = EDUCATION_SOCIAL_SCIENCES_PROGRAMS.undergrad;
+  postGradPrograms = HEALTH_SCIENCE_PROGRAMS.postGrad;
+  undergradPrograms = HEALTH_SCIENCE_PROGRAMS.undergrad;
 }
+
