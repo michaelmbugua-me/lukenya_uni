@@ -11,22 +11,37 @@
     secondaryButtonText="Download Graduation Booklets">
   </app-hero-section>
 
+    <!-- Our Graduation Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Graduation</h2>
+            <p class="gallery-subtitle">Class of 2025</p>
+            <p class="section-desc">
+                The class of 2025 at Lukenya University was honored to be awarded by the Chief Guest H.E Former President of the Republic of Kenya Uhuru Kenyatta.
+                The event was an outstanding moment as both parents and students celebrated as they marked their final mark in academic excellence.
+            </p>
+
+            <div class="gallery-grid">
+                <video #localPlayer [muted]="true" class="study-image" controls preload="metadata" width="100%">
+                    <source src="/home/smiler.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+        </div>
+    </section>
+
   <!-- Graduation 2025 Section -->
   <section class="grad-2025">
     <div class="container grad-2025-inner">
       <div class="grad-2025-text">
-        <h2>Graduation 2025</h2>
+        <h2>Message from the Vice Chancellor,
+            Dr. Sylvia Mueni Kasanga</h2>
         <p>
-          With over <strong>860 Students</strong> graduating! Lukenya University is happy to walk the journey
-          with the students and as they go out to face the workforce they may then be successful.
+            On behalf of board of trustee, governing council, university senate, I officially welcome you to the 7th graduation ceremony. As we gather to celebrate the remarkable achievements of our graduands, I want to
+            extend my heartfelt congratulations to each one of you. Today marks not only a culmination of years of hard work but also the beginning of exciting new journeys.As I reflect on where Lukenya University has come from, i am humbled of Gods goodness. it has been a period filled with inspiration and growth. I have been privileged to witness firsthand the dedication and resilience of our students and faculty, and the beauty of our university environment that nurtures innovation and collaboration.I would like to take a moment to recognize our founders, whose vision and commitment to higher education have laid the foundation for this institution. Their passion for nurturing talent and advancing knowledge is the bedrock upon which Lukenya University stands. It is our duty to honour their legacy by continuing to strive for excellence in all we do.
         </p>
-        <ul>
-          <li>Call for nominations for Honors Cause</li>
-          <li>Notice for Graduation Application</li>
-          <li>Citation for award of honorary-doctorate-degree H.E Sandya Khatna</li>
-          <li>Citation for award of honorary-doctorate-degree Mr. Patrick Makau</li>
-          <li>7th Edition Graduation Newsletter</li>
-        </ul>
         <a href="#" class="link-green">Download 2025 Graduation</a>
       </div>
       <div class="grad-2025-image">
@@ -39,139 +54,6 @@
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="stats-photo">
-      <img
-        src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Graduates celebrating"
-      />
-    </div>
-    <div class="stats-bar">
-      <div class="container stats-inner">
-        <div class="stat-item">
-          <span class="stat-num">13</span>
-          <span class="stat-label">PROGRAMS</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">10<sup>TH</sup></span>
-          <span class="stat-label">GRADUATIONS</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">24</span>
-          <span class="stat-label">HONORARY DEGREES</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">60+</span>
-          <span class="stat-label">GRADUANDS</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <app-scholarship-section></app-scholarship-section>
 
-  <!-- Our Graduation Gallery -->
-  <section class="gallery-section">
-    <div class="container">
-      <h2 class="section-title">Our Graduation</h2>
-      <p class="section-desc">
-        Lukenya University has held annual graduations over the years to hand the
-        students the powers to read and write from an acclaimed university in Kenya.
-      </p>
-
-      <div class="gallery-grid">
-        <!-- Featured item -->
-        <div class="gallery-item gallery-featured">
-          <img
-            src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Class of 2025"
-          />
-          <div class="gallery-overlay">
-            <div class="gallery-info">
-              <span class="gallery-year">01</span>
-              <span class="gallery-label">2025 GRADUATION</span>
-              <h3>Class of 2025</h3>
-              <a href="#" class="gallery-link">View More &#8594;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right column items -->
-        <div class="gallery-column-right">
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2024"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">02</span>
-                <span class="gallery-label">2024 GRADUATION</span>
-                <h3>Class Of 2024</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2023"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">03</span>
-                <span class="gallery-label">2023 GRADUATION</span>
-                <h3>Class Of 2023</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Class of 2022"
-            />
-            <div class="gallery-overlay">
-              <div class="gallery-info">
-                <span class="gallery-year">04</span>
-                <span class="gallery-label">2022 GRADUATION</span>
-                <h3>Class Of 2022</h3>
-                <a href="#" class="gallery-link">View More &#8594;</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-cta">
-        <a href="#" class="btn-yellow">Explore More Graduations</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Scholarship Programs -->
-  <section class="scholarship-section">
-    <div class="container scholarship-inner">
-      <div class="scholarship-left">
-        <h2>Scholarship<br/>Programs</h2>
-      </div>
-      <div class="scholarship-mid">
-        <p>
-          Lukenya University offers a variety of scholarships, grants, and work-study
-          opportunities to help students finance their education and achieve their
-          academic goals.
-        </p>
-      </div>
-      <div class="scholarship-right">
-        <a href="#" class="btn-dark">Financial Aid &#8594;</a>
-      </div>
-      <div class="scholarship-image">
-        <img
-          src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=400"
-          alt="Students"
-        />
-      </div>
-    </div>
-  </section>
 </main>

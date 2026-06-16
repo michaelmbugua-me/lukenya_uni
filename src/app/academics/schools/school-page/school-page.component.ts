@@ -17,6 +17,8 @@ export class SchoolPageComponent {
   @Input() deanMessage!: DeanMessage;
   @Input() postGradPrograms: Program[] = [];
   @Input() undergradPrograms: Program[] = [];
+  @Input() diplomaPrograms: Program[] = [];
+  @Input() certificatePrograms: Program[] = [];
 
   programFilters = ['Short Courses', 'Certificate', 'Diploma', 'Undergraduate', 'Post Graduate'];
   schoolFilters = [
@@ -44,17 +46,35 @@ export class SchoolPageComponent {
     this.selectedMenu = menu;
   }
 
+  private activeOrNone(key: string) {
+    return Object.values(this.programChecked).every(v => !v) || this.programChecked[key];
+  }
+
   get filteredPostGrad() {
     return this.postGradPrograms.filter(p =>
       (this.search === '' || p.title.toLowerCase().includes(this.search.toLowerCase())) &&
-      (Object.values(this.programChecked).every(v => !v) || this.programChecked['Post Graduate'])
+      this.activeOrNone('Post Graduate')
     );
   }
 
   get filteredUndergrad() {
     return this.undergradPrograms.filter(p =>
       (this.search === '' || p.title.toLowerCase().includes(this.search.toLowerCase())) &&
-      (Object.values(this.programChecked).every(v => !v) || this.programChecked['Undergraduate'])
+      this.activeOrNone('Undergraduate')
+    );
+  }
+
+  get filteredDiploma() {
+    return this.diplomaPrograms.filter(p =>
+      (this.search === '' || p.title.toLowerCase().includes(this.search.toLowerCase())) &&
+      this.activeOrNone('Diploma')
+    );
+  }
+
+  get filteredCertificate() {
+    return this.certificatePrograms.filter(p =>
+      (this.search === '' || p.title.toLowerCase().includes(this.search.toLowerCase())) &&
+      this.activeOrNone('Certificate')
     );
   }
 

@@ -95,11 +95,10 @@
 }
 
 .dean-photo {
-  width: 100%;
-  height: 288px;
+  /*height: 501px;*/
   object-fit: cover;
   object-position: top;
-  border-radius: 2px;
+  border-radius: 34px;
 }
 
 /* ── Browse heading ─────────────────────────────────── */

@@ -50,8 +50,10 @@
         subtitle="Welcome to Lukenya University"
         description="We pride ourselves on offering the best quality education, providing the skills necessary to tackle the challenges of the 21st century."
         [deanName]="deanMessage.name"
+        [deanTitle]="deanMessage.title"
         [deanSubtitle]="deanMessage.subtitle"
         [deanImage]="deanMessage.image"
+        [salutation]="deanMessage.salutation"
         [paragraphs]="deanMessage.paragraphs"
         (close)="toggleDrawer()"
         (downloadBrochure)="setSelectedMenu('brochure')"
@@ -142,6 +144,32 @@
               <p class="program-group-sub">Here are some of the Undergraduate programs we offer</p>
               <div class="cards-grid">
                 @for (p of filteredUndergrad; track p.title) {
+                  <ng-container *ngTemplateOutlet="programCard; context: { $implicit: p }"></ng-container>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- Diploma Programs -->
+          @if (filteredDiploma.length > 0) {
+            <div class="program-group">
+              <h2 class="program-group-title">Diploma Programs</h2>
+              <p class="program-group-sub">Here are some of the Diploma programs we offer</p>
+              <div class="cards-grid">
+                @for (p of filteredDiploma; track p.title) {
+                  <ng-container *ngTemplateOutlet="programCard; context: { $implicit: p }"></ng-container>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- Certificate Programs -->
+          @if (filteredCertificate.length > 0) {
+            <div class="program-group">
+              <h2 class="program-group-title">Certificate Programs</h2>
+              <p class="program-group-sub">Here are some of the Certificate programs we offer</p>
+              <div class="cards-grid">
+                @for (p of filteredCertificate; track p.title) {
                   <ng-container *ngTemplateOutlet="programCard; context: { $implicit: p }"></ng-container>
                 }
               </div>

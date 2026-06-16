@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SchoolPageComponent } from '../school-page/school-page.component';
-import { BUSINESS_ECONOMICS_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSAGE } from '../school-data';
+import { BUSINESS_ECONOMICS_PROGRAMS, BUSINESS_ECONOMICS_HERO, BUSINESS_DEAN_MESSAGE } from '../school-data';
 
 @Component({
   selector: 'app-business-economics',
@@ -10,7 +10,9 @@ import { BUSINESS_ECONOMICS_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSA
       [heroData]="heroData"
       [deanMessage]="deanMessage"
       [postGradPrograms]="postGradPrograms"
-      [undergradPrograms]="undergradPrograms">
+      [undergradPrograms]="undergradPrograms"
+      [diplomaPrograms]="diplomaPrograms"
+      [certificatePrograms]="certificatePrograms">
     </app-school-page>
   `,
   imports: [
@@ -19,7 +21,9 @@ import { BUSINESS_ECONOMICS_PROGRAMS, BUSINESS_ECONOMICS_HERO, COMMON_DEAN_MESSA
 })
 export class BusinessEconomicsComponent {
   heroData = BUSINESS_ECONOMICS_HERO;
-  deanMessage = COMMON_DEAN_MESSAGE;
+  deanMessage = BUSINESS_DEAN_MESSAGE;
   postGradPrograms = BUSINESS_ECONOMICS_PROGRAMS.postGrad;
   undergradPrograms = BUSINESS_ECONOMICS_PROGRAMS.undergrad;
+  diplomaPrograms = BUSINESS_ECONOMICS_PROGRAMS.diploma;
+  certificatePrograms = BUSINESS_ECONOMICS_PROGRAMS.certificate;
 }

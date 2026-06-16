@@ -17,7 +17,9 @@ export class SideDrawerComponent implements OnChanges {
   @Input() deanSubtitle = '';
   @Input() deanImage = '';
   @Input() paragraphs: string[] = [];
-  
+  @Input() salutation = '';
+  @Input() deanTitle = '';
+
   @Output() close = new EventEmitter<void>();
   @Output() downloadBrochure = new EventEmitter<void>();
   @Output() viewFees = new EventEmitter<void>();

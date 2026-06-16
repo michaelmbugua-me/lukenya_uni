@@ -275,6 +275,7 @@ img {
 }
 
 .program-grid small img {
+  filter: brightness(0);
   height: 18px;
   width: 18px;
 }
@@ -330,7 +331,7 @@ img {
 
 .life-grid article {
   border-radius: 20px;
-  min-height:clamp(320px,31vw,420px);
+  max-height:clamp(320px,31vw,420px);
   overflow: hidden;
   position: relative;
 }
@@ -551,8 +552,8 @@ img {
 .button.yellow-square {
   background: var(--yellow);
   border-radius:0;
-  justify-content:flex-start;
-  min-height:72px;
+  justify-content: center;
+  min-width: 192px !important;
 }
 
 @media (max-width: 1040px) {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SchoolPageComponent } from '../school-page/school-page.component';
-import { AGRICULTURE_HERO, AGRICULTURE_PROGRAMS, COMMON_DEAN_MESSAGE } from '../school-data';
+import { AGRICULTURE_HERO, AGRICULTURE_PROGRAMS, AGRICULTURE_DEAN_MESSAGE } from '../school-data';
 
 @Component({
   selector: 'app-agriculture-natural-sciences',
@@ -10,7 +10,9 @@ import { AGRICULTURE_HERO, AGRICULTURE_PROGRAMS, COMMON_DEAN_MESSAGE } from '../
       [heroData]="heroData"
       [deanMessage]="deanMessage"
       [postGradPrograms]="postGradPrograms"
-      [undergradPrograms]="undergradPrograms">
+      [undergradPrograms]="undergradPrograms"
+      [diplomaPrograms]="diplomaPrograms"
+      [certificatePrograms]="certificatePrograms">
     </app-school-page>
   `,
   imports: [
@@ -19,7 +21,9 @@ import { AGRICULTURE_HERO, AGRICULTURE_PROGRAMS, COMMON_DEAN_MESSAGE } from '../
 })
 export class AgricultureNaturalSciencesComponent {
   heroData = AGRICULTURE_HERO;
-  deanMessage = COMMON_DEAN_MESSAGE;
+  deanMessage = AGRICULTURE_DEAN_MESSAGE;
   postGradPrograms = AGRICULTURE_PROGRAMS.postGrad;
   undergradPrograms = AGRICULTURE_PROGRAMS.undergrad;
+  diplomaPrograms = AGRICULTURE_PROGRAMS.diploma;
+  certificatePrograms = AGRICULTURE_PROGRAMS.certificate;
 }
