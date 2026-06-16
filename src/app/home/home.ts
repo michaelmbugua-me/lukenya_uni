@@ -1,15 +1,17 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import { HeroSectionComponent } from '../shared/hero-section/hero-section';
+import {ScholarshipSectionComponent} from "../shared/scholarship/scholarship-section";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.html',
-  imports: [
-    RouterLink,
-    HeroSectionComponent
-  ],
+    imports: [
+        RouterLink,
+        HeroSectionComponent,
+        ScholarshipSectionComponent
+    ],
   styleUrl: './home.css'
 })
 export class HomeComponent {

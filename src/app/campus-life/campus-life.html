@@ -40,7 +40,7 @@
         </div>
         <div class="campus-life-right">
             <img
-                    src="https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/campus-life/pool-player.webp"
                     alt="Students playing pool"
                     class="campus-pool-img"
             />
@@ -48,11 +48,11 @@
     </div>
 
     <!-- ── Wide image strip ─────────────────────────── -->
-    <div class="wide-strip">
-        <img
-                src="https://images.pexels.com/photos/3764016/pexels-photo-3764016.jpeg?auto=compress&cs=tinysrgb&w=1260"
-                alt="Students socialising"
-        />
+    <div class="study-video-wrap">
+        <video #localPlayer [muted]="true" class="study-video" controls preload="metadata">
+            <source src="/campus-life/pool-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <!-- ── Stats bar ────────────────────────────────── -->
@@ -101,16 +101,5 @@
             </div>
         </div>
     </div>
-
-    <section class="scholarship">
-        <img alt="" aria-hidden="true" class="scholarship-figure" src="/home/seated_girls.png">
-        <div class="scholarship-inner">
-            <h2>Scholarship Programs</h2>
-            <p>Lukenya University offers a variety of scholarships, grants, and work-study opportunities to help
-                students finance their education and achieve their academic goals.</p>
-            <a class="button dark-square" routerLink="/contact">Financial Aid <span>→</span></a>
-        </div>
-    </section>
-
-
+    <app-scholarship-section></app-scholarship-section>
 </main>

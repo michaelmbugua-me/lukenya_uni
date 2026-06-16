@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {HeroSectionComponent} from "../shared/hero-section/hero-section";
 import {RouterLink} from "@angular/router";
+import {ScholarshipSectionComponent} from "../shared/scholarship/scholarship-section";
 
 @Component({
     selector: 'app-campus-life',
@@ -8,7 +9,8 @@ import {RouterLink} from "@angular/router";
     templateUrl: './campus-life.html',
     imports: [
         HeroSectionComponent,
-        RouterLink
+        RouterLink,
+        ScholarshipSectionComponent
     ],
     styleUrl: './campus-life.css'
 })
