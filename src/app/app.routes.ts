@@ -15,6 +15,8 @@ import { HealthScienceComponent } from './academics/schools/health-sciences/heal
 import {CampusLifeComponent} from "./campus-life/campus-life";
 import {GraduationComponent} from "./graduation/graduation";
 import {GraduationItemComponent} from "./graduation-item/graduation-item";
+import {ApplicationOverviewComponent} from "./application/application-overview/application-overview";
+import {ApplicationFormComponent} from "./application/application-form/application-form";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,5 +35,7 @@ export const routes: Routes = [
   { path: 'graduation-item', component: GraduationItemComponent },
   { path: 'chancellor', component: ChancellorComponent },
   { path: 'pro-chancellor', component: ProChancellorComponent },
-  { path: 'vice-chancellor', component: ViceChancellorComponent }
+  { path: 'vice-chancellor', component: ViceChancellorComponent },
+  { path: 'application-overview', component: ApplicationOverviewComponent },
+  { path: 'application-form', component: ApplicationFormComponent }
 ];

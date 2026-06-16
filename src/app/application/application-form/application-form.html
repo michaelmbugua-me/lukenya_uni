@@ -1,0 +1,477 @@
+<main class="case-page">
+
+    <app-hero-section
+            imageAlt="Application showcase"
+            eyebrow="Admissions"
+            title="Apply to Lukenya University"
+            description="Start your journey with us today by filling out the application form below."
+            buttonLink="#application-form">
+    </app-hero-section>
+
+    <section class="py-14">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-sm leading-relaxed text-gray-700 mb-4">
+                We in the Admissions Office and Lukenya University as a whole believe that you have made the right
+                choice and are very pleased to have you with us.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-600">
+                Your education takes place in the campus environment, as well as the classrooms. We are committed to
+                provide services that benefit your health, safety, and welfare. We are equally committed to
+                enhancing the opportunities for learning through various activities, recreational programs and
+                personal relationships, which make up the student life.
+            </p>
+        </div>
+    </section>
+
+    <section class="pb-20" id="application-form">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-[4rem] md:text-[5.5rem] font-extrabold text-lu-green text-center leading-none mb-12 tracking-tight">
+                APPLICATION</h2>
+
+            <form class="space-y-12">
+
+                <!-- ─── PERSONAL DETAILS ─── -->
+                <div>
+                    <h3 class="text-lu-green-mid font-bold text-base mb-1">Personal Details</h3>
+                    <p class="text-gray-400 text-xs mb-5">Kindly provide the following details to proceed</p>
+
+                    <!-- Row 1: Office, First, Middle -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Office
+                                of the Registrar: Academic Affairs</label>
+                            <input class="w-full border border-gray-200 bg-gray-50 rounded px-3 py-2.5 text-xs text-gray-500 cursor-not-allowed" readonly type="text"
+                                   value="OFFICE OF THE REGISTRAR: ACADEMIC AFFAIRS"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">First
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="John"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Middle
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Doe"
+                                   type="text"/>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Last, DOB, Gender -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Last
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Doe"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Date
+                                of Birth</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="05/14/1999"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Gender</label>
+                            <div class="flex items-center gap-5 pt-2">
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="gender" type="radio" value="female"/> Female
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="gender" type="radio" value="male"/> Male
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="gender" type="radio" value="other"/> Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-100"></div>
+
+                <!-- ─── IDENTIFICATION DETAILS ─── -->
+                <div>
+                    <h3 class="text-lu-green-mid font-bold text-base mb-1">Identification Details</h3>
+                    <p class="text-gray-400 text-xs mb-5">Kindly provide the following details to proceed</p>
+
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Identity
+                                Type</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Passport Or National ID</option>
+                                <option>Passport</option>
+                                <option>National ID</option>
+                                <option>Birth Certificate</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">National
+                                Identity Card Number *</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="ID Number"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Ethnicity</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>African</option>
+                                <option>Asian</option>
+                                <option>European</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Mobile
+                                Number</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="+2547123456789"
+                                   type="tel"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Email
+                                Address</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="name@gmail.com"
+                                   type="email"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Nationality</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Kenyan"
+                                   type="text"/>
+                        </div>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div>
+                        <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-2">Attach
+                            National ID Copy / Birth Certificate / Passport</label>
+                        <label class="upload-area flex flex-col items-center justify-center rounded-lg bg-gray-50 py-10 cursor-pointer transition-colors">
+                            <svg class="w-8 h-8 text-lu-green-mid mb-3" fill="none" stroke="currentColor" stroke-width="1.5"
+                                 viewBox="0 0 24 24">
+                                <path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <p class="text-xs font-semibold text-gray-600">Click or drag to upload</p>
+                            <p class="text-[0.65rem] text-gray-400 mt-1">PDF, JPG or PNG (Max 5MB)</p>
+                            <input class="hidden" type="file"/>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-100"></div>
+
+                <!-- ─── RESIDENTIAL DETAILS ─── -->
+                <div>
+                    <h3 class="text-lu-green-mid font-bold text-base mb-1">Residential Details</h3>
+                    <p class="text-gray-400 text-xs mb-5">Kindly provide the following details to proceed</p>
+
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">County</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Machakos</option>
+                                <option>Nairobi</option>
+                                <option>Mombasa</option>
+                                <option>Kisumu</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Sub
+                                County</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Makueni</option>
+                                <option>Machakos</option>
+                                <option>Kitui</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Constituency</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Kilonzi</option>
+                                <option>Mbooni</option>
+                                <option>Makueni</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Marital
+                                Status</label>
+                            <div class="flex flex-wrap gap-4 pt-2">
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="marital" type="radio" value="single"/> Single
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="marital" type="radio" value="married"/> Married
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="marital" type="radio" value="divorced"/> Divorced
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="marital" type="radio" value="other"/> Other
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Do You
+                                Have a Disability?</label>
+                            <div class="flex gap-5 pt-2">
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="disability" type="radio" value="yes"/> Yes
+                                </label>
+                                <label class="flex items-center gap-1.5 text-xs text-gray-600 cursor-pointer">
+                                    <input class="accent-lu-green-mid" name="disability" type="radio" value="no"/> No
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">If Yes
+                                Indicate Form of Disability</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Blind"
+                                   type="text"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-100"></div>
+
+                <!-- ─── NEXT OF KIN ─── -->
+                <div>
+                    <h3 class="text-lu-green-mid font-bold text-base mb-1">Next of Kin</h3>
+                    <p class="text-gray-400 text-xs mb-5">Kindly provide the following details to proceed</p>
+
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Relationship</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Father</option>
+                                <option>Mother</option>
+                                <option>Guardian</option>
+                                <option>Sibling</option>
+                                <option>Spouse</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">First
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="John"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Middle
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Doe"
+                                   type="text"/>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Last
+                                Name</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Doe"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Mobile
+                                Number</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="+2547123456789"
+                                   type="tel"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-100"></div>
+
+                <!-- ─── QUALIFICATION ─── -->
+                <div>
+                    <h3 class="text-lu-green-mid font-bold text-base mb-1">Qualification for programmes is as summarised</h3>
+                    <p class="text-gray-400 text-xs mb-5">Kindly provide the following details to proceed</p>
+
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">This
+                                Application Is For Enrollment For</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Postgraduate</option>
+                                <option>Undergraduate</option>
+                                <option>Diploma</option>
+                                <option>Certificate</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Name of
+                                Degree / Diploma / Certificate Applied</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Bachelor Of Commerce"
+                                   type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Subject
+                                Combination / Specialization</label>
+                            <input class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs focus:outline-none focus:border-lu-green-mid transition-colors" placeholder="Business &amp; Economics"
+                                   type="text"/>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Preferred
+                                Intake</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>January</option>
+                                <option>May</option>
+                                <option>September</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Mode
+                                of Study</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Full Time</option>
+                                <option>Part Time</option>
+                                <option>Online</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-1.5">How
+                                Did You Know About Lukenya University?</label>
+                            <select class="w-full border border-gray-200 rounded px-3 py-2.5 text-xs text-gray-700 focus:outline-none focus:border-lu-green-mid transition-colors bg-white">
+                                <option>Friend Or Family Member</option>
+                                <option>Social Media</option>
+                                <option>Website</option>
+                                <option>Event / Exhibition</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- File Uploads Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-2">Application
+                                Fee Payment</label>
+                            <label class="upload-area flex flex-col items-center justify-center rounded-lg bg-gray-50 py-9 cursor-pointer transition-colors">
+                                <svg class="w-7 h-7 text-lu-green-mid mb-2" fill="none" stroke="currentColor"
+                                     stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="text-xs font-semibold text-gray-600">Click or drag to upload</p>
+                                <p class="text-[0.65rem] text-gray-400 mt-0.5">PDF, JPG or PNG (Max 5MB)</p>
+                                <input class="hidden" type="file"/>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="block text-[0.65rem] font-semibold text-gray-500 uppercase tracking-wider mb-2">Attach
+                                KCSE Result Slip or Certificate</label>
+                            <label class="upload-area flex flex-col items-center justify-center rounded-lg bg-gray-50 py-9 cursor-pointer transition-colors">
+                                <svg class="w-7 h-7 text-lu-green-mid mb-2" fill="none" stroke="currentColor"
+                                     stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="text-xs font-semibold text-gray-600">Click or drag to upload</p>
+                                <p class="text-[0.65rem] text-gray-400 mt-0.5">PDF, JPG or PNG (Max 5MB)</p>
+                                <input class="hidden" type="file"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-100"></div>
+
+                <!-- ─── DECLARATION ─── -->
+                <div>
+                    <h3 class="text-gray-900 font-bold text-sm uppercase tracking-wider mb-4">Declaration By The
+                        Applicant</h3>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 mb-6 text-xs text-gray-600 leading-relaxed">
+                        When admitted I DO ACCEPT the offer and I PROMISE TO ABIDE by the Rules and Regulations
+                        governing the Organization, Conduct and Discipline of the Students of the Lukenya
+                        University. I also undertake to obey the instructions of the University Authorities at every
+                        level of administration.
+                    </div>
+
+                    <p class="text-xs font-semibold text-gray-700 mb-3">DO YOU UNDERSTAND AND AGREE TO THE TERMS LISTED
+                        ABOVE?</p>
+
+                    <label class="flex items-center gap-2.5 cursor-pointer mb-6">
+                        <input class="w-4 h-4 accent-lu-green-mid rounded" type="checkbox"/>
+                        <span class="text-xs text-gray-600">Yes, I understand and agree to the terms listed above.</span>
+                    </label>
+
+                    <p class="text-[0.7rem] text-gray-400 mb-10">
+                        NOTE: Applicants must ensure that all required documents are submitted. Incomplete applications
+                        will not be processed.
+                    </p>
+
+                    <!-- Submit -->
+                    <div class="relative flex justify-center pb-4">
+                        <button class="inline-flex items-center gap-3 bg-lu-yellow hover:bg-lu-yellow-dark text-gray-900 font-bold text-sm px-10 py-3.5 rounded-full transition-colors shadow-md hover:shadow-lg"
+                                type="submit">
+                            Submit
+                            <span class="flex items-center justify-center w-7 h-7 bg-lu-green rounded-full">
+                                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5"
+                                     viewBox="0 0 24 24">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <!-- Decorative image -->
+                        <div class="hidden lg:block absolute right-0 bottom-0 w-40 h-44 overflow-hidden rounded-tl-2xl">
+                            <img
+                                    alt=""
+                                    class="w-full h-full object-cover object-top"
+                                    src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PART 3: SCHOLARSHIPS + FAQ                                     -->
+    <!-- ============================================================ -->
+
+    <section class="bg-lu-yellow py-12 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[220px_1fr_auto] gap-8 items-center">
+            <div>
+                <h2 class="text-2xl font-extrabold text-gray-900 leading-tight">Scholarship<br/>Programs</h2>
+            </div>
+            <div>
+                <p class="text-sm text-gray-700 leading-relaxed max-w-sm">
+                    Lukenya University offers a variety of scholarships, grants, and work-study
+                    opportunities to help students finance their education and achieve their
+                    academic goals.
+                </p>
+            </div>
+            <div>
+                <a class="inline-flex items-center gap-2 bg-lu-green text-white text-sm font-semibold px-5 py-3 rounded hover:bg-lu-green-mid transition-colors whitespace-nowrap"
+                   href="#">
+                    Financial Aid &#8594;
+                </a>
+            </div>
+        </div>
+    </section>
+</main>

@@ -14,16 +14,22 @@
   --color-brand-green: #01884e;
   --color-brand-yellow: #f9ce31;
   --color-text-dark: #1e1e1e;
+
+  --color-lu-green: #01884e;
+  --color-lu-green-mid: #006D5B;
+  --color-lu-yellow: #f9ce31;
+  --color-lu-yellow-dark: #e5bc2c;
 }
 
 @layer base {
   body {
-    @apply font-sans m-0 p-0 text-[#1e1e1e];
+    @apply font-sans m-0 p-0 text-text-dark;
     font-family: 'Plus Jakarta Sans', serif;
   }
 
   html {
     @apply scroll-smooth;
+    @apply font-sans m-0 p-0 text-text-dark;
   }
 }
 
