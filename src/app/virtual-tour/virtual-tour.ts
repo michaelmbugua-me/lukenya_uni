@@ -36,7 +36,7 @@ export class VirtualTourComponent implements AfterViewInit, OnDestroy {
       id: 'entrance',
       title: 'Main Entrance',
       subtitle: 'Welcome to Lukenya University',
-      image: '/equirectangular/one.jpg',
+      image: '/equirectangular/one.webp',
       hotspots: [
         { yaw: 60, pitch: -5, text: 'Go to Library', sceneId: 'library' },
         { yaw: 180, pitch: -5, text: 'Go to Campus Grounds', sceneId: 'grounds' },
@@ -47,7 +47,7 @@ export class VirtualTourComponent implements AfterViewInit, OnDestroy {
       id: 'library',
       title: 'Library & Study Area',
       subtitle: 'Knowledge at your fingertips',
-      image: '/equirectangular/two.jpg',
+      image: '/equirectangular/two.webp',
       hotspots: [
         { yaw: -60, pitch: -5, text: 'Go to Main Entrance', sceneId: 'entrance' },
         { yaw: 60, pitch: -5, text: 'Go to Campus Grounds', sceneId: 'grounds' },
@@ -58,7 +58,7 @@ export class VirtualTourComponent implements AfterViewInit, OnDestroy {
       id: 'grounds',
       title: 'Campus Grounds',
       subtitle: 'Explore our beautiful campus',
-      image: '/equirectangular/three.jpg',
+      image: '/equirectangular/three.webp',
       hotspots: [
         { yaw: -60, pitch: -5, text: 'Go to Main Entrance', sceneId: 'entrance' },
         { yaw: 60, pitch: -5, text: 'Go to Library', sceneId: 'library' },
@@ -69,7 +69,7 @@ export class VirtualTourComponent implements AfterViewInit, OnDestroy {
       id: 'recreation',
       title: 'Recreation Centre',
       subtitle: 'Sports & student life',
-      image: '/equirectangular/four.jpg',
+      image: '/equirectangular/four.webp',
       hotspots: [
         { yaw: -60, pitch: -5, text: 'Go to Main Entrance', sceneId: 'entrance' },
         { yaw: 60, pitch: -5, text: 'Go to Library', sceneId: 'library' },
