@@ -19,6 +19,7 @@ import {ApplicationOverviewComponent} from "./application/application-overview/a
 import {ApplicationFormComponent} from "./application/application-form/application-form";
 import {CampusLifeComponent} from "./campus-life-module/campus-life/campus-life";
 import {CultureWeekComponent} from "./campus-life-module/culture-week/culture-week";
+import {VirtualTourComponent} from "./virtual-tour/virtual-tour";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,5 +43,6 @@ export const routes: Routes = [
   { path: 'pro-chancellor', component: ProChancellorComponent },
   { path: 'vice-chancellor', component: ViceChancellorComponent },
   { path: 'application-overview', component: ApplicationOverviewComponent },
-  { path: 'application-form', component: ApplicationFormComponent }
+  { path: 'application-form', component: ApplicationFormComponent },
+  { path: 'virtual-tour', component: VirtualTourComponent }
 ];

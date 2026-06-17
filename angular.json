@@ -28,6 +28,7 @@
             ],
             "styles": [
               "node_modules/leaflet/dist/leaflet.css",
+              "node_modules/pannellum/build/pannellum.css",
               "src/styles.css"
             ]
           },
