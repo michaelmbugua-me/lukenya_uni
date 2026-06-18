@@ -2,14 +2,13 @@ import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StatsBandComponent } from '../shared/stats-band/stats-band';
 import { HeroSectionComponent } from '../shared/hero-section/hero-section';
-import { CtaFaqComponent } from '../shared/cta-faq/cta-faq';
 import * as L from 'leaflet';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, StatsBandComponent, HeroSectionComponent, CtaFaqComponent],
+  imports: [CommonModule, StatsBandComponent, HeroSectionComponent],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })
@@ -22,8 +21,8 @@ export class ContactComponent implements AfterViewInit {
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ -1.265, 36.80 ],
-      zoom: 28, // Corrected zoom level
+      center: [ -2.5591955, 38.3224267 ],
+      zoom: 12, // Corrected zoom level
       scrollWheelZoom: false // Disable scroll wheel zoom initially
     });
 
@@ -45,7 +44,7 @@ export class ContactComponent implements AfterViewInit {
 
     tiles.addTo(this.map);
 
-    const marker = L.marker([-1.265, 36.80]);
+    const marker = L.marker([-2.5591955, 38.3224267]);
     marker.setIcon(L.icon({
       iconUrl: '/contact/marker-icon.png',
       iconRetinaUrl: '/contact/marker-icon-2x.png',
@@ -57,6 +56,6 @@ export class ContactComponent implements AfterViewInit {
       shadowSize: [41, 41]
     }));
     marker.addTo(this.map);
-    marker.bindPopup("<b>Lukenya University</b><br>MJ1 Business Park, Westlands.").openPopup();
+    marker.bindPopup("<b>Lukenya University</b><br>Mtito Andei, Makueni County").openPopup();
   }
 }

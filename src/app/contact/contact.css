@@ -159,6 +159,14 @@
   background: #ffffff;
   height: 700px;
   overflow: hidden;
+  padding: 0 clamp(40px, 14.4vw, 276px) 128px;
+}
+
+.map-section #map {
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 .map-section img {

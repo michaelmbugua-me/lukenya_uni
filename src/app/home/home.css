@@ -511,13 +511,15 @@ img {
   gap: 22px;
   grid-template-columns: minmax(120px, 1fr) minmax(180px, 2fr) minmax(120px, 1fr);
   margin-bottom: 34px;
-  overflow: hidden;
+  overflow: visible;
   padding: 0 clamp(18px, 2.4vw, 52px);
   width: min(100% - 72px, 1560px);
 }
 .next-step img {
-  height:100%;
-  object-fit:cover;
+  align-self: start;
+  height: 130%;
+  margin-top: -15%;
+  object-fit: cover;
 }
 
 .next-step h2 {
@@ -609,7 +611,14 @@ img {
 
   .next-step {
     gap: 22px;
+    overflow: hidden;
     padding: 26px 22px 30px;
+  }
+
+  .next-step img {
+    height: auto;
+    margin-top: 0;
+    max-height: 320px;
   }
 
   .next-step h2 {
