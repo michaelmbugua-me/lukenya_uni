@@ -1,56 +1,63 @@
-<!-- Overlay Background -->
-<div *ngIf="isOpen" 
-     (click)="onClose()"
-     class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm animate-fadeIn">
+<!-- Backdrop -->
+<div (click)="onClose()"
+  class="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 pointer-events-none opacity-0"
+  [class.opacity-100]="isOpen"
+  [class.pointer-events-auto]="isOpen">
 </div>
 
-<!-- Side Drawer -->
-<div [class.translate-x-full]="!isOpen"
-     [class.translate-x-0]="isOpen"
-     class="fixed top-0 right-0 z-[101] h-full w-full lg:w-[80%] bg-white shadow-2xl transition-transform duration-500 ease-in-out overflow-y-auto lg:overflow-hidden flex flex-col lg:flex-row">
+<!-- Panel -->
+<aside role="dialog" aria-modal="true" aria-labelledby="drawerTitle"
+  class="fixed top-0 right-0 h-full w-full sm:w-1/2 bg-[#018850] z-50
+         shadow-2xl overflow-y-auto transition-transform duration-300 ease-out"
+  [class.translate-x-full]="!isOpen"
+  [class.translate-x-0]="isOpen">
 
-  <!-- Right content section (Drawer) -->
-  <div class="bg-lu-green text-white w-full lg:w-3/3 p-6 lg:p-16 flex flex-col justify-between relative">
-    <!-- Close button for desktop -->
-    <button (click)="onClose()" class="hidden lg:flex absolute top-8 right-8 text-white/50 hover:text-lu-yellow transition-all p-2 hover:bg-white/10 rounded-full">
-      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-    </button>
+  <!-- Close button -->
+  <button (click)="onClose()" aria-label="Close drawer"
+    class="absolute top-8 left-6 sm:left-8 text-white/90 hover:text-white transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+    </svg>
+  </button>
 
-    <!-- Message header -->
-    <div class="max-w-3xl">
-      <div class="text-lu-yellow text-sm font-bold mb-4 uppercase tracking-[0.3em]">
-        {{ subtitle }}
-      </div>
-      <h2 class="text-3xl lg:text-5xl font-extrabold mb-4 leading-tight">
-        Message from the {{ deanTitle || 'Dean' }},
-        <br />
-        {{ deanName }}
-      </h2>
+  <div class="px-8 sm:px-12 pt-24 pb-12">
+    <div class="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
 
-      <!-- Welcome message -->
-      <div class="space-y-6 text-base lg:text-lg leading-relaxed text-white/90 font-medium overflow-y-auto max-h-[50vh] lg:max-h-none pr-4 custom-scrollbar">
-        @if (salutation) {
-          <p class="italic">{{ salutation }}</p>
-        }
-        @for (para of paragraphs; track $index) {
-          <p>{{ para }}</p>
-        }
-        <p class="font-bold text-lu-yellow">
-          Warm Regards
+      <!-- Text column -->
+      <div>
+        <h2 id="drawerTitle" class="text-3xl sm:text-4xl font-bold text-white leading-tight max-w-[260px]">
+          Dean of Students' Office
+        </h2>
+
+        <p class="mt-5 text-lg sm:text-xl font-bold text-[#FFD241] max-w-sm">
+          A Hub of Innovation and Excellence!
+        </p>
+
+        <p class="mt-5 text-sm text-white/90 leading-relaxed max-w-sm">
+          The Dean of students' office works to ensure students welfare in the University is
+          catered for. The office works with other related offices to ensure students'
+          well-being is attended to. The offices that work closely with this office include;
+          the Guidance and Counselling office, Sports, games and clubs office, Chaplaincy
+          office, Accommodation office as well as the welfare and career offices. The office
+          can be reached physically anytime while on campus or in case of emergencies. The
+          official e-mail address of the office is
+          <a href="mailto:dos@lukenyauniversity.ac.ke" class="underline hover:text-[#FFD241]">
+            dos&#64;lukenyauniversity.ac.ke
+          </a>.
         </p>
       </div>
-    </div>
 
-    <!-- Dean profile section -->
-    <div class="mt-12 flex flex-col lg:flex-row gap-6 items-center lg:items-end">
-      <!-- Dean's image -->
-      <div class="w-28 h-36 lg:w-40 lg:h-52 bg-white/10 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
-        <img [src]="deanImage" [alt]="deanName" class="w-full h-full object-cover object-top" />
+      <!-- Image column -->
+      <div class="relative w-64 sm:w-80 mx-auto sm:mx-0 shrink-0">
+        <div class="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-[#FFD241]"></div>
+        <img
+          [src]="deanImage || 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80'"
+          [alt]="deanName || 'Dean of Students'"
+          class="relative w-full h-80 sm:h-96 object-cover rounded-2xl shadow-lg" />
       </div>
-      <div class="text-center lg:text-left pb-2">
-        <h3 class="text-2xl lg:text-3xl font-extrabold">{{ deanName }}</h3>
-        <p class="text-lu-yellow text-sm lg:text-base mt-2 font-bold tracking-wide">{{ deanSubtitle }}</p>
-      </div>
+
     </div>
   </div>
-</div>
+</aside>
