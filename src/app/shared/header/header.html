@@ -86,13 +86,13 @@
             <a routerLink="/about" (click)="isMenuOpen = false" routerLinkActive="active">About</a>
 
             <div class="mobile-nav-item">
-                <button (click)="toggleSection('academics')" class="mobile-nav-link">
+                <button (click)="toggleSection('academics-module')" class="mobile-nav-link">
                     <span>Academics</span>
-                    <svg [class.rotate-180]="expandedSection === 'academics'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg [class.rotate-180]="expandedSection === 'academics-module'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
-                <div [class.max-h-0]="expandedSection !== 'academics'" class="mobile-subnav overflow-hidden transition-all duration-300">
+                <div [class.max-h-0]="expandedSection !== 'academics-module'" class="mobile-subnav overflow-hidden transition-all duration-300">
                     <a routerLink="/academics/schools/agriculture-natural-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Agriculture, Technical Studies and Natural Sciences</a>
                     <a routerLink="/academics/schools/health-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Health Sciences</a>
                     <a routerLink="/academics/schools/business-economics" (click)="isMenuOpen = false" routerLinkActive="active">School of Business and Economics</a>
