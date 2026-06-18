@@ -130,6 +130,12 @@
   padding: 40px 0;
 }
 
+.button.yellow {
+  background: var(--yellow);
+  color: #1b1b1b;
+  margin: 16px 0;
+}
+
 .stats-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -324,6 +330,29 @@
   transform: translateY(-1px);
 }
 
+/* ===== NOTICES BAR ===== */
+.notices-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.button.green-outline {
+  background: transparent;
+  border: 2px solid var(--green-mid);
+  color: var(--green-mid);
+  font-size: 0.8rem;
+  white-space: normal;
+  text-align: center;
+}
+
+.button.green-outline:hover {
+  background: var(--green-mid);
+  color: #ffffff;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 960px) {
   .grad-2025-inner {
@@ -356,5 +385,101 @@
 @media (max-width: 680px) {
   .gallery-column-right {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .grad-2025 {
+    padding: 48px 0;
+  }
+
+  .grad-2025-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .grad-2025-text p {
+    font-size: 0.8rem;
+  }
+
+  .grad-2025-image img {
+    height: 220px;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .gallery-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .section-desc {
+    font-size: 0.8rem;
+    margin-bottom: 24px;
+  }
+
+  .gallery-featured {
+    height: 260px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .notices-wrapper {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+
+  .notices-wrapper .button.green-outline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grad-2025 {
+    padding: 32px 0;
+  }
+
+  .grad-2025-inner {
+    gap: 24px;
+  }
+
+  .grad-2025-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .grad-2025-image img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .gallery-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .gallery-featured {
+    height: 200px;
+  }
+
+  .gallery-column-right {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-column-right .gallery-item {
+    height: 200px;
+  }
+
+  .stats-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .image-accent {
+    display: none;
   }
 }
