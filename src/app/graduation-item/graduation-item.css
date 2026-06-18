@@ -41,7 +41,7 @@
 
 .grad-2025-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 64px;
   align-items: center;
 }
@@ -91,7 +91,7 @@
 }
 
 .grad-2025-image img {
-  border-radius: 4px;
+  border-radius: 34px;
   height: 420px;
   object-fit: cover;
   width: 100%;
