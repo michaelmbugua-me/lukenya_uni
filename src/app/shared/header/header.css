@@ -319,6 +319,29 @@
   color: #f9ce32;
 }
 
+.chevron-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chevron-btn svg {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chevron-btn.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.chevron-btn.active svg {
+  transform: rotate(180deg);
+}
+
 .mobile-subnav {
   display: flex;
   flex-direction: column;
@@ -328,12 +351,16 @@
 }
 
 .mobile-subnav a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.85);
   transition: color 0.2s;
+  max-width: 320px;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 16px;
 }
 
 .mobile-subnav a:hover,

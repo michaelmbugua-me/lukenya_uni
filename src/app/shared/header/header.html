@@ -88,9 +88,11 @@
             <div class="mobile-nav-item">
                 <button (click)="toggleSection('academics-module')" class="mobile-nav-link">
                     <span>Academics</span>
-                    <svg [class.rotate-180]="expandedSection === 'academics-module'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <span class="chevron-btn" [class.active]="expandedSection === 'academics-module'">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
                 </button>
                 <div [class.max-h-0]="expandedSection !== 'academics-module'" class="mobile-subnav overflow-hidden transition-all duration-300">
                     <a routerLink="/academics/schools/agriculture-natural-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Agriculture, Technical Studies and Natural Sciences</a>
@@ -105,9 +107,11 @@
             <div class="mobile-nav-item">
                 <button (click)="toggleSection('student')" class="mobile-nav-link">
                     <span>Student Life</span>
-                    <svg [class.rotate-180]="expandedSection === 'student'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <span class="chevron-btn" [class.active]="expandedSection === 'student'">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
                 </button>
                 <div [class.max-h-0]="expandedSection !== 'student'" class="mobile-subnav overflow-hidden transition-all duration-300">
                     <a routerLink="/campus-life-overview" (click)="isMenuOpen = false" routerLinkActive="active">Students Overview</a>
