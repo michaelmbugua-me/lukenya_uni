@@ -69,7 +69,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div [class.hidden]="!isMenuOpen" class="mobile-menu-overlay animate-fadeIn bg-movara-dark">
+<div [class.hidden]="!isMenuOpen" class="mobile-menu-overlay animate-fadeIn">
     <button (click)="toggleMenu()" class="close-menu" aria-label="Close menu">
         <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -84,12 +84,46 @@
         <nav class="mobile-nav">
             <a routerLink="/" (click)="isMenuOpen = false" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
             <a routerLink="/about" (click)="isMenuOpen = false" routerLinkActive="active">About</a>
-            <a routerLink="/academics" (click)="isMenuOpen = false" routerLinkActive="active">Academics</a>
-            <a routerLink="/campus-life-overview" (click)="isMenuOpen = false" routerLinkActive="active">Student Life</a>
+
+            <div class="mobile-nav-item">
+                <button (click)="toggleSection('academics')" class="mobile-nav-link">
+                    <span>Academics</span>
+                    <svg [class.rotate-180]="expandedSection === 'academics'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div [class.max-h-0]="expandedSection !== 'academics'" class="mobile-subnav overflow-hidden transition-all duration-300">
+                    <a routerLink="/academics/schools/agriculture-natural-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Agriculture, Technical Studies and Natural Sciences</a>
+                    <a routerLink="/academics/schools/health-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Health Sciences</a>
+                    <a routerLink="/academics/schools/business-economics" (click)="isMenuOpen = false" routerLinkActive="active">School of Business and Economics</a>
+                    <a routerLink="/academics/schools/education-social-sciences" (click)="isMenuOpen = false" routerLinkActive="active">School of Education &amp; Social Sciences</a>
+                    <a href="#" (click)="isMenuOpen = false">Short Courses</a>
+                    <a href="#" (click)="isMenuOpen = false">HELB Loan Applications</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-item">
+                <button (click)="toggleSection('student')" class="mobile-nav-link">
+                    <span>Student Life</span>
+                    <svg [class.rotate-180]="expandedSection === 'student'" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div [class.max-h-0]="expandedSection !== 'student'" class="mobile-subnav overflow-hidden transition-all duration-300">
+                    <a routerLink="/campus-life-overview" (click)="isMenuOpen = false" routerLinkActive="active">Students Overview</a>
+                    <a routerLink="/campus-life-main" (click)="isMenuOpen = false" routerLinkActive="active">Campus Life</a>
+                    <a routerLink="/virtual-tour" (click)="isMenuOpen = false">Virtual campus</a>
+                    <a routerLink="/campus-culture-week" (click)="isMenuOpen = false" routerLinkActive="active">Lukenya Cultural Week Festival</a>
+                    <a href="#" (click)="isMenuOpen = false">Student Portal</a>
+                    <a href="#" (click)="isMenuOpen = false">Download Student Handbook</a>
+                    <a href="#" (click)="isMenuOpen = false">KUCCPS</a>
+                </div>
+            </div>
+
             <a routerLink="/graduation" (click)="isMenuOpen = false" routerLinkActive="active">Graduations</a>
             <a routerLink="/contact" (click)="isMenuOpen = false" routerLinkActive="active">Contact</a>
         </nav>
 
-        <a routerLink="/application-overview" class="mobile-cta bg-brand-yellow" (click)="isMenuOpen = false">Apply Now</a>
+        <a routerLink="/application-overview" class="mobile-cta" (click)="isMenuOpen = false">Apply Now</a>
     </div>
 </div>

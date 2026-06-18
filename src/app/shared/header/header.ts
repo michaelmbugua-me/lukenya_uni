@@ -11,8 +11,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  expandedSection: string | null = null;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    this.expandedSection = null;
+  }
+
+  toggleSection(section: string) {
+    this.expandedSection = this.expandedSection === section ? null : section;
   }
 }
