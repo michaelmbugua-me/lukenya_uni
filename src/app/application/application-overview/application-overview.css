@@ -1,4 +1,6 @@
 /* Application Overview Component Styles */
 :host {
   display: block;
+  --content: min(100% - 40px, 1120px);
+  --yellow: #f9ce32;
 }

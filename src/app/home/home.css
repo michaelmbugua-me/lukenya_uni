@@ -92,7 +92,7 @@ img {
 .campus-life,
 .news,
 .next-step {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   width: var(--content);
 }
 
