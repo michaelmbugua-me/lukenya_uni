@@ -3,6 +3,11 @@
    (Shared: variables, page container, buttons, pill, section-heading → styles.css)
    =========================== */
 
+:host {
+  --content: min(100% - 40px, 1120px);
+  --yellow: #f9ce32;
+}
+
 .secondary-link {
   align-items: center;
   color: #fff;
