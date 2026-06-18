@@ -83,10 +83,11 @@
   width: 28px;
 }
 
-.socials svg {
-  fill: currentColor;
+.social-icon {
   height: 22px;
   width: 22px;
+  filter: brightness(0) saturate(100%) invert(100%);
+  display: block;
 }
 
 .footer-contact {
