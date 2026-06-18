@@ -547,7 +547,7 @@ export const AGRICULTURE_DEAN_MESSAGE: DeanMessage = {
     'I am delighted to welcome you to the School of Agriculture, Technical Studies and Natural Sciences at Lukenya University, where we are dedicated to fostering excellence in agricultural education, research, and innovation. Nestled in the heart of Makueni County, our university stands as a beacon of learning and sustainable development in the region.',
     'At Lukenya University, we pride ourselves on offering a robust curriculum that equips our students with the knowledge and skills necessary to tackle the challenges of a rapidly evolving agricultural landscape. Whether you are pursuing studies in crop science, animal science, forage production, livestock management, environment and ecology, or short courses, our programs are designed to empower you with practical insights and hands-on experience.',
   ],
-  image: '/academics-module/agric.jpg',
+  image: '/academics/agric.jpg',
 };
 
 export const HEALTH_SCIENCE_DEAN_MESSAGE: DeanMessage = {
@@ -559,7 +559,7 @@ export const HEALTH_SCIENCE_DEAN_MESSAGE: DeanMessage = {
     'Welcome to the School of Health Sciences at Lukenya University. Our school is committed to producing competent, compassionate healthcare professionals who will serve their communities with distinction. We offer a comprehensive range of programs from certificate to doctoral level, all designed to meet the evolving needs of the healthcare sector.',
     'Our faculty comprises experienced practitioners and researchers who bring real-world expertise into the classroom. We emphasize hands-on clinical training, community-based learning, and interdisciplinary collaboration to ensure our graduates are well-prepared for the challenges of modern healthcare delivery.',
   ],
-  image: '/academics-module/health.jpg',
+  image: '/academics/health.jpg',
 };
 
 export const EDUCATION_DEAN_MESSAGE: DeanMessage = {
@@ -571,7 +571,7 @@ export const EDUCATION_DEAN_MESSAGE: DeanMessage = {
     'It is my distinct pleasure to welcome you to the School of Education and Social Sciences at Lukenya University. Our school is founded on the belief that education and social sciences are the bedrock of any progressive society. We are dedicated to training educators, counselors, social workers, and researchers who will make a meaningful impact in their communities.',
     'Our programs are designed to blend theoretical knowledge with practical application-module. Through partnerships with schools, social welfare agencies, and community organizations, our students gain valuable field experience that prepares them for successful careers. We invite you to join us in our mission to shape minds and transform communities.',
   ],
-  image: '/academics-module/education.jpg',
+  image: '/academics/education.jpg',
 };
 
 export const BUSINESS_DEAN_MESSAGE: DeanMessage = {
@@ -583,7 +583,7 @@ export const BUSINESS_DEAN_MESSAGE: DeanMessage = {
     'Welcome to the School of Business and Economics at Lukenya University. Our school is at the forefront of business education, preparing students for the dynamic demands of the global economy. We offer programs that combine academic rigor with practical relevance, ensuring our graduates are ready to lead and innovate.',
     'Our curriculum is continuously updated to reflect current industry trends and emerging technologies. We maintain strong linkages with the corporate sector, providing our students with internship opportunities, guest lectures, and career mentorship. We are committed to developing ethical, competent, and visionary business leaders.',
   ],
-  image: '/academics-module/business.jpg',
+  image: '/academics/business.jpg',
 };
 
 /* ═════════════════════════════════════════════════════
