@@ -11,7 +11,38 @@
     [isExternalLink]="true">
   </app-hero-section>
 
-  <app-stats-band></app-stats-band>
+  <section class="faq-section" id="faq">
+    <div class="faq-header">
+      <p class="pill">FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-lede">
+        Welcome to the Lukenya University ODEL (Open, Distance, and E-Learning) FAQ page &mdash; your go-to resource for answers to commonly asked questions about our diverse range of programs and services.
+      </p>
+    </div>
+
+    <div class="faq-grid">
+      @for (category of faqCategories; track category.title) {
+        <div class="faq-category">
+          <h3 class="faq-category-title">{{ category.title }}</h3>
+          <dl class="faq-list">
+            @for (item of category.items; track item.question) {
+              <div class="faq-item" [class.open]="item.open">
+                <dt (click)="toggleFaq(item)" role="button" [attr.aria-expanded]="item.open" tabindex="0">
+                  <span>{{ item.question }}</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" width="20" height="20">
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </dt>
+                <dd>
+                  <p>{{ item.answer }}</p>
+                </dd>
+              </div>
+            }
+          </dl>
+        </div>
+      }
+    </div>
+  </section>
 
   <section class="contact-section" id="contact-form">
     <div class="contact-copy">

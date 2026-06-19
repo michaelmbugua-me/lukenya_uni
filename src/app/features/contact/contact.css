@@ -8,7 +8,7 @@
   display: grid;
   gap: clamp(48px, 8vw, 150px);
   grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 0.85fr);
-  padding: 0 clamp(40px, 14.4vw, 276px) 128px;
+  padding: 80px clamp(40px, 14.4vw, 276px) 128px;
 }
 
 
@@ -174,6 +174,110 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+/* ===========================
+   FAQ Section
+   =========================== */
+
+.faq-section {
+  background: #f9fafb;
+  padding: 64px clamp(40px, 14.4vw, 276px) 80px;
+}
+
+.faq-header {
+  margin-bottom: 48px;
+  max-width: 680px;
+}
+
+.faq-header .section-lede {
+  margin-top: 16px;
+  max-width: 640px;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 48px;
+}
+
+.faq-category-title {
+  font-size: clamp(18px, 1.4vw, 24px);
+  font-weight: 600;
+  color: #01884E;
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.faq-item:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 24px;
+  cursor: pointer;
+  user-select: none;
+  font-size: clamp(15px, 1.1vw, 17px);
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.faq-item dt:focus-visible {
+  outline: 2px solid #01884E;
+  outline-offset: -2px;
+  border-radius: 10px;
+}
+
+.faq-chevron {
+  flex-shrink: 0;
+  color: #6b7280;
+  transition: transform 0.25s ease;
+}
+
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+  color: #01884E;
+}
+
+.faq-item dd {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open dd {
+  max-height: 1000px;
+}
+
+.faq-item dd p {
+  padding: 0 24px 20px;
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-line;
 }
 
 @media (max-width: 980px) {
