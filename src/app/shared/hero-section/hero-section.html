@@ -46,16 +46,16 @@
     @if (showBottomButtons) {
       <div class="hero-actions">
         @if (primaryButtonText) {
-          @if (primaryButtonExternal) {
-            <a class="button yellow" [href]="primaryButtonLink">{{ primaryButtonText }}</a>
+          @if (isExternal(primaryButtonLink)) {
+            <a class="button yellow" [href]="primaryButtonLink" target="_blank" rel="noopener noreferrer">{{ primaryButtonText }}</a>
           } @else {
             <a class="button yellow" [routerLink]="primaryButtonLink">{{ primaryButtonText }}</a>
           }
         }
 
         @if (secondaryButtonText) {
-          @if (secondaryButtonExternal) {
-            <a class="button outline" [href]="secondaryButtonLink">{{ secondaryButtonText }}</a>
+          @if (isExternal(secondaryButtonLink)) {
+            <a class="button outline" [href]="secondaryButtonLink" target="_blank" rel="noopener noreferrer">{{ secondaryButtonText }}</a>
           } @else {
             <a class="button outline" [routerLink]="secondaryButtonLink">{{ secondaryButtonText }}</a>
           }
@@ -63,10 +63,10 @@
       </div>
     } @else {
       @if (buttonText) {
-        @if (!isExternalLink) {
-          <a [routerLink]="buttonLink" class="button yellow">{{ buttonText }}</a>
+        @if (isExternal(buttonLink)) {
+          <a [href]="buttonLink" target="_blank" rel="noopener noreferrer" class="button yellow">{{ buttonText }}</a>
         } @else {
-          <a [href]="buttonLink" class="button yellow">{{ buttonText }}</a>
+          <a [routerLink]="buttonLink" class="button yellow">{{ buttonText }}</a>
         }
       }
     }

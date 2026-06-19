@@ -59,6 +59,10 @@ export class HeroSectionComponent {
     return this.pillText || this.eyebrow;
   }
 
+  isExternal(link: string): boolean {
+    return link.startsWith('http://') || link.startsWith('https://') || link.startsWith('mailto:') || link.startsWith('tel:');
+  }
+
   onArrowClick(direction: 'left' | 'right'): void {
     if (direction === 'left') {
       this.leftActive = !this.leftActive;
