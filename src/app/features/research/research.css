@@ -1,0 +1,382 @@
+:host {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.research-page {
+  --green: #01884e;
+  --green-dark: #09452b;
+  --yellow: #f9ce32;
+  --ink: #18181f;
+  --muted: #595d63;
+  --content: min(100% - 72px, 1200px);
+  background: #efefef;
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", Inter, "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Intro ────────────────────────────────────────────── */
+
+.rp-intro {
+  margin: 0 auto 80px;
+  width: var(--content);
+}
+
+.rp-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.rp-intro-copy h2 {
+  font-size: clamp(34px, 3.6vw, 52px);
+  font-weight: 900;
+  line-height: 1.0;
+  margin: 0 0 22px;
+  letter-spacing: -0.01em;
+}
+
+.rp-intro-copy p {
+  color: #3a3d44;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.rp-intro-image img {
+  border-radius: 16px;
+  width: 100%;
+  height: clamp(280px, 28vw, 380px);
+  object-fit: cover;
+}
+
+/* ── Activities ───────────────────────────────────────── */
+
+.rp-activities {
+  margin: 0 auto 80px;
+  width: var(--content);
+}
+
+.rp-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.rp-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 26px 26px;
+}
+
+.rp-card--wide {
+  grid-column: 1 / -1;
+}
+
+.rp-card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.rp-card-icon svg {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+.rp-card h3 {
+  font-size: clamp(16px, 1.1vw, 20px);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.rp-card p {
+  color: #575b61;
+  font-size: clamp(13px, 0.9vw, 15px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rp-card--wide {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0 20px;
+  align-items: start;
+}
+
+.rp-card--wide .rp-card-icon {
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.rp-card--wide h3 {
+  grid-column: 2;
+}
+
+.rp-card--wide p {
+  grid-column: 2;
+}
+
+/* ── Journals ─────────────────────────────────────────── */
+
+.rp-journals {
+  background: #fff;
+  padding: 64px 0 80px;
+  margin-bottom: 0;
+}
+
+.rp-journals-inner {
+  width: var(--content);
+  margin: 0 auto;
+}
+
+.rp-journals-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.rp-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #888;
+  margin: 0 0 6px;
+}
+
+.rp-journals-header h2 {
+  font-size: clamp(28px, 2.4vw, 40px);
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.rp-journals-sub {
+  font-size: clamp(13px, 0.9vw, 15px);
+  color: #6b6f76;
+  margin: 0;
+  max-width: 480px;
+}
+
+.rp-see-all {
+  font-size: clamp(13px, 0.9vw, 15px);
+  font-weight: 600;
+  color: var(--green);
+  white-space: nowrap;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--green);
+}
+
+.rp-journals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.rp-journal-feature {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.rp-journal-feature > img {
+  width: 100%;
+  height: clamp(200px, 22vw, 280px);
+  object-fit: cover;
+}
+
+.rp-journal-feature-body {
+  padding: 20px 18px 22px;
+}
+
+.rp-date {
+  display: block;
+  font-size: 11px;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.rp-journal-feature-body h3 {
+  font-size: clamp(17px, 1.2vw, 22px);
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.25;
+}
+
+.rp-journal-feature-body p {
+  font-size: clamp(13px, 0.9vw, 15px);
+  color: #6b6f76;
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+
+.rp-journals-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rp-journals-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.rp-journal-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rp-journal-card > img {
+  width: 100%;
+  height: clamp(100px, 12vw, 148px);
+  object-fit: cover;
+}
+
+.rp-journal-card h4 {
+  font-size: clamp(13px, 0.9vw, 15px);
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.25;
+  padding: 12px 12px 0;
+}
+
+.rp-journal-card .rp-date {
+  padding: 10px 12px 0;
+}
+
+.rp-journal-card p {
+  font-size: clamp(12px, 0.8vw, 13px);
+  color: #6b6f76;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  padding: 0 12px;
+}
+
+.rp-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px 14px;
+}
+
+.rp-author img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rp-author span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.rp-journal-feature-body .rp-author {
+  padding: 0;
+}
+
+.rp-reader-note {
+  background: var(--yellow);
+  border-radius: 12px;
+  padding: 24px 28px 26px;
+}
+
+.rp-reader-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.55);
+  margin: 0 0 12px;
+}
+
+.rp-reader-note blockquote {
+  font-size: clamp(17px, 1.3vw, 22px);
+  font-weight: 700;
+  color: #1b1b1b;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.rp-reader-sub {
+  font-size: clamp(12px, 0.85vw, 14px);
+  color: rgba(0,0,0,0.55);
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+
+@media (max-width: 1040px) {
+  .rp-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .rp-activities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rp-journals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .research-page {
+    --content: min(100% - 28px, 1200px);
+  }
+
+  .rp-activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-card--wide {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-card--wide .rp-card-icon {
+    margin-bottom: 14px;
+  }
+
+  .rp-card--wide h3,
+  .rp-card--wide p {
+    grid-column: 1;
+  }
+
+  .rp-journals-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-journals-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

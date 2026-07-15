@@ -22,5 +22,6 @@ export const routes: Routes = [
   { path: 'vice-chancellor', loadComponent: () => import('./features/board-of-trustees/vice-chancellor/vice-chancellor').then(m => m.ViceChancellorComponent) },
   { path: 'application-overview', loadComponent: () => import('./features/application/overview/application-overview').then(m => m.ApplicationOverviewComponent) },
   { path: 'application-form', loadComponent: () => import('./features/application/form/application-form').then(m => m.ApplicationFormComponent) },
-  { path: 'virtual-tour', loadComponent: () => import('./features/campus-life/virtual-tour/virtual-tour').then(m => m.VirtualTourComponent) }
+  { path: 'virtual-tour', loadComponent: () => import('./features/campus-life/virtual-tour/virtual-tour').then(m => m.VirtualTourComponent) },
+  { path: 'research', loadComponent: () => import('./features/research/research').then(m => m.ResearchComponent) }
 ];
