@@ -63,6 +63,10 @@ export class HeroSectionComponent {
     return link.startsWith('http://') || link.startsWith('https://') || link.startsWith('mailto:') || link.startsWith('tel:');
   }
 
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   onArrowClick(direction: 'left' | 'right'): void {
     if (direction === 'left') {
       this.leftActive = !this.leftActive;

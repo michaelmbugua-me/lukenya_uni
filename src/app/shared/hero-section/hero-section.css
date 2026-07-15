@@ -148,14 +148,23 @@
   background: #f4ce2f;
   border: 0;
   border-radius: 50%;
-  bottom: 28px;
+  bottom: 32px;
   color: #343434;
+  cursor: pointer;
   display: flex;
+  font-size: 20px;
   height: 48px;
   justify-content: center;
-  position: absolute;
-  right: 28px;
+  position: fixed;
+  right: 32px;
   width: 48px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.round-control:hover {
+  transform: scale(1.1);
 }
 
 .hero-arrow {

@@ -83,7 +83,8 @@
     }
   </div>
 
-  @if (showScrollControl) {
-    <button class="round-control" type="button" [attr.aria-label]="scrollButtonLabel">{{ scrollButtonText }}</button>
-  }
 </section>
+
+@if (showScrollControl) {
+  <button class="round-control" type="button" [attr.aria-label]="scrollButtonLabel" (click)="scrollToTop()">{{ scrollButtonText }}</button>
+}
